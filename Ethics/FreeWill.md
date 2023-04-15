@@ -43,3 +43,7 @@ Rational understanding and action is part of your intrinsic value; doing the "ri
 To be perfectly irrational is to be perfectly doomed; but to be perfectly rational & deterministic in any pragmatic sense is unnecessary, counterproductive, and impossible to begin with. Your job is to *balance* 1) rationality with 2) imperfection and 3) the unfathomability of existence. These are not equal or equivalent forces; they are - very roughly speaking - big, small and tiny.
 
 Rather than obsessing over free will, obsess over *value*. How do you become a person of great value? Start with the rational, deterministic things: Be smart, observant, knowledgeable, reliable. Move on to imperfection: Be open-minded, flexible, forgiving. Finally: Embrace the unfathomability of existence as how things are meant to be, whatever that might mean, and make the most of it.
+
+----
+
+[Back to Ethics main page](./README.md)
