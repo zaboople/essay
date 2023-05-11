@@ -7,7 +7,9 @@ In order, I am each of these:
 - Individualist
 - Heretic
 - Survivalist
+- Balancing Act
 
 In line with those ideals, I have created some essays generally related to "ethics" here. They necessarily touch on religion a bit, but they are not political.
 
 - [Free Will](./FreeWill.md)
+- [Faith](./Faith.md)
