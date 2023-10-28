@@ -20,6 +20,8 @@ Considering randomness again, should you *want* to be random, or at least *more*
 
 In the simplest universe, chaos dissipates, and life *is* pointless and predictable. What would you do there? You'd choose self-annihilation just to free yourself. Before deciding that your currently *chaotic* life has no meaning, consider how meaningless this simplest, most predictable universe is. If you're at all short on chaos, it's readily available in any free society - some old-timers would say, "Just have children!"
 
+A simple problem: Everyone says, "Don't go to the grocery store hungry!" because you're much more likely to buy junk food. First, eat some breakfast, a sandwich, etc. We are confessing that we lack the strength of "will" alone to shop conscientiously when hungry, a loss of *control* that can be regained, however, by having a meal first. There you have it: Useful, practical advice, for once. This advice follows the pattern of, "Focus more on the things you can control, less on the things you can't." Even better! It certainly makes sense to recognize that some aspects of our behavior are difficult to control through sheer *will*. We can structure our lives and pursue various means to mitigate or even cure, and if those remedies sometimes amount to a more circumspect *will*, good enough. So, by no means is free will a *perfect* freedom of will; it is the control we have in spite of the control we haven't.
+
 Having perhaps secured some *faith* in your sense of value, we can move on to hair-splitting.
 
 ## Paradox
