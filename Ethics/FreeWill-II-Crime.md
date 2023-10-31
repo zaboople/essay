@@ -10,7 +10,7 @@ As a proper advocate for free will and criminal justice, you recognize my libert
 
 None of those compel retribution as an ideal, even when they compel punishment. Forgiveness is already the moral ideal. We don't need to destroy anyone's sense of *individuality* and *liberty* as casualties in the death of free will for the sake of killing retribution as well. Neither does the assertion of free will itself compel retribution, even though it insists that the perpetrator was capable of choosing to avoid crime.
 
-A *free* society *demands* an acknowledgement of free will from its citizens, because it demands responsible action in exchange for the freedom granted. Why be free if you have no free will? *Real* forgiveness is an absolutely worthy virtue, but one that rests on a principle of individual change, that a person can become better and overcome the mistakes they've made.
+A truly free society *demands* an acknowledgement of free will from its citizens, because it demands responsible action in exchange for the freedom granted. Why be free if you have no free will? *Real* forgiveness is an absolutely worthy virtue, but one that rests on a principle of individual change, that a person can become better and overcome the mistakes they've made.
 
 Of course there are cases where physical and/or psychological trauma results in a person who is unable to behave normally and cannot be trusted, even with therapeutic intervention, and that means permanent and expensive incarceration, often in a mental health institution rather than a prison, although the differences are often minimal. We certainly ought to make sure it is not the institution itself causing the trauma, though.
 
