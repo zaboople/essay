@@ -12,5 +12,5 @@ In order, I am each of these:
 In line with those ideals, I have created some essays generally related to "ethics" here. They necessarily touch on religion a bit, but they are not political.
 
 - [Free Will](./FreeWill.md)
-- [Crime & Punishment](./FreeWill-II-Crime.txt)
+- [Crime & Punishment](./FreeWill-II-Crime.md)
 - [Faith](./Faith.md)
