@@ -10,4 +10,4 @@ The lower caste is persuaded to avoid thinking for themselves, intellectually an
 
 The upper caste often resorts to pseudo-apology through *pity*. Caste panders and patronizes; it never has the respect to say, "You're capable of much more," because the upper caste doesn't believe that. The upper caste will say, "Your life is so difficult; I could never possibly understand it, even if you spent years explaining it to me," so as to wave off any hope of empathy, to render a vast, expansive canyon of impassable indifference disguised as "caring". Never forget that caste is as much about pompous snobbery and pretentious elitism as it is about violent hatred, even if the latter is a lot scarier than the rest.
 
-Members of the lower caste are left to hate themselves and one another. The only way to break the back of the caste system is to reject self-hatred and the pandering that encourages it.
+Members of the lower caste are left to hate themselves and one another. The only way to break the back of the caste system is to reject self-hatred and the pandering that encourages it; and to embrace self-expression.
