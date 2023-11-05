@@ -14,4 +14,3 @@ In line with those ideals, I have created some essays generally related to "ethi
 - [Free Will](./FreeWill.md)
 - [Crime & Punishment](./FreeWill-II-Crime.md)
 - [Faith](./Faith.md)
-- [Caste](./Caste.md)
