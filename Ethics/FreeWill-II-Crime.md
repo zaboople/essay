@@ -15,3 +15,7 @@ A truly free society *demands* an acknowledgement of free will from its citizens
 Of course there are cases where physical and/or psychological trauma results in a person who is unable to behave normally and cannot be trusted, even with therapeutic intervention, and that means permanent and expensive incarceration, often in a mental health institution rather than a prison, although the differences are often minimal. We certainly ought to make sure it is not the institution itself causing the trauma, though.
 
 We can buy into this criminal justice ideology as strictly selfish and even atheist people if we really want to; it doesn't matter. It's in your best interest to construct a law-abiding social order where you can freely exchange with others. The principles of criminal justice herein fall largely in line with the original thinking of Bentham's Utilitarian philosophy, which sought to remove retribution/revenge from criminal justice (Bentham was also profoundly atheist, but that part is strictly optional).
+
+----
+
+[Back to Ethics main page](./README.md)
