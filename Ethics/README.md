@@ -12,6 +12,7 @@ In order, I am each of these:
 In line with those ideals, I have created some essays generally related to "ethics" here. They necessarily touch on religion a bit, but they are not political.
 
 - [Free Will](./FreeWill.md)
-- [Crime & Punishment](./FreeWill-II-Crime.md)
+- [Free Will - Crime & Punishment](./FreeWill-II-Crime.md)
+- [Natural Law](./NaturalLaw.md)
 - [Faith](./Faith.md)
 - [Artificial Intelligence & The Singularity](./AIAndSingularity.md)
