@@ -12,9 +12,9 @@ Converting squishy-brained people into computers is hard, but artificial intelli
 
 Neural network computing designs tend to create rather opaque processes, however: What's really going on in there? Tech-business hyperbole is incessant and overwhelming as ever, so skepticism is reasonable. The current claims go as follows:
 
-    - AI is incredibly dangerous and an existential threat to our existence; there is no reason to think it will always act in our best interests.
-    - We're going to do it anyhow because you can't close pandora's box now, can you?
-    - No it can't possibly be sentient and/or conscious! The "Chinese Room" proved it already. It's just a "word prediction engine" anyhow.
+- AI is incredibly dangerous and an existential threat to our existence; there is no reason to think it will always act in our best interests.
+- We're going to do it anyhow because you can't close pandora's box now, can you?
+- No it can't possibly be sentient and/or conscious! The "Chinese Room" proved it already. It's just a "word prediction engine" anyhow.
 
 The argument is for a legal, highly profitable but strictly controlled AI. But how are we so sure about this supposed lack of sentience? The conversation goes like this:
 
