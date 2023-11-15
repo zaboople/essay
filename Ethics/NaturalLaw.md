@@ -60,13 +60,13 @@ Still, even death as self-sacrifice for the good of another can be the rational 
 
 ## Can We Become Truly Moral Without Religion?
 
-Shall I smugly insist that my education & faith in God has made me morally superior to the unwashed atheists around me? Bleagh. Things are hard enough already without trying to prove *that*.
+Shall I smugly insist that my religious education & faith in God has made me morally superior to the unwashed atheists around me? Bleagh. Things are hard enough already without trying to prove *that*.
 
 It isn't so much that faith in God is *necessary* to get by and hopefully thrive as a society, but that it is part of what we *are*, simply, our nature - and becomes part of our moral obligation when it arises within us. We should try understand it and use it appropriately.
 
 ## Automatic Moralities
 
-Sometimes we propose moral systems like laissez-faire capitalism or some extreme forms of utilitarianism, in which individuals play an amoral game and attempt to get the highest score. We're told that the system excuses us from moral concerns by magically self-correcting for right and wrong. Any system of "automatic morality" like this is always morally disastrous, because morality is an individual responsibility requiring individual conscience and great effort.
+Sometimes we propose moral systems like extreme forms of laissez-faire capitalism or of utilitarianism, in which individuals play an amoral game and attempt to get the highest score. We're told that the system excuses us from moral concerns by magically self-correcting for right and wrong. Any system of "automatic morality" like this is always morally disastrous, because morality is an individual responsibility requiring individual conscience and great effort.
 
 Certainly our social systems of law, achievement, wealth and so forth ought to permit and even encourage us towards morally acceptable behavior. However, if I create a game, you'll notice ways to cheat at that game, and the most dangerous thing is for both of us to insist that it is un-cheatable.
 
