@@ -22,7 +22,7 @@ We need a constitutional amendment to set the definition of "liberty" explicitly
 
 Would such a liberty amendment force the courts to universally legalize abortion again? It might compel a revisiting of that debate, but not an outcome, and while the court might occasionally flip, it absolutely hates to flop. If I wanted to legalize abortion, I would propose an abortion amendment outright. Until then, courts will decide on the outcome they like, then torture the law until it expels something expedient. Either way, that debate is for another day.
 
-Given that Alito claims "hundreds" of liberties, am I missing some subtle extra-liberty that was previously implied? If I am, then I'm happy to see it constitutionally enumerated as well, now or later. However, given that "liberty" currently means nothing whatsoever, we ought take action. Now is the time to do the dirty work of clearly defining things rather than relying on a court that is more than a little capricious, arbitrary, and political.
+Given that Alito claims "hundreds" of liberties, am I missing some subtle extra-liberty that was previously implied? If I am, then I'm happy to see it constitutionally enumerated as well, now or later. However, given that "liberty" currently means nothing whatsoever, we ought take action. Now is the time to do the dirty work of clearly defining things rather than relying on a court that is more than a little capricious, arbitrary, and political. So:
 
 --------------------------------------------------------
 
