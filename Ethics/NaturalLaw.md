@@ -44,13 +44,13 @@ If you insist on some kind of one-dimensional ladder that you expect to magicall
 
 Overall, you are in fact observing nature at work in this political science, the same physical principles of structure in nature applied to the social contract of human nature, diabolical and prone to hubris as the balancing act might be. As heuristics go, if there is balance compelled, nature is afoot.
 
-# The Altruistic Mandate
+## The Altruistic Mandate
 
 Suppose a person is doing The Right Thing, and we ask them: Why? "Well, because I have a mandate from God."
 
 "Okay, but you also like doing this sort of thing, right? In some way it gives you good feelings, maybe?"
 
-"No, I hate every minute of it. But I have to do it." Is this person immoral, because of how they *feel*, or at least less moral than the good-feeling do-gooder? Of course not. We wrap up too much *feeling* in morality, and since we will always have performative morality, there is nothing more annoying than a person letting us know how much feeling they feel when doing good as prominently and publicly as they can, hoping to gain our admiration. Just do the right thing and get it done, kids. That's how mandates work.
+"No, I hate every minute of it. But I have to do it." Is this person immoral, because of how they *feel*, or at least less moral than the good-feeling do-gooder? Of course not. We wrap up so much *feeling* in morality, but there is nothing more annoying than a person letting us know how much feeling they feel when doing good as prominently and publicly as they can, hoping to gain our admiration. Just do the right thing and get it done, kids. That's how mandates work.
 
 Still, it helps to have a rational basis, and altruism itself is perfectly rational, given that we are social beings and helping one another is innate to our nature. It might well be that it makes you feel better - or at least *proper* - even without making a big media production of it. Furthermore, contributing to the stabilization of less fortunate corners of society is a perfectly rational thing to do, given that the destabilization is so irrational.
 
