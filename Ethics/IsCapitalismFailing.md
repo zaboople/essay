@@ -34,18 +34,6 @@ Third, recognize that management is about loyalty to an organization first, and 
 
 Fourth, rotate upper management, which tends to reward loyalty with high-paying and meaningless appointments to reinforce itself. New leadership should be able to get rid of dead weight sub-leaders and the bureaucracy they support.
 
-## Tech Startups
-
-The idea of a "tech startup" is to create a company that specializes in technology innovation, usually with funding proportional to the expected profits, which are ideally astronomical. Sometimes this works out as hoped, but only if employees are actually committed to the company's ideas.
-
-Let's propose a game, where there are a series of companies, and each company is doomed: It starts out with borrowed money, spends it and keeps borrowing, until it can't borrow anymore, and it goes out of business. You and I play the game as employees, and so our task is to hop from company to company, getting in while the getting is good - money is successfully borrowed - and getting out before it goes bad.
-
-What is our strategy? More importantly, which is more important: my loyalty to the company,  or my loyalty to you? Obviously my loyalty to a company is not very meaningful when we know the company's going to go out of business sooner than later; but my loyalty to you outlasts the company, and helps ensure that I will help you dodge the bullet of corporate layoffs, but also to help you on board the newest, most solvent ship that just sailed in as the old one sinks. We are not concerned with what's best for the organization, but whom can I trust, and who might stab me in the back. Interpersonal loyalty can transform into a matter of ruthless intimidation and aggression towards those who have alliances outside our own club - including those who are foolishly loyal to the company.
-
-We are playing a zero-sum game, the kind of game that attracts criminal minds. We might feign a libertarian justification that capitalism is "ruthless" and "only the strong survive", but this game isn't capitalist at all. Of course no, it wasn't anyone's intention to create this sort of game, but startup companies tend to fail, so failure is excused - even encouraged - and whoops, we've paved our road of good intentions straight to heck.
-
-The tech startup is a strange addendum to the b.s. job phenomenology, but worth noting if you've ever been lived in a so-called "tech hub" geography and boom economy where these jobs are constantly cycling through.
-
 ----
 
 [Back to Ethics main page](./README.md)
