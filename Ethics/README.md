@@ -12,3 +12,4 @@ Secondary matters:
 - [Proposing a Constitutional Liberty Amendment](./LibertyAmendment.md)
 - [Artificial Intelligence & The Singularity](./AIAndSingularity.md)
 - [The Moral Versus The Miraculous](./MoralVsMiraculous.md)
+- [Caste](./Caste.md)
