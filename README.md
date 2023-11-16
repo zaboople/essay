@@ -1,1 +1,1 @@
-[Ethics](Ethics)
+[Ethics](Ethics/README.md)
