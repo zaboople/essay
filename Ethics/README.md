@@ -13,3 +13,5 @@ Secondary matters:
 - [Artificial Intelligence & The Singularity](./AIAndSingularity.md)
 - [The Moral Versus The Miraculous](./MoralVsMiraculous.md)
 - [Caste](./Caste.md)
+- [Is Capitalism Failing?](./IsCapitalismFailing.md)
+- [Final Judgement](./FinalJudgement.md)
