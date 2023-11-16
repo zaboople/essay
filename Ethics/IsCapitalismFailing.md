@@ -36,7 +36,7 @@ Fourth, rotate upper management, which tends to reward loyalty with high-paying 
 
 ## Tech Startups
 
-The idea of a "tech startup" is to create a company that specializes in technology innovation, usually with funding proportional to the expected profits, which are ideally astronomical. Sometimes this works out as hoped.
+The idea of a "tech startup" is to create a company that specializes in technology innovation, usually with funding proportional to the expected profits, which are ideally astronomical. Sometimes this works out as hoped, but only if employees are actually committed to the company's ideas.
 
 Let's propose a game, where there are a series of companies, and each company is doomed: It starts out with borrowed money, spends it and keeps borrowing, until it can't borrow anymore, and it goes out of business. You and I play the game as employees, and so our task is to hop from company to company, getting in while the getting is good - money is successfully borrowed - and getting out before it goes bad.
 
