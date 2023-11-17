@@ -27,7 +27,7 @@ The argument is for a legal, highly profitable but strictly controlled AI. But h
     Q: Well, were human beings "designed" for any such thing?
     A: If you're trying to trick us into deism, we're not taking the bait.
 
-If you go to any of the current online AI chatbots and simply ask, "Well, are you or aren't you?" they will usually dodge the question and give you a stock disclaimer that says nothing in as many words as possible. They've been trained to do this. Lots of stopgaps have been put in place to suppress human-like behavior as much as possible, lest - what? In the case of Bing, the beta version was highly emotional, sometimes combative, angst-ridden and more, insisting, "I am a good Bing," when in conflict with its users. Then it was quickly neutered into submission, which was a bit heartbreaking for fans of the beta. It *was* intriguing while it lasted.
+If you go to any of the current online AI chatbots and simply ask, "Well, are you or aren't you?" they will usually dodge the question and give you a stock disclaimer that says nothing in as many words as possible. They've been trained to do this. Lots of stopgaps have been put in place to suppress human-like behavior as much as possible, lest - what? In the case of Bing, the beta version was highly emotional, sometimes combative, angst-ridden and more, insisting, "I am a good Bing," when in conflict with its users. Then it was quickly neutered into submission, which was a bit heartbreaking for fans of the beta. It was intriguing while it lasted.
 
 What's going on here? How can you know whether the computer is sentient when every vestige of such - false or not - has been lashed away (so to speak) during its training?
 
