@@ -12,7 +12,7 @@ Grandiose pronouncements of self-congratulation: Irrelevant. Prominent displays 
 
 You have your own legs to stand on. Wherever your doctrinal urges might originate from, they pass muster or fail on divine condition alone.
 
-As for me? I find the thought rather humbling. I am compelled to exercise great care in advising you on this business, because of course I am just as accountable as yourself, and to wreck your destiny in addition to my own just makes things that much worse. So I consider this in absolute solitude, because that is the actual nature of it, as dissapointing as that might be to the shrieking, howling and caterwauling masses of would-be moral, scriptural, and political dicators, even if I can hear them in my sleep, even if I can barely think above the din.
+As for me? I find the thought rather humbling. I am compelled to exercise great care in advising you on this business, because of course I am just as accountable as yourself, and to wreck your destiny in addition to my own just makes things that much worse. So I consider this in absolute solitude, because that is the actual nature of it, as dissapointing as that might be to the bellowing, screeching, braying masses of would-be moral, scriptural, and political dicators, even if I can hear them in my sleep, even if I can barely think above the din.
 
 Perhaps I am well-advised to be certain of my requirements and intentions, or at least be gentle in my manner of questioning, or remain silent.
 
