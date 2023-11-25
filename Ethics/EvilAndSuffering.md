@@ -14,7 +14,7 @@ So the question is not why won't God intervene, but why didn't God give us the f
 
 Perhaps there is some part of your soul that asked for the most challenging, confusing, terrifying world before you arrived, and that's why you're here. It seems like our lack of courage and fear of failure is the defeat that soul expected least, or maybe courage was the thing it hoped to prove, in a world where even faith is impossible without.
 
-If I remain angry enough at the world to reject God, what am I left with? I'm still angry at the world, without the remotest hope of a resolution, that all this might have a purpose. Does that somehow make it all better? So we must reject our anger at the world regardless, having gained nothing but hopelessness. The question of faith remains ours to resolve, neither disproven nor proven.
+If I remain angry enough at the world to reject God, what am I left with? I'm still angry at the world, without the remotest hope of a resolution, that all this might have a purpose. Does that somehow make it all better? So I must reject anger at the world regardless, having gained nothing but hopelessness. The question of faith remains unanswered, mine to resolve or not.
 
 ----
 
