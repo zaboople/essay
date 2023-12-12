@@ -16,3 +16,7 @@ Secondary matters:
 - [Caste](./Caste.md)
 - [Is Capitalism Failing?](./IsCapitalismFailing.md)
 - [Final Judgement](./FinalJudgement.md)
+
+----
+
+[Back to Essays main page](../README.md)
