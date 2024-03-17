@@ -5,6 +5,7 @@ In order, I am each of these: idiot, pragmatist, individualist, heretic, and bal
 - [Free Will](./FreeWill.md)
 - [Natural Law](./NaturalLaw.md)
 - [Faith](./Faith.md)
+- [Evil and Suffering](EvilAndSuffering.md)
 
 Secondary matters:
 
@@ -15,3 +16,7 @@ Secondary matters:
 - [Caste](./Caste.md)
 - [Is Capitalism Failing?](./IsCapitalismFailing.md)
 - [Final Judgement](./FinalJudgement.md)
+
+----
+
+[Back to Essays main page](../README.md)
