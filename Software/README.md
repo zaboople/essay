@@ -4,4 +4,4 @@ These are essays on software, primarily computer programming, or you could say "
 
 ----
 
-[Back to Software main page](./README.md)
+[Back to Essays main page](../README.md)

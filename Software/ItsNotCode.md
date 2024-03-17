@@ -70,3 +70,7 @@ Estimating a construction project is going to be a lot easier with blueprints in
 A lot of software development managers want to have two tiers of software development, where a smaller, higher-paid group does all the thinking - architects and other senior people - and a larger, lower-paid group does all the "labor". They are trying to imagine the typical computer programmer as a laborer, albeit a skilled laborer. The image of "coder" assumes you are using your savant-like skills to tediously grind out all those 1's and 0's, and you need to shut up, focus on grinding, and especially improve your grinding speed. It's not the loss of status here that offends, but a complete misapprehension of what the job is about.
 
 So, maybe stop saying "code" when you talk about programming computers.
+
+----
+
+[Back to Software main page](./README.md)
