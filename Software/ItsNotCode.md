@@ -43,7 +43,7 @@ We can rightfully describe the act of speaking or writing in English, Russian, S
 
 Before you start splitting hairs about just what is code or isn't, maybe we ought to first state the *goal* of such arguing: You need to describe what you do for a living to people who don't understand, and describe it intuitively, or they'll start making silly diagrams and ordering you around like a pipefitter, tailor or restaurant line worker (noble professions all, but not engineering).
 
-# Who Wears the Hard Hat?
+## Who Wears the Hard Hat?
 
 Things would be lot easier if we had some burly folk in flannel shirts, nailing up the 1's and 0's, installing a spigot here and there, maybe some gauges and things, something management could look at and say, "Well it's coming along nicely, I must say!" Then they'd look over at you, a programmer, and ask, "Who the heck are you?" and you could say, "Well, I'm the engineer who designed this!" Then they would say, "Oh! Well then, fine job you've done here. Looking good!"
 
@@ -53,17 +53,17 @@ Grace Hopper described programming as "writing a cookbook", which is pretty clos
 
 In the end, I don't write computer programs; I write *descriptions* of computer programs. The compiler/interpreter does the rest. Programming languages are in fact *design* languages, and programmers are designers. Again, there is no physics, only the symbolic realm, and it turns out that symbolic language is the ideal design tool, not diagrams. Just because someone decided to describe the work as "software engineering" doesn't make diagrams a good idea.
 
-# Is It Really Engineering?
+## Is It Really Engineering?
 
 It actually does make some sense to think of computer programming as engineering, in the sense that we need to build working systems derived from mathematic and scientific discovery, but the academic domain is computer science rather than physics and its specializations. As with any other engineering, our working systems need to be reliable, consistent, robust, fault-tolerant, etc., and especially *safe* - effectively, they need to be *ethical*. Our collective ethical neglect has become a larger and larger problem over the last few decades as computing spreads to all possible domains, and as people's lives and livelihoods come to depend on the quality of that computing.
 
 It has been difficult to convince computer programmers to mature and discipline themselves instead of wallowing in a tough-guy, danger-close, hacker-cowboy mentality of arrogance justified by a constant refrain of, "How else am I supposed to innovate?" That's actually a good enough question to insist on learning to manage risk effectively rather than refusing to accept risk at all, but room for improvement abounds.
 
-# Distributed Systems
+## Distributed Systems
 
 Now that everyone is obsessed with building extraordinarily distributed systems with dozens of network nodes, it *does* make sense to start diagramming those networks, since they are specifically *physical* entities. Unfortunately most of us still rely on word-of-mouth, whiteboard photographs and institutional memory to keep track of these mostly invisible diagrams, often with lots of mistakes and missing parts. If you force a typical software development team to draw a reasonably complete diagram "or else", you can usually guess the diagram's accuracy by how much it embarrasses the team with its organically grown, mind-boggling complexity.
 
-# Impact
+## Impact
 
 Estimating a construction project is going to be a lot easier with blueprints in hand, but how do you estimate it before then? Very, very carefully! This is why software project estimation is so difficult, because you're *designing as you go*! The design and the construction are done at the same time. You're not even sure your design will work. In fact, you can usually estimate construction at "anywhere from a few seconds to a few minutes", which sounds great until everyone realizes the design will take days, weeks, even months. It might help management understand computer programmers better if we explain things this way.
 
