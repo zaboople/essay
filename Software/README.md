@@ -2,6 +2,7 @@ These are essays on software, primarily computer programming, or you could say "
 
 - [Dev-Ops](DevOps.md)
 - [It's Not "Code"](ItsNotCode.md)
+- [The Server Is Down!](TheServerIsDown.md)
 
 ----
 
