@@ -1,4 +1,4 @@
-# The Server Is Down! (a primer for junior programmers)
+# The Server Is Down! (for junior programmers)
 
 There's a lot that can be said about networking, but let me illustrate my pet peeve:
 
