@@ -6,6 +6,7 @@ These are essays on software, primarily computer programming, or you could say "
 - [It's Not "Code"](ItsNotCode.md)
 - [Null And Optional](NullAndOptional.md)
 - [The Server Is Down!](TheServerIsDown.md)
+- [Which Environment am I In?](WhichEnvironment.md)
 
 ----
 
