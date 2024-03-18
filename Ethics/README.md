@@ -16,6 +16,8 @@ Secondary matters:
 - [Caste](./Caste.md)
 - [Is Capitalism Failing?](./IsCapitalismFailing.md)
 - [Final Judgement](./FinalJudgement.md)
+- [Reality Is a Jerk](./RealityIsAJerk.md)
+- [Moral Storytelling](./MoralStorytelling.md)
 
 ----
 
