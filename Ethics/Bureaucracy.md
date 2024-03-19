@@ -52,4 +52,8 @@ Not good. Since around 2010 or so, if I walk into an interview and say, "I don't
 - Not a team player
 - Likely source of friction
 
-As explained already, it's all a nonsensical trap posed by gatekeepers who think they're capable of filtering for "good" vs. "bad". It's best to just explain the balance and refuse to commit to one side or the other: Nobody works in a vacuum, so you have to work with other people, and balance your own desire for empowerment with collaborative skills that make it easier to deal with others as needed.
+The original question is just a nonsensical trap posed by gatekeepers who think they're capable of filtering for "good" vs. "bad". It's best to just explain the balance and refuse to commit to one side or the other: Nobody works in a vacuum, so you have to work with other people, and balance your own desire for empowerment with collaborative skills that make it easier to deal with the others. That's an honest answer to a dishonest question.
+
+----
+
+[Back to Ethics main page](./README.md)
