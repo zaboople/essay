@@ -1,6 +1,6 @@
 # Proposal For a Constitutional Amendment to Describe Liberty
 
-Have a look at the recent Dobbs v. Jackson Supreme Court decision overturning Roe v. Wade. Ignoring the abiding moral drama of the practice of abortion itself - we'll never all agree - while the method of Roe v Wade *was* unsound ("legislating from the bench" is the longstanding & valid complaint), Dobbs v. Jackson is worse: It guts the guiding principle of our democracy.
+Have a look at the recent Dobbs v. Jackson Supreme Court decision overturning Roe v. Wade and Casey v. Planned Parenthood. Ignoring the abiding moral drama of abortion itself - we'll never all agree - while the method of Roe v Wade *was* unsound ("legislating from the bench" is the longstanding & valid complaint), Dobbs v. Jackson is worse: It guts the guiding principle of our democracy.
 
 To quote Justice Alito's opinion for the majority: "The term 'liberty' alone provides little guidance. Thus, historical inquiries are essential whenever the Court is asked to recognize a new component of the 'liberty' interest protected by the Due Process Clause."
 
@@ -8,13 +8,11 @@ Should we rewrite Patrick Henry's words to "Give me little guidance or give me d
 
 Alito justifies this lack of guidance with the claim that "liberty" is awash in hundreds of potential meanings, to the point of being meaningless. He credits the late Justice Ginsburg for a precedent that the Supreme Court must enumerate our "liberties" for us by discovering them in the roots of national "history and tradition". Alito's innovation is to declare the tradition expired as of 1868, when the 14th amendment was added as the second and last mention of due process & liberty - with the 150 years following exempt. This is utterly confounding.
 
-Justice Thomas also made it clear in a concurring opinion that he would like to eliminate substantive due process altogether, AKA the "penumbras, formed by emanations" that make up implied liberties and rights derived from those clearly enumerated, and that have been used to strike down oppressive laws in the past.
-
-We'd think that liberty was as simple as the freedom to do what you want to do within the bounds of due process. It was never the job of any government agent to enumerate your liberties, because the freedoms of liberty are innumerable; liberty is a *right* in and of itself. Rather, that government agent's job is to give comprehensive *reasons* for infringing upon your liberty, strictly avoiding arbitrary & capricious law. The Courts just decide if that agent met the standard.
+We'd think that liberty was as simple as the freedom to do what you want to do within the bounds of due process. It was never the job of any government agent to enumerate your liberties, because the freedoms of liberty are innumerable; liberty is a *right* in and of itself. Rather, that government agent's job is to give comprehensive *reasons* for infringing upon your liberty, strictly avoiding arbitrary & capricious law. The Courts decide if that agent met the standard.
 
 Alito burned the most fundamental ideal of the United States of America. Was that worth it, for abortion, and only to negate universal legality of it? How could anything be worth that price? Should we copy & paste the 14th into a 28th amendment just so we can ask the court to tell us the meaning of liberty since the age of Jim Crow? Thank goodness for the 13th, else human slavery would be a traditional liberty. Alito could have just complained about Roe v. Wade as legislation like everyone else, but he insisted on being "novel", so to speak.
 
-If the court is so timid as to be paralyzed in the absence of specifics, let them demand specific enumeration of *limits* to be effected against liberty by due process, not the other way around.
+If the court is so timid as to be paralyzed in the absence of specifics, let them demand specific enumeration of *limits* to be effected against liberty by due process as done in the Bill of Rights; not the other way around.
 
 I am not advocating for some "living constitution" or "evolving liberty" and have no idea what that kind of language is supposed to mean either. Is liberty "alive"? It's what life is *about*. It is a fundamental principle of our democracy, and it was *affirmed* in 1868; Alito would have you think it was *abandoned*. It is high time we reaffirm this principle, now and forever, and as a matter of fact, yes, in the exact same tradition that the early founders embraced. Their mistake was to think the word itself was sufficient, and Supreme Court precedent officially now says otherwise. That precedent will have damaging effects forevermore, until remedied.
 
