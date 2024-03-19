@@ -18,6 +18,8 @@ Alice: What?
 
 Bob: Are we talking about the same thing?
 
+## We All Hate It But We All Do It
+
 What _is_ a bureaucrat, anyhow? A devil's dictionary might say, "Everyone else." Nobody's going to say, "I really like bureaucracy!" Perhaps the all-encompassing definition is: _A bureaucrat is someone who tries to help when nobody needs them, and/or can't be bothered when somebody does_.
 
 Then again, big problems require big organizations, and big organizations require *some* kind of bureaucracy to function. You can be the small-company-only kind of person who sneers at this, but be thankful for the people who make it possible and the benefits you enjoy from such.
