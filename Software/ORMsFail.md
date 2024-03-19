@@ -47,7 +47,7 @@ Second, we have a design principle of, "It's Just Storage": A database is just a
 
 These two principles collide into a third, the most toxic possible idea: *Data should appear to be in memory already*. This is one of the leakiest abstractions ever conceived, by design. It literally demotes I/O to the status of invisibility, which is a huge problem, especially when you are bottlenecked on I/O, which is usually the case.
 
-Most of us don't mind when trivial things are implicit and handled invisibly, but none of this stuff is trivial. Making it implicit makes it hard to control and account for. If we have proper respect for our problem space, it should be easy to understand that we need explicit control over it. The lack of respect and explicit control is where much of our trouble starts.
+Most of us don't mind when trivial things are implicit and handled invisibly, but none of this stuff is trivial. Making it implicit makes it hard to control and account for. If we have proper respect for our problem space, it should be easy to understand that we need explicit control over it. This is where much of our trouble starts.
 
 ## The Feature-Set of Badness
 
@@ -67,7 +67,7 @@ So we've already found our first way to spiral out of control: Write a feature-c
 
 "Marshalling" is the dirty work of moving bits and pieces of data back and forth across the SQL/driver boundary. Things like:
 
-    foo.bar=resultSet.getInt("bar") // data coming in
+    foo.bar = resultSet.getInt("bar") // data coming in
 
 and
 
