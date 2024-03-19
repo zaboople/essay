@@ -15,7 +15,6 @@ Secondary matters:
 - [The Moral Versus The Miraculous](./MoralVsMiraculous.md)
 - [Caste](./Caste.md)
 - [Is Capitalism Failing?](./IsCapitalismFailing.md)
-- [Final Judgement](./FinalJudgement.md)
 - [A Tale of Two Bureaucracies](./Bureaucracy.md)
 - [Reality Is a Jerk](./RealityIsAJerk.md)
 - [Moral Storytelling](./MoralStorytelling.md)
