@@ -3,7 +3,7 @@ These are essays on software, primarily computer programming, or you could say "
 ## Bigger Things
 
 - [It's Not "Code"](ItsNotCode.md)
-- [Why ORM's Fail](ORMsFail.md)
+- [Why ORM's Fail Us](ORMsFail.md)
 
 ## Smaller Things
 

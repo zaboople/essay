@@ -1,4 +1,4 @@
-# Why ORM's Are't Practical
+# Why ORM's Fail Us
 
 ORM stands for Object Relational.... Management? Manager? Something like that. It's supposed to be about solving the "object-relational mismatch", which is this idea that relational databases are a bit "wrong", in that they don't respect our ideas about "objects". Once upon a time there were even lots of people working on the idea of an "object-oriented database", resulting in numerous failed and bygone products.
 
