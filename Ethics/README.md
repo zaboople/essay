@@ -11,11 +11,12 @@ Secondary matters:
 
 - [Free Will - Crime & Punishment](./FreeWill-II-Crime.md)
 - [Proposing a Constitutional Liberty Amendment](./LibertyAmendment.md)
-- [Artificial Intelligence & The Singularity](./AIAndSingularity.md)
+- [Artificial Intelligence & the Singularity](./AIAndSingularity.md)
 - [The Moral Versus The Miraculous](./MoralVsMiraculous.md)
 - [Caste](./Caste.md)
 - [Is Capitalism Failing?](./IsCapitalismFailing.md)
 - [Final Judgement](./FinalJudgement.md)
+- [A Tale of Two Bureaucracies](./Bureaucracy.md)
 - [Reality Is a Jerk](./RealityIsAJerk.md)
 - [Moral Storytelling](./MoralStorytelling.md)
 
