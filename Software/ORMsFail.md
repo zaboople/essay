@@ -1,16 +1,15 @@
 # Why ORM's Fail Us
 
-ORM stands for Object Relational.... Management? Manager? Something like that. It's supposed to be about solving the "object-relational mismatch", which is this idea that relational databases are a bit "wrong", in that they don't respect our ideas about "objects". Once upon a time there were even lots of people working on the idea of an "object-oriented database", resulting in numerous failed and bygone products.
+ORM stands for Object Relational.... Management? Manager? Something like that. It's supposed to be about solving the "object-relational mismatch problem", which is this idea that relational databases are a bit "wrong", in that they don't respect our ideas about "objects". Once upon a time there were even lots of people working on the idea of an "object-oriented database", resulting in numerous failed and bygone products.
 
-By this point most of us *should* recognize that RDBMS's aren't really "wrong", but it seems to be widely acknowledged that ORM's are "The Vietnam of Software Engineering", as Martin Fowler would say, yet he can't explain why. Herein we attempt to explain.
+By this point most of us *should* recognize that RDBMS's aren't really "wrong", but it seems to be widely acknowledged that ORM's are "The Vietnam of Software Engineering", as Ted Neward would say. Mr. Neward puts too much blame on the perceived failure of RDBMS's to be object-oriented enough, but the real problem is bad tool design and overambition.
 
-## Bang and Buck
+## Bang For Buck
 
-The typical ORM feature-set follows a "standard" bang-for-buck curve, which looks like this:
+The typical ORM feature-set follows a "law of diminishing returns" pattern, or what we might call a bang-for-buck curve like this:
 
           |                                               o
-          |
-          |                      o                                                        ?
+          |                      o                                                o
           |
           |          o
           |
@@ -18,20 +17,20 @@ The typical ORM feature-set follows a "standard" bang-for-buck curve, which look
           |
           | o
           |o
-          o________________________________________________________________________________
+          o________________________________________________________________________
                     Buck
 
 This curve claims that when you're designing an abstraction, there are features which are both easy to implement, and easy to understand - thus your cost, or "Buck" is low; and yet they are useful enough - that's your "Bang" - to be worthwhile. So those items land on the left-hand area of our curve.
 
 As we drift to the right, there are features which seem nice to have, and which we might think we _must_ have, but are hard to understand and harder to implement. They might give us an improved Bang, but we are compelled to ask whether it is worthwhile. These kinds of features often end up being "leaky abstractions", which is to say, you can't use it well without understanding the intricate details of how it was written. There is also a higher risk that the implementor made mistakes that we as users are left to discover and deal with.
 
-I put a question mark on the far right because at some point our features cause so much havoc and mayhem, they not only create a radical uptick in our Buck, but maybe an actual decline in our Bang - and that's how we got this "Vietnam" thing.
+At the very farthest right, our features cause so much havoc and mayhem, they not only create a radical uptick in our Buck, but a *decline* in our Bang - and that's how we get this "Vietnam" thing.
 
 ## Why You Would Bother
 
-A common claim is that "if you don't have an ORM, you're going to end up writing one". Well, no, you're only going to write one if you're ambitious and egotistical enough to think you *can*, and even then only inasmuch as you think it will be easy; in the beginning, it usually is.
+A common claim is that "if you don't have an ORM, you're going to end up writing one". Not really: You most certainly can implement your object-oriented application without using any ORM at all, even though some would naively assert that this can't possibly be done or it would be too expensive - by no means true.
 
-At the left of our BFB curve, we'd be mostly focused on:
+So you're only going to write an ORM if you're ambitious and egotistical enough to think you *can*, and even then only inasmuch as you think it will be easy; in the beginning, it usually is, and if you can leave well enough alone, you'll do fine. At the left of our BFB curve, we'd be mostly focused on:
 
 - Eliminating repetitive, tedious lines of boilerplate
 - Preventing simple mistakes
@@ -83,7 +82,7 @@ Enter metaprogramming: By adding some meta-data that tells us which tables and c
     ...
     orm.insert(new Foo(...));
 
-The above also requires us to meta-describe primary key information, accounting for auto-generated keys when we use them. This can get complex if we demand that the ORM author start handling special cases like objects that are spread across more than one table, custom data converters, and so on, but if they are reasonably conservative and resist the temptation to indulge every entreaty, they can stay mostly on the "good" side of the bang-for-buck curve. Don't forget: That curve applies to the ORM user as much as the author.
+The above also requires us to meta-describe primary key information, accounting for auto-generated keys when we use them. This can get complex if we demand that the ORM author start handling special cases like objects that are spread across more than one table, custom data converters, and so on, but if they are reasonably conservative and resist the temptation to indulge every entreaty, they can stay mostly on the "good" side of the bang-for-buck curve. Unfortunately most ORM's do the opposite, so that as a user you'll have to deal with the complexity even if you don't need it.
 
 ### 3. Implicit Writes and Connections
 
