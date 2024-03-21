@@ -2,7 +2,7 @@
 
 ORM stands for Object Relational.... Management? Manager? Something like that. It's supposed to be about solving the "object-relational mismatch problem", which is this idea that relational databases are a bit "wrong", in that they don't respect our ideas about object-oriented programming. Once upon a time there were even lots of people working on the idea of an "object-oriented database", resulting in numerous failed and bygone products.
 
-By this point most of us *should* recognize that RDBMS's aren't really "wrong", but it seems to be widely acknowledged that ORM's are "The Vietnam of Software Engineering", as [Ted Neward would say](https://www.odbms.org/wp-content/uploads/2013/11/031.01-Neward-The-Vietnam-of-Computer-Science-June-2006.pdf). Mr. Neward seems to put a little bit too much blame on the perceived incompatibility of OOP vs RDBMS tech when the real problem is bad tool design caused by overambition and anti-pragmatism.
+By this point most of us *should* recognize that RDBMS's aren't really "wrong", but it seems to be widely acknowledged that ORM's are "The Vietnam of Software Engineering", as [Ted Neward would say](https://www.odbms.org/wp-content/uploads/2013/11/031.01-Neward-The-Vietnam-of-Computer-Science-June-2006.pdf). Mr. Neward seems to put a bit too much blame on the perceived incompatibility of OOP vs RDBMS tech when the real problem is bad tool design caused by overambition and anti-pragmatism.
 
 ## Bang For Buck
 
