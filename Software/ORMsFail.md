@@ -1,8 +1,8 @@
 # Why ORM's Fail Us
 
-ORM stands for Object Relational.... Management? Manager? Something like that. It's supposed to be about solving the "object-relational mismatch problem", which is this idea that relational databases are a bit "wrong", in that they don't respect our ideas about "objects". Once upon a time there were even lots of people working on the idea of an "object-oriented database", resulting in numerous failed and bygone products.
+ORM stands for Object Relational.... Management? Manager? Something like that. It's supposed to be about solving the "object-relational mismatch problem", which is this idea that relational databases are a bit "wrong", in that they don't respect our ideas about object-oriented programming. Once upon a time there were even lots of people working on the idea of an "object-oriented database", resulting in numerous failed and bygone products.
 
-By this point most of us *should* recognize that RDBMS's aren't really "wrong", but it seems to be widely acknowledged that ORM's are "The Vietnam of Software Engineering", as Ted Neward would say. Mr. Neward puts too much blame on the perceived failure of RDBMS's to be object-oriented enough, but the real problem is bad tool design caused by overambition and anti-pragmatism.
+By this point most of us *should* recognize that RDBMS's aren't really "wrong", but it seems to be widely acknowledged that ORM's are "The Vietnam of Software Engineering", as Ted Neward would say. Mr. Neward seems to put too much blame on the perceived incompatibility of OOP vs RDBMS tech when the real problem is bad tool design caused by overambition and anti-pragmatism.
 
 ## Bang For Buck
 
@@ -22,19 +22,21 @@ The typical ORM feature-set follows a "law of diminishing returns" pattern, or w
 
 This curve claims that when you're designing an abstraction, there are features which are both easy to implement, and easy to understand - thus your cost, or "Buck" is low; and yet they are useful enough - that's your "Bang" - to be worthwhile. So those items land on the left-hand area of our curve.
 
-As we drift to the right, there are features which seem nice to have, and which we might think we _must_ have, but are hard to understand and harder to implement. They might give us an improved Bang, but we are compelled to ask whether it is worthwhile. These kinds of features often end up being "leaky abstractions", which is to say, you can't use it well without understanding the intricate details of how it was written. There is also a higher risk that the implementor made mistakes that we as users are left to discover and deal with.
+As we drift to the right, there are features which seem nice to have, and being idealistic, we might *insist* on having, but are hard to understand and harder to implement. These might give us an improved Bang, but we are compelled to ask whether it is worthwhile. Such features often become "leaky abstractions", which is to say, you can't use it well without understanding the intricate details of how it was written. There is also a higher risk that the implementor made mistakes that we as users are left to discover and deal with.
 
 At the very farthest right, our features cause so much havoc and mayhem, they not only create a radical uptick in our Buck, but a *decline* in our Bang - and that's how we get this "Vietnam" thing.
 
 ## Why You Would Bother
 
-It's commonly claimed that, "If you don't have an ORM, you're going to end up writing one." Not really: You most certainly can implement your object-oriented application without using any ORM at all. You're only going to write an ORM if you're ambitious and egotistical enough to think you *can*, and even then only inasmuch as you think it will be easy; in the beginning, it usually is, and if you can leave well enough alone, you'll do fine. This is approach is at the left of our BFB curve, where we'd be mostly focused on:
+It's commonly claimed that, "If you don't have an ORM, you're going to end up writing one." Not really: You most certainly can implement your object-oriented application without using any ORM at all. You're only going to write an ORM if you're ambitious and egotistical enough to think you *can*, and even then only inasmuch as you think it will be easy; in the beginning, it usually is, and if you can leave well enough alone, you'll do okay. This approach is at the left of our BFB curve, where we'd be mostly focused on:
 
 - Eliminating repetitive, tedious lines of boilerplate
 - Preventing simple mistakes
 - Making up for shortcomings in our original driver library
 
-Of course if you already have a quality ORM library at the ready, you can limit yourself to whatever customizations and minor gaps need filling in. Just be warned that popular ORM's typically go far to the right-hand side of the curve.
+Arguably those goals fall short of any truly "object-relational" ideology - more an ideology of convenience. Of course if you already have a suitable library at the ready, you can use that along with whatever customizations and minor gaps you might still want to fill in.
+
+Be warned, however, that popular ORM's typically go far to the right-hand side of the curve. I would like to explain how this happens.
 
 ## Some Classic Bad Design Principles
 
@@ -44,9 +46,9 @@ Second, we have a design principle of, "It's Just Storage": A database is just a
 
 These two principles collide into a third, the most toxic possible idea: *Data should appear to be in memory already*. This is one of the leakiest abstractions ever conceived, by design. It literally demotes I/O to the status of invisibility, which is a huge problem, especially when you are bottlenecked on I/O, which is usually the case.
 
-Lastly, there is a subtle principle of "The programming language is broken, so let's fix it." A lot of bad ORM design is not because of deficiencies in the database but in the almighty OOP language of choice. Java originally left out a lot of important things, most notably "var-args" function parameterization, and lambdas. This informed a clunky design for Java's JDBC library and tempted ORM designers to do metaprogramming & reflection tricks.
+Most of us don't mind when trivial things are implicit and handled invisibly, but none of this stuff is trivial. Making it implicit makes it hard to control and account for. If we have proper respect for our problem space, it should be easy to understand that we need explicit control over it.
 
-Most of us don't mind when trivial things are implicit and handled invisibly, but none of this stuff is trivial. Making it implicit makes it hard to control and account for. If we have proper respect for our problem space, it should be easy to understand that we need explicit control over it. This is where much of our trouble starts.
+To top all that off, we have a problem of "the programming language is broken, so let's fix it!" When things like lambdas, var-args, and multi-line strings are unavailable, it's too easy to justify horrible workarounds; at the very least, don't blame that on your RDBMS. Fortunately the Java elephant in the room has mostly come around, and its practitioners should do some rethinking.
 
 ## The Feature-Set of Badness
 
@@ -122,7 +124,7 @@ RDM is also going to lead to implicit writes, because our highly distributed log
 
 Eliminate the Rich Domain Model, and our caching problem dissipates. Of course this can be difficult to do on teams where RDM is quasi-religious dogma disguised as "engineering", and holy war is no fun for anybody. The best you can do in some cases is to remind people of the importance of a coherent narrative.
 
-### 5. Connections & Transactions FIXME
+### 5. Connections & Transactions
 
 Consider the following based roughly on Java JDBC:
 
@@ -138,15 +140,15 @@ Consider the following based roughly on Java JDBC:
         conn.close();
     }
 
-That is a lot of boilerplate! Nowadays, however, this is (mostly) trivial to abstract away into a lambda. Historically, people would try to invent all sorts of aspect-oriented trickery with annotations and meta-stuff that seemed really clever but yet again went to bang-buck heck. The only hard part is convincing everyone to *stop* doing it the hard way.
+That is a lot of boilerplate! Nowadays, however, this is (mostly) trivial to abstract away into a lambda. Historically, people would try to invent all sorts of aspect-oriented trickery with annotations and meta-stuff that seemed really clever, but yet again went to bang-buck heck.
 
 ## Conclusions
 
 What gets us in trouble:
 
-- Too much meta-programming, and thus too much of a learning curve to go with
+- Too much meta-programming, and thus too much complexity
 - Too much implicit behavior where explicit behavior would be sufficient, esp. with I/O
-- OOP elitism driving a desire to make programming more complicated than necessary
+- OOP elitism justifying a desire to make programming more complicated than necessary
 
 It *is* possible to build enhancements for a library like JDBC where repetitive programming could be eliminated, if we act conservatively. The key is to recognize that once you have a database driver, you'll be able to get the job done no matter what, and that predictable, straightforward behavior is more important than exotic features or trying to get everything written in the fewest possible lines.
 
