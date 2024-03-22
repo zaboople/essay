@@ -158,3 +158,7 @@ One might also ask a question, as to which is worse:
 Anyone with real experience knows that B) is far worse, because it involves brutal, risky, touch-and-go data migration where A) only requires a rewrite and redeploy. Many programmers believe the right way to design is objects-first, but I recommend going database-first. The wrong storage plan is going to have much worse consequences, and storage tends to outlive programming languages.
 
 Some reputable folks (such as [Jeff Atwood] (https://blog.codinghorror.com/object-relational-mapping-is-the-vietnam-of-computer-science)) insist that the only option is to abandon RDBMS tech entirely, or abandon OOP entirely; this is silly baby-bathwatering. You may need to adopt a less militant, strident, cult-like approach to OOP, but that's a good idea even without RDBMS in the picture.
+
+----
+
+[Back to Software main page](./README.md)
