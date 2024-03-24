@@ -80,7 +80,7 @@ Payment Person: Well it's already settled and decided, and it's too late for -
 
 Customer Person: Now see here: _Your_ piddly Invoices and _your_ Payments are just inanimate objects! They're _virtual pieces of paper_, for heaven's sake! Pieces of paper don't _do_ things! They just _sit_ there!
 
-King: *Groans*
+King: *Groans loudly*
 
 Customer Person: See, now, my _Customer_ objects, they _do_ things! They are people, complicated people who live in my richly rich and virtually matrixed world of high-tech virtuality doing all sorts of things, things which must be carefully modelled in where else but the all-important Customer object, as `Customer.apply(payment, invoice)`! There is no other object-oriented way!
 
