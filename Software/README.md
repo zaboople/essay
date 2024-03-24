@@ -4,6 +4,7 @@ These are essays on software, primarily computer programming, or you could say "
 
 - [It's Not "Code"](ItsNotCode.md)
 - [Why ORM's Fail Us](ORMsFail.md)
+- [The Rich Domain Model](TheRichDomainModel.md)
 
 ## Smaller Things
 
