@@ -7,6 +7,8 @@ Invoice Person: Okay, so what you need to do is put this in the Invoice class, s
 
 Us: Oh, yes. We like the sound of that!
 
+
+
 Narrator: But Payment Person has something to say...
 
 *Payment Person walks in and looks around.*
