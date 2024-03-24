@@ -4,15 +4,13 @@ Narrator: The collective "we" has been asked to implement a new business process
 
 \*\*
 
-Invoice Person: Okay, so what you need to do is put this in the Invoice class, see? You make a method called Invoice.apply(payment). See how _natural_ that is? It practically flows from your fingertips, it's so intuitive.
+Invoice Person: Okay, so what you need to do is put this in the Invoice class, see? You make a method called `Invoice.apply(payment)`. See how _natural_ that is? It practically flows from your fingertips, it's so intuitive.
 
 Us: Oh, yes. We like the sound of that!
 
-Narrator: Uh-oh! Payment Person is coming! They might have something to say too!
+Narrator: Uh-oh! Payment Person is coming!
 
 \*\*
-
-*Payment Person walks in and looks around.*
 
 Payment Person: Harumph! What is going on here!
 
@@ -44,7 +42,7 @@ Us: Oh my!
 
 Narrator: Behold! The king approacheth!
 
-_Along comes King Solomon, looking irritable_
+_Along comes King Solomon, looking irritable, with trumpety music_
 
 King: You people are disturbing my slumber and I'm completely fed up now!
 
@@ -52,7 +50,7 @@ Invoice Person: But -
 
 Payment Person: But -
 
-King: SILENCE! I decree that the logic will be split in two with my mighty sword of kingliness, and half will go to you, the other half to you! So be it, and all that! *Waves hands ceremoniously*
+King: SILENCE! I decree that the logic will be split in two with my mighty sword of kingliness, and half will go to you, the other half to you! So be it, and all that! *Waves sword ceremoniously*
 
 Invoice Person: Sigh. Ok.
 
@@ -62,7 +60,7 @@ Us: Alrighty then!
 
 \*\*
 
-_Along comes the Customer Person, wearing VR goggles for some reason, and thus a bit stumbly_
+_Along comes Customer Person, wearing VR goggles for some reason, and thus a bit stumbly_
 
 Customer Person: What is going on here?
 
@@ -80,7 +78,7 @@ Customer Person: Now see here: _Your_ piddly Invoices and _your_ Payments are ju
 
 King: Sigh...
 
-Customer Person: See, now, my _Customer_ objects, they _do_ things! They are people, complicated people who live in my richly rich and virtual matrix world of high-tech virtuality and do all sorts of things, things which must be carefully modelled in where else but the all-important Customer object! There is no other object-oriented way!
+Customer Person: See, now, my _Customer_ objects, they _do_ things! They are people, complicated people who live in my richly rich and virtually matrixed world of high-tech virtuality doing all sorts of things, things which must be carefully modelled in where else but the all-important Customer object! There is no other object-oriented way!
 
 Invoice Person: NO! That's not fair! You're _always_ trying to hog all the logic!
 
@@ -125,15 +123,15 @@ It's important to stop and understand the difference between:
 
 The first line forces `invoice` to expose all necessary state "outside" itself; the second makes it easier to keep that state private, reducing its scope, and limiting scope is generally a good thing. But what about:
 
-    invoice.doSomething(payment)
-    payment.doSomething(invoice)
-    doSomething(invoice, payment)
+    invoice.apply(payment)   // This?
+    payment.applyTo(invoice) // Or this?
+    apply(invoice, payment)  // Why not this?
 
 In all three cases, either the invoice or payment or both will have to expose some internal state, and in that light, it might as well *be* both. Have we just invalidated the whole idea of object-oriented scope control? No, we're just recognizing that state has to be available where it's needed, and the *business process* needs it.
 
-Consider the various stateful indexes, arrays and so forth inside a list, hashtable, tree, etc.: This background-recordkeeping sort of data is easy to hide inside an object-oriented class and keep strictly private because it's just not useful outside of the enclosing data structure's scope. What about the actual information that you put *into* that list or hashtable as an everyday user-programmer? Obviously the whole point of the list/hashtable/tree is to make this *other* data easy to manage, not to lock it away where nobody can get to it.
+Consider the various stateful indexes, arrays and so forth inside a list, hashtable, tree, etc.: This background-recordkeeping sort of data is easy to hide inside an object-oriented class and keep strictly private because it's just not useful outside of the enclosing data structure's scope. What about the actual information that you put *into* that list/hashtable/tree as an everyday user-programmer? Obviously the whole point of the structure is to make this *other* data easy to manage, not to lock it away where nobody can get to it.
 
-Database data generally doesn't fit the mold of background data-structure recordkeeping; it's useful in its own right. You will design and/or use data structures to make payment and invoice data easy to sift, sort, and otherwise manipulate, but it makes no sense to try to bury the payment & invoice details deep underground when you'll only have to dig them back up again and again.
+Database data generally doesn't fit the mold of background data-structure recordkeeping; it's widely useful in its own right. You will design and/or use data structures to make payment and invoice data easy to sift, sort, and otherwise manipulate, but it makes no sense to try to bury the payment & invoice details deep underground when you'll only have to dig them back up again and again.
 
 Put simply, just because *some* data fits into an object-oriented class handily, that doesn't make it compelled to follow the same rules as *other* data that also fits into O-O classes. To insist otherwise is to abuse and darned near torture the art of analogy.
 
@@ -143,15 +141,15 @@ Customer Person is correct in asserting that invoices and payments are just virt
 
 But what about customers then? In our architecture, are customers puppets, with us pulling strings and making their arms & legs wave around? Actually, no. The customer is external to us, and we don't control them. Our job is to receive commands from the customer, do our best to carry those commands out, and properly account for everything. Tracking customer actions is not the same as _simulating_ them. So what we might call a "Customer Object" is merely the information we need to know about the customer, not a behavioral simulation.
 
-We _could_ build a customer simulation engine for testing, with little customer puppets (so to speak) that _do_ things and try to buy stuff from our system. We'd need to model customer behavior in our little puppets as realistically as possible, and maybe even hyper-realistically, so that a lot of our customers are criminals, institutional patients, dogs, small children, and so forth, to verify that our system can tolerate any and all abuse. But this is a whole different thing, and if you're jealous, maybe you should've taken that job in quality assurance that you turned your nose up at.
+We _could_ build a customer simulation engine for testing, with little customer puppets (so to speak) that _do_ things and try to buy stuff from our system. We'd need to model customer behavior in our little puppets as realistically as possible, and maybe even hyper-realistically, so that a lot of our customers are criminals, institutional patients, dogs, small children, and so forth, to verify that our system can tolerate any and all abuse. But this is a whole different thing, and if you're jealous, maybe you should've taken that job in quality assurance (the job you turned up your nose at).
 
 ## Divide and Conquer Is Just a Heuristic
 
-It might seem that our Solomon-ian strategy of doling out bits and pieces of responsibility to whatever objects happen along consitutes a divide-and-conquer strategy, but divide-and-conquer only works when the separate parties can act with true independence, and this is unlikely when we are implementing a transactional process of *relationally* (as in RDBMS) related steps. We'll only end up with a confusing game of hopscotch where we have to chase a process from file to file to file to file to file.
+It might seem that our King Solomonian strategy of doling out bits and pieces of responsibility to whatever objects happen along consitutes a divide-and-conquer strategy, but divide-and-conquer only works when the separate parties can act with true independence, and this is unlikely when we are implementing a transactional process of *relationally* (as in RDBMS) related steps. We'll only end up with a confusing game of hopscotch where we have to chase a process from file to file to file to file to file.
 
 We know we're using the Rich Domain Model, in fact, when we have so many files open in our editor, we can hardly keep track of them, and yet we're only trying to understand a single narrative. We'll end up with a book-of-the-month club where each book is actually other books chopped up by chapter and reassembled haphazardly; to derive a coherent narrative we'll have to wait until all the books arrive and open them all at once. We've actually *rejected the narrative itself* and demoted it to second-class status.
 
-From an art-school standpoint, this is certainly very artistic and postmodern, but from a business standpoint, well, William Burroughs was definitely not a competent software engineer, and apparently art school didn't pan out for you anyhow...
+From an art-school standpoint, this is certainly very artistic and postmodern, but from a business standpoint, well, William Burroughs was definitely not a competent software engineer, and apparently art school didn't pan out for either of us anyhow...
 
 ## There Is A Simulation In Here After All
 
@@ -163,17 +161,17 @@ or:
 
     VirtualAccountant.apply(payment, invoiceCollection) // Apply to these invoices
 
-- and maybe a few other variations. We're free to decide that this virtual accountant is strictly concerned with payments, and have some other virtual accountants that specialize in other, mostly unrelated things. We might have certain kinds of virtual accountant that specialize in _shared_ logic, like `va.makeInvoiceForOutstandingBalance(items)`, since all sorts of different business processes share the same ending: an invoice. Now we start seeing a much more coherent narrative, where our text files form outright *narratives* instead of jumbled collections of bits and pieces.
+- and maybe a few other variations. We're free to decide that this virtual accountant is strictly concerned with payments, and have some other virtual accountants that specialize in other, mostly unrelated things. We might have certain kinds of virtual accountant that specialize in _shared_ logic, like `va.makeInvoiceFor(itemsShipped)`, since all sorts of different business processes share the same ending: an invoice. We'll still have a much more coherent narrative, where our text files form outright *narratives* instead of jumbled collections of bits and pieces, with a bit of data overlap notwithstanding.
 
 Ironically enough, in this world of objects, the Virtual Accountant is the one thing that _doesn't_ need to be  "persistent" (stored in the database). After all, did it ever make sense to put actual people in filing cabinets to deal with later? If you think so... we need to talk...
 
-Does the virtual accountant even need to be object-oriented? It certainly _can_ be, without harm, but any real necessity depends less on aspects of "simulation" and much more on how OO helps us create a coherent process with any necessary state included, as we write it. OOPS is a tool in our toolbox that we can use whenever it makes sense, as usual.
+Does a virtual accountant even need to be object-oriented? It certainly _can_ be, without harm, but any real necessity depends less on aspects of "simulation" and much more on how OO helps us create a coherent process with any necessary state included, as we write it. OOPS is a tool in our toolbox that we can use whenever it makes sense, as usual.
 
 ## But You Just Won't Stand For It
 
-Some so-called engineers just won't budge on their Rich Domain Model dogma, leading to a problem: Data is read here, written there, read some more here, more there, and it's impossible to count how many reads and writes we've incurred; but more importantly, unintentional read/write _overlap_ is going to happen, resulting in lost information. This is an excellent argument for establishing a *coherent narrative*, but since you've rejected that, you're likely to blame the ORM for not fixing it. More on that [here](./ORMsFail.md).
+Some so-called engineers just won't budge on their Rich Domain Model dogma, leading not only leading to a butchered and scattered narrative, but potential data loss as uncoordinate, overlapping reads and writes pop up across all the scatterings. They're likely to demand that the ORM fix this, leading to [cache nightmares](./ORMsFail.md) and even more trouble. Maybe some day we'll all come around, but that's still a ways off, because *dogma dies hard*. That's just how it goes.
 
-Disaster ensues, because . So you'll spend several years blaming your ORM angrily for being so stupid, then give up on your career in frustration, just in time for the next idealist-elitist to come along and do the same thing, until everyone decides to blame object-oriented programming for their own mistakes and go back to writing assembly.
+----
 
-Eventually we'll all come to terms with this, but that's a ways off.
+[Back to Software main page](./README.md)
 
