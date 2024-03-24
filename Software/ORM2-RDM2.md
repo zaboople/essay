@@ -10,7 +10,7 @@ Us: Oh, yes. We like the sound of that!
 
 Narrator: But Payment Person has something to say...
 
-
+\*\*
 
 *Payment Person walks in and looks around.*
 
@@ -40,45 +40,75 @@ Payment Person: _You're_ stupid!
 
 Us: Oh my!
 
-
+\*\*
 
 Narrator: Behold! The king approacheth!
 
 _Along comes King Solomon, looking irritable_
 
-    King: You people are disturbing my slumber and I'm completely fed up now!
-    Invoice Person: But -
-    Payment Person: But -
-    King: SILENCE! I decree that the logic will be split in two with my mighty sword of kingliness, and half will go to you, the other half to you! So be it, and all that! *Waves hands ceremoniously*
-    Invoice Person: Sigh. Ok.
-    Payment Person: Fine. Whatever.
-    Us: Alrighty then!
+King: You people are disturbing my slumber and I'm completely fed up now!
+
+Invoice Person: But -
+
+Payment Person: But -
+
+King: SILENCE! I decree that the logic will be split in two with my mighty sword of kingliness, and half will go to you, the other half to you! So be it, and all that! *Waves hands ceremoniously*
+
+Invoice Person: Sigh. Ok.
+
+Payment Person: Fine. Whatever.
+
+Us: Alrighty then!
+
+\*\*
 
 _Along comes the Customer Person, wearing VR goggles for some reason, and thus a bit stumbly_
 
-    Customer Person: What is going on here?
-    Invoice Person: Um...
-    Payment Person: Nothing!
-    Us: We're going to apply payments to invoices!
-    Customer Person: AND I WASN'T CONSULTED WITH? Everyone knows _I_ am the Customer Person!
-    Payment Person: Well it's already settled and decided, and it's too late for -
-    Customer Person: Now see here: _Your_ piddly Invoices and _your_ Payments are just inanimate objects! They're _virtual pieces of paper_, for heaven's sake! Pieces of paper don't _do_ things! They just _sit_ there!
-    King: Sigh...
-    Customer Person: See, now, my _Customer_ objects, they _do_ things! They are people, complicated people who live in my richly rich and virtual matrix world of high-tech virtuality and do all sorts of things, things which must be carefully modelled in where else but the all-important Customer object! There is no other object-oriented way!
-    Invoice Person: NO! That's not fair! You're _always_ trying to hog all the logic!
-    Payment Person: Yeah! Your stupid class is 10,000 lines long already and it's practically unmaintainable!
-    Invoice Person: Here comes the merge conflicts!
-    King: SILENCE! Alright, I've revised my decision: We'll split it THREE ways!
-    All: Aw, man!
-    King: SHUT UP! Now, it's a fair argument you have, there, Customer Person, so I'll allow you to _initiate_ processing, and dole out responsibilities - in equal thirds, mind you - between yourself and the other two.
-    Customer: That's what I'm talking about! Customer Person always runs the show, yeah! *(pumps fist and stumbles)*
-    Invoice: Dammit.
-    Payment: Phooey.
-    King: And that's final, no further disruptions, since I have an appointment with my masseuse at noon in the main conference room.
-    All: Ew.
-    King: I'll try to remember to pull the shades this time.
-    Invoice Line Item Person: HEY EVERYBODY!
-    All: GO AWAY!
+Customer Person: What is going on here?
+
+Invoice Person: Um...
+
+Payment Person: Nothing!
+
+Us: We're going to apply payments to invoices!
+
+Customer Person: AND I WASN'T CONSULTED WITH? Everyone knows _I_ am the Customer Person!
+
+Payment Person: Well it's already settled and decided, and it's too late for -
+
+Customer Person: Now see here: _Your_ piddly Invoices and _your_ Payments are just inanimate objects! They're _virtual pieces of paper_, for heaven's sake! Pieces of paper don't _do_ things! They just _sit_ there!
+
+King: Sigh...
+
+Customer Person: See, now, my _Customer_ objects, they _do_ things! They are people, complicated people who live in my richly rich and virtual matrix world of high-tech virtuality and do all sorts of things, things which must be carefully modelled in where else but the all-important Customer object! There is no other object-oriented way!
+
+Invoice Person: NO! That's not fair! You're _always_ trying to hog all the logic!
+
+Payment Person: Yeah! Your stupid class is 10,000 lines long already and it's practically unmaintainable!
+
+Invoice Person: Here comes the merge conflicts!
+
+King: SILENCE! Alright, I've revised my decision: We'll split it THREE ways!
+
+All: Aw, man!
+
+King: SHUT UP! Now, it's a fair argument you have, there, Customer Person, so I'll allow you to _initiate_ processing, and dole out responsibilities - in equal thirds, mind you - between yourself and the other two.
+
+Customer: That's what I'm talking about! Customer Person always runs the show, yeah! *(pumps fist and stumbles)*
+
+Invoice: Dammit.
+
+Payment: Phooey.
+
+King: And that's final, no further disruptions, since I have an appointment with my masseuse at noon in the main conference room.
+
+All: Ew.
+
+King: I'll try to remember to pull the shades this time.
+
+Invoice Line Item Person: HEY EVERYBODY!
+
+All: GO AWAY!
 
 _King Solomon exits stage left, while the crowd begins fist-fighting._
 
