@@ -2,14 +2,15 @@
 
 Narrator: The collective "we" has been asked to implement a new business process involving payments and invoices, and we've gone out in search of answers. Our first encounter is with Invoice Person, who authored the famous Invoice class, which mirrors invoice data from our database. Let's see what he has to say...
 
+\*\*
 
 Invoice Person: Okay, so what you need to do is put this in the Invoice class, see? You make a method called Invoice.apply(payment). See how _natural_ that is? It practically flows from your fingertips, it's so intuitive.
 
 Us: Oh, yes. We like the sound of that!
 
-
-
 Narrator: But Payment Person has something to say...
+
+
 
 *Payment Person walks in and looks around.*
 
