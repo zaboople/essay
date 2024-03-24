@@ -24,15 +24,24 @@ Payment Person: WHAT? Why was I not consulted about this???
 Invoice Person: Ahem. It's really -
 
 Payment Person: Nevermind! I'm here now. So, here's what you do: Write the logic in a new method named `Payment.applyTo(invoice)`. See how natural that is? Makes perfect sense. Flows right from your fingertips!
+
 Invoice Person: Now hold on just a second there!
+
 Payment Person: _You_ hold on a second!
+
 Invoice Person: You're not the boss of me! Besides, if the logic goes in the Payment class, then we have to expose all sorts of private information from Invoice to Payment, _Things That Should Not Be Visible_!
+
 Payment Person: No, if the logic goes in the Invoice class, we'd have to expose all sorts of private information from Payment to Invoice, Things That -
+
 Invoice Person: That's stupid! I already said that!
+
 Payment Person: _You're_ stupid!
+
 Us: Oh my!
 
-    Narrator: The king approacheth!
+
+
+Narrator: Behold! The king approacheth!
 
 _Along comes King Solomon, looking irritable_
 
