@@ -143,7 +143,7 @@ Put simply, just because *some* data fits into an object-oriented class handily,
 
 Customer Person is correct in asserting that invoices and payments are just virtual pieces of paper - documents - that never did anything in "the real world" and certainly don't need to _do things_ now. They are simply information. They are not animals, or even machines.
 
-But what about customers then? In our architecture, are customers puppets, with us pulling strings and making their arms & legs wave around? Actually, no. The customer is external to us, and we don't control them. Our job is to receive commands from the customer, do our best to carry those commands out, and properly account for everything. Tracking customer actions is not the same as _simulating_ them. So what we might call a "Customer Object" is merely the information we need to know about the customer, not a behavioral simulation.
+But what about customers then? In our architecture, are customers simulation puppets, with us pulling strings and making their arms & legs wave around? Actually, no. The customer is external to us, and we don't control them. Our job is to receive commands from the customer, do our best to carry those commands out, and properly account for everything. Tracking customer actions is not the same as _simulating_ them. So what we might call a "Customer Object" is merely the information we need to know about the customer, not a behavioral simulation.
 
 We _could_ build a customer simulation engine for testing, with little customer puppets (so to speak) that _do_ things and try to buy stuff from our system. We'd need to model customer behavior in our little puppets as realistically as possible, and maybe even hyper-realistically, so that a lot of our customers are criminals, institutional patients, dogs, small children, and so forth, to verify that our system can tolerate any and all abuse. But this is a whole different thing, and if you're jealous, maybe you should've taken that job in quality assurance (the job you turned up your nose at).
 
@@ -173,9 +173,8 @@ Does a virtual accountant even need to be object-oriented? It certainly _can_ be
 
 ## But You Just Won't Stand For It
 
-Some so-called engineers just won't budge on their Rich Domain Model dogma, leading not only leading to a butchered and scattered narrative, but potential data loss as uncoordinated, overlapping reads and writes pop up across all the scatterings. They're likely to demand that the ORM fix this, leading to [cache nightmares](./ORMsFail.md) and even more trouble. Maybe some day we'll all come around, but that's still a ways off, because *dogma dies hard*. So it goes.
+Some programmers just won't budge on their Rich Domain Model dogma, leading not only leading to a butchered and scattered narrative, but potential data loss as uncoordinated, overlapping reads and writes pop up across all the scatterings. They're likely to demand that the ORM fix this, leading to [cache nightmares](./ORMsFail.md) and even more trouble. Maybe some day we'll all come around, but that's still a ways off, because *dogma dies hard*. So it goes.
 
 ----
 
 [Back to Software main page](./README.md)
-
