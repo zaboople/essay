@@ -1,4 +1,8 @@
-# The Kingdom of the Riches of Domain Models: A One-Act Play
+# The Rich Domain Model
+
+Ah, the Rich Domain Model, and its presumably wretched cousin, the "Anemic" Domain Model. Let's begin with... a play.
+
+## The Kingdom of the Riches of Domain Models: A One-Act Play
 
 Narrator: The collective "we" has been asked to implement a new business process involving payments and invoices, and we've gone out in search of answers. Our first encounter is with Invoice Person, who authored the famous Invoice class, which mirrors invoice data from our database. Let's see what he has to say...
 
@@ -76,9 +80,9 @@ Payment Person: Well it's already settled and decided, and it's too late for -
 
 Customer Person: Now see here: _Your_ piddly Invoices and _your_ Payments are just inanimate objects! They're _virtual pieces of paper_, for heaven's sake! Pieces of paper don't _do_ things! They just _sit_ there!
 
-King: Sigh...
+King: *Groans*
 
-Customer Person: See, now, my _Customer_ objects, they _do_ things! They are people, complicated people who live in my richly rich and virtually matrixed world of high-tech virtuality doing all sorts of things, things which must be carefully modelled in where else but the all-important Customer object! There is no other object-oriented way!
+Customer Person: See, now, my _Customer_ objects, they _do_ things! They are people, complicated people who live in my richly rich and virtually matrixed world of high-tech virtuality doing all sorts of things, things which must be carefully modelled in where else but the all-important Customer object, as `Customer.apply(payment, invoice)`! There is no other object-oriented way!
 
 Invoice Person: NO! That's not fair! You're _always_ trying to hog all the logic!
 
