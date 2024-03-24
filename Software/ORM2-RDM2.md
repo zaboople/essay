@@ -104,6 +104,8 @@ All: Ew.
 
 King: I'll try to remember to pull the shades this time.
 
+Narrator: Oooh! Here comes Invoice Line Item Person!
+
 Invoice Line Item Person: HEY EVERYBODY!
 
 All: GO AWAY!
