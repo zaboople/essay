@@ -4,7 +4,7 @@ Narrator: The collective "we" has been asked to implement a new business process
 
 \*\*
 
-Invoice Person: Okay, so what you need to do is put this in the Invoice class, see? You make a method called `Invoice.apply(payment)`. See how _natural_ that is? It practically flows from your fingertips, it's so intuitive.
+Invoice Person: Okay, so what you need to do is put this in the Invoice class, see? You make a method called  `Invoice.apply(payment)`. See how _natural_ that is? It practically flows from your fingertips, it's so intuitive.
 
 Us: Oh, yes. We like the sound of that!
 
