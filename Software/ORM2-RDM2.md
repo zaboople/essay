@@ -1,27 +1,34 @@
 # The Kingdom of the Riches of Domain Models: A One-Act Play
 
-    Narrator: The collective "we" has been asked to implement a new business process involving payments and invoices, and we've gone out in search of answers. Our first encounter is with Invoice Person, who authored the famous Invoice class, which mirrors invoice data from our database. Let's see what he has to say...
+Narrator: The collective "we" has been asked to implement a new business process involving payments and invoices, and we've gone out in search of answers. Our first encounter is with Invoice Person, who authored the famous Invoice class, which mirrors invoice data from our database. Let's see what he has to say...
 
-    Invoice Person: Okay, so what you need to do is put this in the Invoice class, see? You make a method called Invoice.apply(payment). See how _natural_ that is? It practically flows from your fingertips, it's so intuitive.
-    Us: Oh, yes. We like the sound of that!
 
-    Narrator: But Payment Person has something to say...
+Invoice Person: Okay, so what you need to do is put this in the Invoice class, see? You make a method called Invoice.apply(payment). See how _natural_ that is? It practically flows from your fingertips, it's so intuitive.
+
+Us: Oh, yes. We like the sound of that!
+
+Narrator: But Payment Person has something to say...
 
 *Payment Person walks in and looks around.*
 
-    Payment Person: Harumph! What is going on here!
-    Invoice Person: Oooh, nothing, nothing at all...
-    Us: We're applying payments to invoices!
-    Payment Person: WHAT? Why was I not consulted about this???
-    Invoice Person: Ahem. It's really -
-    Payment Person: Nevermind! I'm here now. So, here's what you do: Write the logic in a new method named `Payment.applyTo(invoice)`. See how natural that is? Makes perfect sense. Flows right from your fingertips!
-    Invoice Person: Now hold on just a second there!
-    Payment Person: _You_ hold on a second!
-    Invoice Person: You're not the boss of me! Besides, if the logic goes in the Payment class, then we have to expose all sorts of private information from Invoice to Payment, _Things That Should Not Be Visible_!
-    Payment Person: No, if the logic goes in the Invoice class, we'd have to expose all sorts of private information from Payment to Invoice, Things That -
-    Invoice Person: That's stupid! I already said that!
-    Payment Person: _You're_ stupid!
-    Us: Oh my!
+Payment Person: Harumph! What is going on here!
+
+Invoice Person: Oooh, nothing, nothing at all...
+
+Us: We're applying payments to invoices!
+
+Payment Person: WHAT? Why was I not consulted about this???
+
+Invoice Person: Ahem. It's really -
+
+Payment Person: Nevermind! I'm here now. So, here's what you do: Write the logic in a new method named `Payment.applyTo(invoice)`. See how natural that is? Makes perfect sense. Flows right from your fingertips!
+Invoice Person: Now hold on just a second there!
+Payment Person: _You_ hold on a second!
+Invoice Person: You're not the boss of me! Besides, if the logic goes in the Payment class, then we have to expose all sorts of private information from Invoice to Payment, _Things That Should Not Be Visible_!
+Payment Person: No, if the logic goes in the Invoice class, we'd have to expose all sorts of private information from Payment to Invoice, Things That -
+Invoice Person: That's stupid! I already said that!
+Payment Person: _You're_ stupid!
+Us: Oh my!
 
     Narrator: The king approacheth!
 
