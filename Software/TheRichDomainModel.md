@@ -118,8 +118,6 @@ _King Solomon exits stage left, while the crowd begins fist-fighting._
 
 _The End_
 
-# Sorting out the Modelling & Simulation Riot
-
 ## Exposing state
 
 It's important to stop and understand the difference between:
@@ -149,7 +147,7 @@ But what about customers then? In our architecture, are customers puppets, with 
 
 We _could_ build a customer simulation engine for testing, with little customer puppets (so to speak) that _do_ things and try to buy stuff from our system. We'd need to model customer behavior in our little puppets as realistically as possible, and maybe even hyper-realistically, so that a lot of our customers are criminals, institutional patients, dogs, small children, and so forth, to verify that our system can tolerate any and all abuse. But this is a whole different thing, and if you're jealous, maybe you should've taken that job in quality assurance (the job you turned up your nose at).
 
-## Divide and Conquer Is Just a Heuristic
+## Divide and Conquer is not a Ronco Kitchen Gadget
 
 It might seem that our King Solomonian strategy of doling out bits and pieces of responsibility to whatever objects happen along consitutes a divide-and-conquer strategy, but divide-and-conquer only works when the separate parties can act with true independence, and this is unlikely when we are implementing a transactional process of *relationally* (as in RDBMS) related steps. We'll only end up with a confusing game of hopscotch where we have to chase a process from file to file to file to file to file.
 
@@ -175,7 +173,7 @@ Does a virtual accountant even need to be object-oriented? It certainly _can_ be
 
 ## But You Just Won't Stand For It
 
-Some so-called engineers just won't budge on their Rich Domain Model dogma, leading not only leading to a butchered and scattered narrative, but potential data loss as uncoordinate, overlapping reads and writes pop up across all the scatterings. They're likely to demand that the ORM fix this, leading to [cache nightmares](./ORMsFail.md) and even more trouble. Maybe some day we'll all come around, but that's still a ways off, because *dogma dies hard*. That's just how it goes.
+Some so-called engineers just won't budge on their Rich Domain Model dogma, leading not only leading to a butchered and scattered narrative, but potential data loss as uncoordinated, overlapping reads and writes pop up across all the scatterings. They're likely to demand that the ORM fix this, leading to [cache nightmares](./ORMsFail.md) and even more trouble. Maybe some day we'll all come around, but that's still a ways off, because *dogma dies hard*. So it goes.
 
 ----
 
