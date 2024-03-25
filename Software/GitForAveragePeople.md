@@ -2,7 +2,7 @@
 
 Git is controversial, because it doesn't seem like it was designed for average everyday dev teams, but everybody uses it anyhow. Many people will say, "The problem is that Git is too hard!" and they are partly right; to be more specific, Git has a lot of things you probably will never need, and understanding *all* of them *is* hard. This is where one must remember a cardinal rule:
 
-    Just because you _can_ doesn't mean you _should_.
+>  **Just because you _can_ doesn't mean you _should_.**
 
 Crazy people don't care about that rule. They want to make simple problems into complicated problems, and will pressure you to normalize unnecessary practices. They will say things like, "Git is easy, if you just understand what a directed acyclic graph is," which is their way of talking nonsensically in order to throw you off their trail. The way to deal with crazy people is to go *around* them, not fight them. This is easy when they're just random anonymous internet people, but harder when you have to work with them.
 
