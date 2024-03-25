@@ -10,21 +10,21 @@ So for the average programmer at the average job, especially web application fol
 
 ## First, Some Generally Good Practices
 
-*Get a trash repo to play with.* You can make one with a personal github account, or just ask your local sys admin to let you make one for the team. This way you can test out git tricks harmlessly instead of sitting with your shaky finger over the enter button, thinking, "Should I? Dare I? What if? Oh dear!" Try out your idea on the trash repo until you're confident things are okay or decide, "Nope!". Your trash repo becomes the proverbial ounce of prevention/pound of gold.
+**Get a trash repo to play with.** You can make one with a personal github account, or just ask your local sys admin to let you make one for the team. This way you can test out git tricks harmlessly instead of sitting with your shaky finger over the enter button, thinking, "Should I? Dare I? What if? Oh dear!" Try out your idea on the trash repo until you're confident things are okay or decide, "Nope!". Your trash repo becomes the proverbial ounce of prevention/pound of cure.
 
-*Avoid complex workflows if possible.* Your resident crazy person will want to make a test branch, production branch, patch branch, bugfix branch, staging branch, and a few more branches with weird names that don't make any sense; then they'll have a diagram with arrows going every which way showing the "right" workflow. Most average teams do just fine with a master branch that also acts as production, and create short-term "task" branches for their individual tasks; when the task is done, merge to master, deploy, and delete your task branch. That's how simple it can and usually should be. If somebody wants to go beyond that, hold their feet to the fire and demand *reasons* for why the fancy workflow is *absolutely necessary*. Still, you may have to lose this fight, sometimes...
+**Avoid complex workflows if possible.** Your resident crazy person will want to make a test branch, production branch, patch branch, bugfix branch, staging branch, and a few more branches with weird names that don't make any sense; then they'll have a diagram with arrows going every which way showing the "right" workflow. Most average teams do just fine with a master branch that also acts as production, and create short-term "task" branches for their individual tasks; when the task is done, merge to master, deploy, and delete your task branch. That's how simple it can and usually should be. If somebody wants to go beyond that, hold their feet to the fire and demand *reasons* for why the fancy workflow is *absolutely necessary*. Still, you may have to lose this fight, sometimes...
 
-*Do not "force push".* When reading internet Git tutorials written by crazy people, you will often find a line like, "Now, here you might have to force push, but don't worry, it's not as bad as it sounds." No! Force push *is* as bad as it sounds. Treat it like a deadly disease and stay away from it. It's a great way to lose work and spend hours or days trying to recover.
+**Do not "force push".** When reading internet Git tutorials written by crazy people, you will often find a line like, "Now, here you might have to force push, but don't worry, it's not as bad as it sounds." No! Force push *is* as bad as it sounds. Treat it like a deadly disease and stay away from it. It's a great way to lose work and spend hours or days trying to recover.
 
-*Push your branch to a suitable origin often.* This way you don't lose 3 weeks of work because your laptop got run over by a car, or fell in the lake, or was eaten by bears, or all of the above.
+**Push your branch to a suitable origin often.** This way you don't lose 3 weeks of work because your laptop got run over by a car, or fell in the lake, or was eaten by bears, or all of the above.
 
-*Merge master into your branch regularly.* Don't wait until the last minute to find out that you have merge conflicts or subtle bugs introduced by new behavior that your branch didn't account for. (If master isn't your production branch, fine, then merge that production branch into yours, or merge master & production into yours, or whatever works).
+**Merge master into your branch regularly.** Don't wait until the last minute to find out that you have merge conflicts or subtle bugs introduced by new behavior that your branch didn't account for. (If master isn't your production branch, fine, then merge that production branch into yours, or merge master & production into yours, or whatever works).
 
     git checkout my_branch;
     git pull --ff-only;
     git merge origin/master;
 
-*Rebase is the question - "No" is the answer.* Crazy people love rebase, because rebase allows you to _rewrite history_, and that's just toooo cool. Keep in mind that before Git, nobody even _considered_ rewriting history, usually because they couldn't if they wanted to. Anyhow, a crazy person reviewing your merge/pull request will say, "There's a punctuation error in this commit message. You need to rebase and correct it." So you try rebasing, and git starts fighting you, and pretty soon you realize there's only one way to get this to work: Force push. Wait, hold on: Force push is a capital offense around here - no can do! There's a way around this, so read on.
+**Rebase is the question - "No" is the answer.** Crazy people love rebase, because rebase allows you to _rewrite history_, and that's just toooo cool. Keep in mind that before Git, nobody even _considered_ rewriting history, usually because they couldn't if they wanted to. Anyhow, a crazy person reviewing your merge/pull request will say, "There's a punctuation error in this commit message. You need to rebase and correct it." So you try rebasing, and git starts fighting you, and pretty soon you realize there's only one way to get this to work: Force push. Wait, hold on: Force push is a capital offense around here - no can do! There's a way around this, so read on.
 
 ## The Joy of Squashing
 
@@ -36,10 +36,10 @@ By default, Git merges the *history* of your changes, not the changes themselves
 
    > git checkout master
 
-   # Let's merge my_big_branch *into* master:
+   \# Let's merge my_big_branch *into* master:
    > git merge --squash my_big_branch
 
-   # My changes are now staged, so it's up to me to do a final commit:
+   \# My changes are now staged, so it's up to me to do a final commit:
    > git commit -m "Here is everything I did in one great big commit"
 
 Squash throws all of our branch's history away - commits, merges, everything. All of that gets "squashed" out. Instead our changes are now just a new, single set of changes in a vanilla commit straight to master, with a timestamp that reflects *when the change was merged*. Note that a lot of fancy-shmancy git-based products like github and gitlab support squash merge as an option for their review & approval workflows.
