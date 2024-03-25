@@ -34,13 +34,13 @@ Worse yet, the change may have happened across several commits as someone try-tr
 
 By default, Git merges the *history* of your changes, not the changes themselves. A lot of people intuitively think Git must be doing the latter, because that makes more sense to them, and thus merge confuses them. Consider, however, that the history of your branch and all its backing and forthing is usually of little consequence; what we care about is the finished result and how it impacts everyone else. So, consider *squashing*, which merges changes, *not* histories:
 
-   > git checkout master
+    \> git checkout master
 
-   \# Let's merge my_big_branch *into* master:
-   > git merge --squash my_big_branch
+    \# Let's merge my_big_branch *into* master:
+    \> git merge --squash my_big_branch
 
-   \# My changes are now staged, so it's up to me to do a final commit:
-   > git commit -m "Here is everything I did in one great big commit"
+    \# My changes are now staged, so it's up to me to do a final commit:
+    \> git commit -m "Here is everything I did in one great big commit"
 
 Squash throws all of our branch's history away - commits, merges, everything. All of that gets "squashed" out. Instead our changes are now just a new, single set of changes in a vanilla commit straight to master, with a timestamp that reflects *when the change was merged*. Note that a lot of fancy-shmancy git-based products like github and gitlab support squash merge as an option for their review & approval workflows.
 
