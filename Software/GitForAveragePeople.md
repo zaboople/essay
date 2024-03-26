@@ -24,11 +24,11 @@ So for the average programmer at the average job, especially web application fol
     git pull --ff-only;
     git merge origin/master;
 
-**Rebase is the question - "No" is the answer.** Crazy people love rebase, because rebase allows you to _rewrite history_, and that's just toooo cool. Keep in mind that before Git, nobody even _considered_ rewriting history, usually because they couldn't if they wanted to. Anyhow, a crazy person reviewing your merge/pull request will say, "There's a punctuation error in this commit message. You need to rebase and correct it." So you try rebasing, and git starts fighting you, and pretty soon you realize there's only one way to get this to work: Force push. Wait, hold on: Force push is a capital offense around here - no can do! There's a way around this, so read on.
+**Rebase is the question - "No" is the answer.** Crazy people love rebase, because rebase allows you to _rewrite history_, and that's just so, so cool. Keep in mind that before Git, nobody even _considered_ rewriting history, usually because they couldn't if they wanted to, and also because they didn't care. Anyhow, a crazy person reviewing your merge/pull request will say, "There's a punctuation error in this commit message. You need to rebase and correct it." So you try rebasing, and git starts fighting you, and pretty soon you realize there's only one way to get this to work: Force push. Wait, hold on: Force push is a capital offense around here - no can do! There's a way around this, so read on.
 
 ## The Joy of Squashing
 
-Let's say production just broke. Your first question is, "What changed?" Good question, so you look in the commit history, and unbeknownst to you, the actual change is in there with a helpful commit message, but it's timestamped as 2 weeks ago. Well, that can't be it then, can it? This broke today, not two weeks ago. No, actually, when you merge, you merge _histories_, so what was *merged* today *looks* like it changed two weeks ago. What? Huh? Yep.
+Let's say production just broke. Your first question is, "What changed?" Good question, so you look in the commit history, and unbeknownst to you, the actual change is in there with a helpful commit message, but it's timestamped as 2 weeks ago. Well, that can't be it then, can it? This broke today, not two weeks ago. No, actually, when you merge, you merge _histories_, so what was merged today *looks* like it changed two weeks ago. What? Huh? Yep.
 
 Worse yet, the change may have happened across several commits as someone try-try-tried again, and those commits are interspersed with the histories of _other_ people's work that was happening in _other_ branches that were merged into master at various _other_ times. Wait, come again? What? Ugh.
 
@@ -44,16 +44,16 @@ By default, Git merges the *history* of your changes, not the changes themselves
 
 Squash throws all of our branch's history away - commits, merges, everything. All of that gets "squashed" out. Instead our changes are now just a new, single set of changes in a vanilla commit straight to master, with a timestamp that reflects *when the change was merged*. Note that a lot of fancy-shmancy git-based products like github and gitlab support squash merge as an option for their review & approval workflows.
 
-You might be skeptical about this, and ask, "If squash is the better way to merge, then why isn't it the default?" Good question, and it wasn't my call, but for average programmers working on average teams, squash is usually the better way. Still, suppose that after doing the above squash & commit, you do:
+You might be skeptical about this, and ask, "If squash is the better way to merge, then why isn't it the default?" Good question, and it wasn't my call, but for average programmers working on average teams, squash is usually the better way. Still, for the sake of confusing you... Suppose that after doing the above squash & commit, you do:
 
     > git checkout my_big_branch
     > git merge origin/master
 
 When you "backmerge" like this, git thinks to itself, "Wow, this is crazy: It turns out my_big_branch mysteriously has all the same changes that were just committed to master! This programmer is psychic or something!" Because it's a vanilla commit, master doesn't have the usual tracking hints to tell Git *where* the change came from, which is my_big_branch. That isn't to say you'll have a merge conflict, though; as long as you haven't jumped the gun and already started changing your changes in my_big_branch,  Git will just go along to get along and everything's fine thereafter; and *then* you can start changing your changes (because you're indecisive like me).
 
-The key thing is that if you need to backmerge because you want to reuse your branch (questionable habit, but ok), then you should do that as a history merge, not a squash merge. That way your history is mostly the same as master's history, and additional history merges from master into my_big_branch go off without a hitch.
+The key thing is that if you need to backmerge because you want to reuse your branch (questionable habit, but ok), then you probably should do that as a history merge, not a squash merge. You might also want to stick with history merge when hopping from workflow branch to workflow branch because you lost the fight over complex workflows - but squash will still be a good practice for new changes *entering* the workflow, especially via review & approval processes.
 
-# The Joy of Revert
+## The Joy of Revert
 
 Squash provides an implicit bonus: It's a lot easier to undo our changes if we find out we broke everything, because our changes were just a vanilla commit:
 
@@ -68,13 +68,13 @@ Yes! You can *revert a revert*, because a revert is just a vanilla commit in its
 
 ## The Rebase Alternative: Squash Again
 
-Let's return to our problem of the peer review where someone is demanding we rewrite history to their specification. If we squash merge our work into master, all those little commits become meaningless anyhow. Still, if people insist on regular merge to master, we can fix our history like so:
+Let's return to our problem of the peer review where someone is demanding we rewrite history to their specification. If we squash merge our work into master, all those little commits become meaningless anyhow. Still, if people insist on a history-merge to master, we can fix our history like so:
 
     git checkout master;
     git branch just_for_crazy; # Make a new branch to submit for review
     git merge --squash my_original_branch;
 
-Now we can submit the *new* just_for_crazy branch in an equally new merge request, but maybe our reviewer will be annoyed with our clever workaround if there's now just one commit in our history. No problem: Instead of immediately committing, we "unstage" our changes (AKA "un-add"):
+Now we can submit the *new* just_for_crazy branch in an equally new merge request, but maybe our reviewer will be annoyed with us if there's now just one commit in our history. No problem: Instead of immediately committing, we "unstage" our changes (AKA "un-add"):
 
     git reset HEAD
 
