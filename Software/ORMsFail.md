@@ -124,6 +124,8 @@ RDM is also going to lead to implicit writes, because our highly distributed log
 
 Eliminate the Rich Domain Model, and our caching problem dissipates. Of course this can be difficult to do on teams where RDM is quasi-religious dogma disguised as "engineering", and holy war is no fun for anybody. The best you can do in some cases is to advocate for the importance of a coherent narrative and try to change people's minds, futile as that may be. Feel free to use the old "There two hard problems in computing" joke: Naming things, caching, and off-by-one. (We really need some new jokes...)
 
+(A somewhat sillier take on RDM [here](./TheRichDomainModel.md))
+
 ### 5. Connections (again) & Transactions
 
 Consider the following based roughly on Java JDBC:

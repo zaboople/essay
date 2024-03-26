@@ -1,11 +1,16 @@
 These are essays on software, primarily computer programming, or you could say "software engineering" assuming such a thing exists yet.
 
-## Bigger Things
+## Big Deal Things
 
 - [It's Not "Code"](ItsNotCode.md)
 - [Why ORM's Fail Us](ORMsFail.md)
 
-## Smaller Things
+## Medium Deal Things
+
+- [Git For Average People](GitForAveragePeople.md)
+- [The Rich Domain Model](TheRichDomainModel.md)
+
+## Small Deal Things
 
 - [Constants at the Top](ConstantsAtTheTop.md)
 - [Dev-Ops](DevOps.md)
