@@ -1,6 +1,6 @@
 # Git, For Average People
 
-Git is controversial, because it doesn't seem like it was designed for average everyday dev teams, but everybody uses it anyhow. Many people will say, "The problem is that Git is too hard!" This might be partly right, but to be more specific, Git has a lot of things you will probably never need, and understanding *all* of them *is* hard. So: Don't. This is where one must remember a cardinal rule:
+Git is controversial, because it doesn't seem like it was designed for average everyday dev teams, but everybody uses it anyhow. Many people will say, "The problem is that Git is too hard!" This might be partly right, but to be more specific, Git has a lot of things you will probably never need, and understanding *all* of them *is* hard. So: Don't. Remember the cardinal rule:
 
 >  **Just because you _can_ doesn't mean you _should_.**
 
@@ -30,7 +30,7 @@ So for the average programmer at the average job, especially web application fol
 
 ## The Joy of Squashing
 
-Let's say production just broke. Your first question is, "What changed?" Good question, so you look in the commit history, and unbeknownst to you, the actual change is in there with a helpful commit message, but it's timestamped as 2 weeks ago. Well, that can't be it then, can it? This broke today, not two weeks ago. No, actually, when you merge, you merge _histories_, so what was merged today *looks* like it changed two weeks ago. What? Huh? Yep.
+Let's say production just broke. Your first question is, "What changed?" Good question, so you look in the commit history, and unbeknownst to you, the actual change is in there with a helpful commit message, but it's timestamped as 2 weeks ago. Well, that can't be it then, can it? This broke today, not two weeks ago. No, actually, when you merge, you merge _histories_, so what was merged today *looks* like it changed days or even weeks ago, depending on when it changed in the source branch. What? Huh? Yep.
 
 Worse yet, the change may have happened across several commits as someone try-try-tried again, and those commits are interspersed with the histories of _other_ people's work that was happening in _other_ branches that were merged into master at various _other_ times. Wait, come again? What? Ugh.
 
@@ -50,13 +50,13 @@ You might be skeptical about `--squash`, and ask, "If this is the better way to 
 
 Note that when "backmerging", however, it's best to stick with regular old history merge. So when you're pulling down other folks' newly merged work from master into your task branch every day (as per best practices), you'd still do `git merge origin/master`. This way Git always has a solid reference point when comparing your branch to master later on.
 
-In fact, it's worth pursuing a tangent here: What if we want to reuse our branch and do more work in it *after* we squash-merged it into master already? This is a questionable habit, but okay, first things first: Backmerge master into your branch, just to get squared away. When you do this, Git will think, "Huh, that's funny: It turns out my_big_branch mysteriously has all the same changes that were just committed to master. This programmer is psychic or something!" Git doesn't know that my_big_branch is *where* those latest changes came from in the first place, because squashing creates a brand new SHA for the changes, and none of your SHA's match. Don't worry, though: We won't get a merge conflict as long as you haven't jumped the gun and already started changing your changes in my_big_branch. Backmerge first, and *then* you can change your changes (because you're indecisive like me).
+In fact, it's worth pursuing a tangent here: What if we want to reuse our branch and do more work in it *after* we squash-merged it into master already? This is a questionable habit, but okay, first things first: Backmerge master into your branch, just to get squared away. When you do this, Git will think, "Huh, that's funny: It turns out my_big_branch mysteriously has all the same changes that were just committed to master. This programmer is psychic or something!" Git doesn't know that my_big_branch is where those latest changes came from in the first place, because squashing created a brand new SHA in master, and none of your SHA's match. Don't worry, though: We won't get a merge conflict as long as you haven't jumped the gun and already started changing your changes in my_big_branch. Backmerge first, and *then* you can change your changes (because you're indecisive like me).
 
 That tangent kinda underlines the point of history merge: Instead of trying to decide the winners and losers of merge-conflict heck by comparing timestamps, Git just uses the history-merged SHA's to verify that you're already up to date with everyone else's changes (or not). We could also babble about directed acyclic graphs here, but you probably get the point already.
 
 ## The Joy of Revert
 
-Squash provides an implicit bonus: It's a lot easier to undo our changes if we find out we broke everything, because our changes were just a vanilla commit:
+Squash provides an implicit bonus: Now that we know who broke everything and when, it's a lot easier to undo our changes because it's just a vanilla commit:
 
     > git revert <SHA of squash commit>
 
