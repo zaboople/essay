@@ -1,12 +1,12 @@
 # Dependencies Are The Great Problem of Software Engineering
 
-Dependencies are a fundamental problem that is killing software engineering teams everywhere, largely due to a complete lack of awareness, much less actual interest in the problem. Computer Science curriculums do little to address it and probably shouldn't attempt to take sole responsibility for it; it's really part of the mostly ambiguous, nebulous, ill-defined and emergent discipline of "software engineering".
+Dependencies are a fundamental problem that is killing software engineering teams everywhere, largely due to a complete lack of awareness, much less actual interest in the problem. Computer science curriculums do little to address it and probably shouldn't attempt to take sole responsibility for it; it's really part of the mostly ambiguous, nebulous, ill-defined and emergent discipline of "software engineering".
 
 ## The Lifecycle of Doom
 
 Suppose you're working on a brand new project, "green-field" and all that. Your biggest problem is that you need to build a team to work on it. How are you going to find enough qualified people? Easy, just make a job advertisement that says:
 
-  *Hiring for brand-new starting-from-scratch project.*
+> Hiring for brand-new starting-from-scratch project.
 
 The world will beat a path to your door.
 
