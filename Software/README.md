@@ -2,8 +2,9 @@ These are essays on software, primarily computer programming, or you could say "
 
 ## Big Deal Things
 
-- [It's Not "Code"](ItsNotCode.md)
 - [Dependencies Are the Great Problem of Software Engineering](DependenciesAreKillingUs.md)
+- [It's Not "Code"](ItsNotCode.md)
+- [Myths of Agile Software Development](Agile.md)
 - [Why ORM's Fail Us](ORMsFail.md)
 
 ## Medium Deal Things
@@ -11,7 +12,7 @@ These are essays on software, primarily computer programming, or you could say "
 - [Git For Average People](GitForAveragePeople.md)
 - [The Rich Domain Model](TheRichDomainModel.md)
 
-## Small Deal Things
+## Little Things
 
 - [Constants at the Top](ConstantsAtTheTop.md)
 - [Dev-Ops](DevOps.md)
