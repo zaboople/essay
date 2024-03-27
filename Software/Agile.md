@@ -50,7 +50,7 @@ There are lots of software products that promote agility. These are basically "t
 
 2. The software scales nicely, allowing you to enter thousands of tickets that will never go anywhere. Most of these tickets are incomprehensible, typed in by someone in a hurry, maybe dictated by another person in a hurry. The ocean of tickets assures we will never run out of work, but it also assures that we will always feel helpless and overwhelmed, and most importantly, prioritization becomes impossible. Once you lose priorities, "agile" is just a word in the dictionary. The ticketing system is now a reasonable approximation of infinity.
 
-All of this comes down to the painful but necessary process of *culling*: Ticket fields need to be limited to some agreed maximum, so that new fields must replace old ones, or they don't go in. Furthermore, aging tickets need to be removed, which requires us to admit: *Yeah, nobody's ever gonna do that one* and/or *I don't even know what that's supposed to mean*.
+All of this comes down to the painful but necessary process of *culling*: Ticket fields need to be limited to some agreed maximum, so that new fields must replace old ones, or they don't go in. Furthermore, aging tickets need to be removed, which requires us to admit: "Yeah, nobody's ever gonna do that one," and/or "I don't even know what that's supposed to mean."
 
 Don't give in to hoarding!
 
@@ -94,7 +94,7 @@ By and large security requirements are architecture requirements, and architectu
 
 Most managers and software engineers are used to demanding full control over the architecture: How dare you tell us how to design *our* system? In fact this kind of scenario is becomingly increasingly common, so that corporate & governmental customers are often defining architectural security requirements up front.
 
-Sometimes internal architects and security professionals are left in the dark, only to appear late and start making their own demands. Systems and network administrators may veto a decision as well. This is another example of our technical staff acting as *stakeholders* with *requirements*. Consider the plight of the junior software developer, who is subject to the whim of anyone who outranks them, even on their own team; they are at even greater risk than usual.
+Sometimes internal architects and security professionals are left in the dark, only to appear late and start making their own demands. Systems and network administrators may veto a decision as well. This is another example of our technical staff acting as *stakeholders* with *requirements*. Consider the plight of the junior software developer, who is subject to the whim of anyone who outranks them, even on their own team; they are at even greater risk than usual of a rug-pull.
 
 Architectural requirements should be identified as early and quickly as possible. Ad-hoc discovery will result in massive setbacks and potential failure.
 
