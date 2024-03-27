@@ -11,7 +11,7 @@ Looking further at the manifesto, it is actually divided into _two_ documents:
   1. The first is 4 rather vague, pithy introductory aphorisms.
   2. The [second](https://agilemanifesto.org/principles.html) is 12 brief principles specifying a little more detail.
 
-The 4 aphorisms are the first sign of trouble, phrased in the style of _this over that_: Most notable are that "Working software" is more important than "comprehensive documentation", and "responding to change" is more important than "following a plan". We might take this to mean:
+The 4 aphorisms are the first sign of trouble, phrased in the style of _this over that_: Most notable are that "Working software over comprehensive documentation", and "Responding to change over following a plan". We might take this to mean:
 
   - You don't need documentation
   - You don't need a plan
@@ -44,7 +44,7 @@ Don't assume software developers are antisocial jerks who can't talk to "normal"
 
 ## Agility Software
 
-There are lots of software products that promote agility. These are basically "ticketing" systems for tracking work, with all the interesting workflow and tracking statistics that you'd expect. Most of these systems are very flexible, so that if want to use them in the simplest way possible, you can; and if you want to tie yourself in knots, you can do that too. Guess what a dysfunctional organization is going to do with them?
+There are lots of software products that promote agility. These are basically "ticketing" systems for tracking work, with all the interesting workflow and tracking statistics that you'd expect. Most of these systems are very flexible, so that if you want to use them in the simplest way possible, you can; and if you want to tie yourself in knots, you can do that too. Guess what a dysfunctional organization is going to do with them?
 
 1. Ticket forms can be customized, so that instead of a handful of fields - all you probably need, assuming one field is free-form text - you'll steadily grow to 10, 20, 30 and yes, even 50 different inputs for every single form, all completely disorganized and haphazardly arranged, all mandated by managers who are reacting to some special circumstance that they want to see formally addressed "from now on", all forgotten by same managers a couple of weeks later.
 
@@ -52,7 +52,7 @@ There are lots of software products that promote agility. These are basically "t
 
 All of this comes down to the painful but necessary process of *culling*: Ticket fields need to be limited to some agreed maximum, so that new fields must replace old ones, or they don't go in. Furthermore, aging tickets need to be removed, which requires us to admit: *Yeah, nobody's ever gonna do that one* and/or *I don't even know what that's supposed to mean*.
 
-Don't give in to hoarding.
+Don't give in to hoarding!
 
 ## Stakeholders
 

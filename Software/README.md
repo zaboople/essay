@@ -12,7 +12,7 @@ These are essays on software, primarily computer programming, or you could say "
 - [Git For Average People](GitForAveragePeople.md)
 - [The Rich Domain Model](TheRichDomainModel.md)
 
-## Small Deal Things
+## Little Things
 
 - [Constants at the Top](ConstantsAtTheTop.md)
 - [Dev-Ops](DevOps.md)
