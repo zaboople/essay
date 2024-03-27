@@ -1,4 +1,4 @@
-# Agile Software Development
+# Myths of Agile Software Development
 
 To understand "agile", one could start by reading the original [Agile Manifesto](https://agilemanifesto.org/) - it won't take long - but the general idea goes something like: Divide your work up into smaller parts, most important things first. Let stakeholders know what you're doing, get their feedback and review priorities with them regularly. Make adjustments to the plan if the plan isn't working. Make improvements as incrementally as possible instead of trying to throw a giant pile of stuff over the wall all at once. Keep a regular dialog going among team members so they know where the trouble is, who needs help, what is and isn't working.
 
@@ -24,7 +24,7 @@ As usual, aphorisms are easily abused.
 
 As the 12 principles go, we know most people never read them because of the 11th, which I'll quote verbatim: "The best architectures, requirements, and designs emerge from self-organizing teams." We can only interpret that as a requirement for _bottom-up_ organization, not _top-down_. Show me a software developer who hates agile, and I'll show you a software developer who had it forced on them, _from the top down_ by management, for better or worse.
 
-But now we have a paradox: Management is completely bought in on the idea - surprise, it was an easy sell after all - but how to make the organization agile without forcing it on everyone? What if the teams just don't want to? The Agile Manifesto simply assumes they will want to, and if they don't, it shrugs. The manifesto wants to argue with management, not staff. I don't think the authors expected the argument to be so easy, or that the corresponding argument with staff would be so hard, even though the resistance is mostly passive: We're too busy doing stuff to organize and plan the stuff first.
+But now we have a paradox: Management is completely bought in on the idea - surprise, it was an easy sell after all - but how to make the organization agile without forcing it on everyone? What if the teams just don't want to? The Agile Manifesto simply assumes they *will* want to, and if they don't, it shrugs. The manifesto wants to argue with management, not staff. I don't think the authors expected the argument to be so easy, or that the corresponding argument with staff would be so hard, even though the resistance is mostly passive: We're too busy doing stuff to organize and plan the stuff first.
 
 So, "self-organizing teams" is a rare occurrence. Agile usually arrives within the organization as a bureaucratic mandate to reduce bureaucracy: top-down, appointed, enforced, with designated procedures, practices, methodology, training modules, forms, graphs, reports and very little overall interest in the actual work that must be done by actual individuals on actual problems. Most of this happens at the middle management layers, where folks attempt to translate upper aphorisms into middling formalities.
 

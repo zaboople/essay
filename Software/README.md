@@ -2,9 +2,9 @@ These are essays on software, primarily computer programming, or you could say "
 
 ## Big Deal Things
 
-- [Agile Software Development](Agile.md)
 - [Dependencies Are the Great Problem of Software Engineering](DependenciesAreKillingUs.md)
 - [It's Not "Code"](ItsNotCode.md)
+- [Myths of Agile Software Development](Agile.md)
 - [Why ORM's Fail Us](ORMsFail.md)
 
 ## Medium Deal Things
