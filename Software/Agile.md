@@ -108,7 +108,7 @@ Some final, general recommendations for embarking on agile:
 
 1. Restore good faith as needed, because otherwise Agile falls apart. This requires enough honesty to identify the bad faith and even harder, its source - technical or personal - and that's bloody work.
 
-2. Believe in belief: If the process is promoting efficiency, the team should believe in it, but are teams _allowed_ to say that they _don't_? It doesn't matter what the graphs, books and agile coaches tell you; if the team believes the process is pointless, the process has failed, and shutting them up doesn't change that.
+2. Believe in belief: If the process is promoting efficiency, the team should believe in it, but are teams allowed to say that they _don't_? It doesn't matter what the graphs, books and agile coaches tell you; if the team believes the process is pointless, the process has failed, and shutting them up doesn't change that.
 
 ----
 
