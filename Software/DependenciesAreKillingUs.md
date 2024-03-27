@@ -187,3 +187,7 @@ This use of `find` and `xargs` yields a more flexible recursive grep than `grep 
 ## Conclusion
 
 My main goal here was to illuminate an important perspective on software, one that you haven't been taught to pay attention to. I am hoping that in the future you will consider this way of looking at things as part of your decision-making. Again, the problem of dependencies isn't easy or black & white, but you should be thinking about it as a core problem that affects everyone.
+
+----
+
+[Back to Software main page](./README.md)
