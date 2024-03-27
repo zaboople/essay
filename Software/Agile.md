@@ -68,7 +68,7 @@ Who understands technical defiencies best? Technical people, i.e. first and fore
 
 It's important to understand that formal processes don't magically make people more efficient; if anything, we'll be robbed of time spent on the process itself. Management is usually hoping their new agile initiative will fix the problem of "things not getting delivered on time", and they will usually be dissapointed. Then comes accusations that software developers could get the job done faster if they would stop working on the wrong things, so that we're really playing a game of Agile Crackdown: If you don't have a ticket for it, we better not catch you working on it.
 
-Management may be right that things are not getting done quickly enough, but they need to consider alternatives to their assessment of *why*. Agile methods cannot compensate for bad software architecture that is choking software development. A process solution can only fix process problems.
+Management may be right that things are not getting done quickly enough, but they need to consider alternatives to their assessment of *why*. Agile methods cannot compensate for bad software architecture that is choking software development. A process solution can only fix process problems. An "agile crackdown" tickets-required approach is actually reasonable,  as long as we're recognizing the stakeholder-ness of the software development team (as per above) and balancing their priorities with those of everyone else.
 
 ## Risk
 
@@ -84,7 +84,7 @@ Most Agile interpretations focus on some idea of "sprints". The sprint is centra
 
 The Sprint-based approach has no conflict with medium-to-long-term strategy, but it has absolutely nothing to say about them either. However, long-term thinking is hard, and nobody wants to do the hard parts, so we can just declare: Agile says long-term thinking doesn't count! That's simply not true.
 
-## Security and Architectural Risk
+## Requirements, Security and Architectural Risk
 
 A while back I was working on a project with the kind of customer that has to be really paranoid about security, just because their business was the infrastructural kind that makes sure you have water, electricity, gas, etc. You don't want that infrastructure to fail because terrorists, nation-state actors, criminal blackmailers etc. took advantage of a security failure.
 
@@ -94,7 +94,9 @@ By and large security requirements are architecture requirements, and architectu
 
 Most managers and software engineers are used to demanding full control over the architecture: How dare you tell us how to design *our* system? In fact this kind of scenario is becomingly increasingly common, so that corporate & governmental customers are often defining architectural security requirements up front.
 
-Architectural requirements should be identified as early and quickly as possible. Ad-hoc discovery will result in massive losses.
+Sometimes internal architects and security professionals are left in the dark, only to appear late and start making their own demands. Systems and network administrators may veto a decision as well. This is another example of our technical staff acting as *stakeholders* with *requirements*. Consider the plight of the junior software developer, who is subject to the whim of anyone who outranks them, even on their own team; they are at even greater risk than usual.
+
+Architectural requirements should be identified as early and quickly as possible. Ad-hoc discovery will result in massive setbacks and potential failure.
 
 ## Conclusions
 
