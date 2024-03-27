@@ -3,6 +3,7 @@ These are essays on software, primarily computer programming, or you could say "
 ## Big Deal Things
 
 - [It's Not "Code"](ItsNotCode.md)
+- [Dependencies Are the Great Problem of Software Engineering](DependenciesAreKillingUs.md)
 - [Why ORM's Fail Us](ORMsFail.md)
 
 ## Medium Deal Things
