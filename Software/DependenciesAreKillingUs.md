@@ -6,7 +6,7 @@ Dependencies are a fundamental problem that is killing software engineering team
 
 Suppose you're working on a brand new project, "green-field" and all that. Your biggest problem is that you need to build a team to work on it. How are you going to find enough qualified people? Easy, just make a job advertisement that says:
 
-> Hiring for brand-new starting-from-scratch project.
+> Hiring for brand-new starting-from-scratch project!
 
 The world will beat a path to your door.
 
