@@ -1,0 +1,29 @@
+# The Bigger Picture of Free Will
+
+This is not an argument for free will, as I did that [here](). I want to address why I find it necessary to start hammering the alarm bell over something usually consigned to the ivory tower of inconclusively bickering philosophers and safely ignored by everyone else. We have other things to do.
+
+What happened is that some scientists kicked down the tower doors, snatched up the debate and began parading about with the proud announcement: *It is resolved forevermore.* Journalists perked up and took notes. In everyone's blind zeal, they ignored  the (very) few philosophers who gave warning and marched right past a gaping ethical blind spot only to cause innocent people profound and overwhelming distress. Just because some folks are novice swimmers doesn't justify pushing them off the pier and watching them drown.
+
+Why would someone claiming the best of intentions seek to destroy your humanity in scorched-earth fashion, yanking your free will out from under you, watching you drop straight into a bottomless personal hell at terminal velocity, shouting down at you, "I'm doing you a big favor, you know!" Do they really think their idea of all-sins-forgiven as a ham-fisted replica of Christianity Without the Annoying God Parts is any less than an emotional death sentence? What kind of delusional, head-smacking madness is this?
+
+(Boring But Necessary Disclaimers: Of course this isn't a solicitation for mob justice against anyone - free speech is necessary - just an attempt to understand some bad behavior and persuade folks to reconsider it. If this reads like an arch-conservative, right-wingist political screed, my apologies, but that's an overreaction. I'm at worst a moderate political independent advocating for basic human rights and dignity, reasonably tolerant of socialist endeavor, and absolutely not any kind of aspiring neofascist nut job. In fact, when people resort to political extremism - as they have - it means grievances need hearing out.)
+
+## Pardon My Nostalgia
+
+When I was a kid, the cold war was waning but ongoing, so George Orwell's book Animal Farm was mandatory reading for sixth-graders, as a sort of anti-communist manifesto; not that we understood the point, but it was entertaining enough. I never thought to ask, though: Why are the characters animals, specifically domesticated livestock?
+
+It seems like Orwell recognized that the soviet communists saw one another just about *literally* as domesticated livestock, entitled to pity and some hedonistic bliss of grazing and reproduction, in exchange for a bit of everyday plow-tugging. The self-appointed leaders were hypocritical elitists who granted themselves special status, per Orwell's famous non sequitir, "Some animals are more equal than others." They elevated themselves to human status, even, but seeing everyone else as cattle, enslavement and wholesale slaughter becomes an ordinary matter of state business, and then so much horror.
+
+Karl Marx never bothered with ethics; he mostly sneered at the idea, concerned only with class and power. It might be unsurprising that this becomes the weakness exploited by most (all?) adherents to his ideas about communism, much as he wanted only to *help*.
+
+## Stepping Back From The Prior Train Wreck
+
+I don't mean to accuse the scientists of nefarious political activism, really. The lynchpin of catastrophic failure is not even Marxism per se; we could arrive at the same point with Utilitarianism. The problem is that *we're disguising contempt as compassion and humility*. When you look at your fellow human beings with so much cynical disdain, even swearing up and down that you hold yourself to the same lowest standard, the guardrails fail and we all plunge into gibbering insanity while insisting that we've claimed the highest of moral grounds.
+
+I must ask the scientists: Does your denial of free will absolve yourself of ethical responsibility as well? Is that the proper conduct of science and medicine, especially in public, that any harm done is blameless? Probably not, but are we playing the game of elitist hypocrisy, then? If you're going to declare yourself a domesticated farm critter, never to be accountable for what you do, say so, but it seems a fool's errand, especially for any public figure; if you only wish to insult the world and demand that everyone accept the role of obedient mule before your own rarified genius, we have at best *slightly* less of a howling self-indictment.
+
+There isn't anything *gained* from such attitudes, or even from trying to win the free-will debate. Psychology and neurology have much to offer, especially as ways for people to regain *control* of their lives - in effect to claim some greater share of their free will, if we like to see it that way. Why sabotage yourself, your work, and everyone around you? Is it some great tragedy that in abandoning the sabotage, just about everyone ends up better off? It pains me that some folks are indeed neurologically and/or psychologically traumatized to a point that we must reduce them to an uncomfortable status of what - less human? We should do everything we can to prevent and heal that, to be very careful about such diagnoses, but I'll accept it with hesitance.
+
+The elephant of irony in the room, of course, is that the American system of liberty within due process is absolutely predicated on an idea of free will; it can only collapse without. The freedom to speak openly in the USA, even to say rotten things, even to describe your fellow citizens as a bunch of dumb animals exists *because of that liberty and the free will it rests upon*. For all our misgivings and political troubles, we enjoy great privileges and rights because certain forerunners had *self-respect*, enough to act heroically on our behalf. That's where the high ground is.
+
+---
