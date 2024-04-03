@@ -50,7 +50,7 @@ To be perfectly irrational is to be perfectly doomed; but to be perfectly ration
 
 Rather than obsessing over free will, obsess over *value*. How do you become a person of great value? Start with the rational, deterministic things: Be smart, observant, knowledgeable, reliable. Move on to imperfection: Be open-minded, flexible, forgiving. Finally: Embrace the unfathomability as how things are meant to be, whatever that might mean, and make the most of it.
 
-<sup>1</sup> It turns out Max Beer made this point in 1907. He was a Marxist, but forgive that as necessary. I am not one.
+<sup>1</sup> It turns out Max Beer made this point in 1907. He was a Marxist Communist, however, and otherwise had views on ethics, will, and propaganda that I can't vouch for.
 
 <sup>2</sup> My omniscience machine might be attributed to La Place's "demon", although La Place didn't call it a demon, and obviously a lot of others would call it a monotheistic God.
 
