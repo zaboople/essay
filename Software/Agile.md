@@ -96,6 +96,8 @@ Most managers and software engineers are used to demanding full control over the
 
 Sometimes internal architects and security professionals are left in the dark, only to appear late and start making their own demands. Systems and network administrators may veto a decision as well. This is another example of our technical staff acting as *stakeholders* with *requirements*. Consider the plight of the junior software developer, who is subject to the whim of anyone who outranks them, even on their own team; they are at even greater risk than usual of a rug-pull.
 
+I always tell people, "Requirements are the part of the design that is required." This makes a lot of software developers angry, because it seems to blur a line that they consider solid and unbreakable, but pragmatic reality disagrees. So, you're allowed to say, "Obviously C++ is the only reasonable language to use here." You just need to recognize that when someone else is implementing the system, you have a requirement that they need to know about.
+
 Architectural requirements should be identified as early and quickly as possible. Ad-hoc discovery will result in massive setbacks and potential failure.
 
 ## Conclusions
