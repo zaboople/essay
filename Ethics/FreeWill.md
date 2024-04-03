@@ -52,9 +52,9 @@ Rather than obsessing over free will, obsess over *value*. How do you become a p
 
 ----
 
-<sup>1</sup> It turns out Max Beer made this point in 1907. He was a Marxist Communist, however, and otherwise had views on ethics, will, and propaganda that I can't vouch for.
+<sup>1</sup> It turns out Max Beer made the judge vs. criminal argument in 1907. He was a Marxist Communist, however, and otherwise had views on ethics, will, and propaganda that I can't vouch for and won't go near - broken clock/twice a day...
 
-<sup>2</sup> My omniscience machine might be attributed to La Place's "demon", although La Place didn't call it a demon, and obviously a lot of others would call it a monotheistic God.
+<sup>2</sup> My omniscience machine might be attributed to La Place's "demon", although La Place didn't call it a demon, and obviously a lot of others would call it a monotheistic God favoring "predestination".
 
 ----
 
