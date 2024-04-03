@@ -32,9 +32,11 @@ It is incredibly obvious that your motivation to make good decisions *matters*. 
 
 To understand our free will paradox better, first understand what science does: It does not compel or yield perfect omniscience; instead, science allows us to use imperfect understanding, imperfect information, imperfect theory and even imperfect calculation to *predict* an outcome with reasonable accuracy - and it works. Ultimately, science is for pragmatists, not perfectionists.
 
-The free will antagonist is just as antagonistic to science itself: I insist that your entire life is perfectly predictable, but when you ask for that prediction, I refuse, and say, "Well, I could if I was omniscient!" But I'm not! No actual prediction is made, and no new information is revealed, just a claim of "I could." Nothing of scientific usefulness is revealed because no science is being conducted here. *I am claiming unttainable knowledge - on the condition of unattainable knowledge*. I can claim just as much value from an infinity of nothing.
+The free will antagonist is just as antagonistic to science itself: I insist that your entire life is perfectly predictable, but when you ask for that prediction, I refuse, and say, "Well, I could if I was omniscient!" But I'm not! No actual prediction is made, and no new information is revealed, just a claim of "I could." Nothing of scientific usefulness is revealed because no science is being conducted here. *I am claiming unttainable prediction - on the condition of unattainable knowledge*. I can claim just as much value from an infinity of nothing.
 
 It gets worse: Suppose I construct an *omniscience machine* (à la La Place's "demon"), a contraption of extraordinary power that is able to generate theories and predictions of the future, more and more of them pouring out in the machine's readout at astonishing speed, rapidly approaching omniscience. Conscious beings read all of this, and say, "Ah! We can take advantage of this new information!" These people will therefore affect the future, and that information must be considered by my OM. Now we have a feedback loop, where I have to crank the OM harder & harder because every bit of new knowledge about the future affects the future. I've created the ultimate game-theory nightmare. Arguably, some of the people will commit suicide rather than experience the future revealed; this creates a new future for everyone else, and a new pool of potential suicide committers. Do we eventually end up with our entire population dead? Maybe my machine will explode and/or use up all available energy first.
+
+Who is Zeno, and who is the archer? Who is saying "Your arrow can't possibly fly"?
 
 The universe that gives you determinism also refuses to give you omniscience, as if one fact is conditioned on the other. Perhaps our free will paradox might help us arrive at some greater theory of information, causality and otherwise some day, but it will never get us to the forbidden ground of omniscient prediction. If the history of the world is already written, it is locked away where we can never get to *most* of it - only some - and for all practical purposes that "most" doesn't exist - as *impractical* purposes go, those can wait for you to recover your self-esteem.
 
@@ -47,6 +49,8 @@ Rational understanding and action is part of your intrinsic value; doing the "ri
 To be perfectly irrational is to be perfectly doomed; but to be perfectly rational & deterministic in any pragmatic sense is unnecessary, counterproductive, and impossible to begin with. We have to balance rationality with imperfection and the unfathomability of existence.
 
 Rather than obsessing over free will, obsess over *value*. How do you become a person of great value? Start with the rational, deterministic things: Be smart, observant, knowledgeable, reliable. Move on to imperfection: Be open-minded, flexible, forgiving. Finally: Embrace the unfathomability as how things are meant to be, whatever that might mean, and make the most of it.
+
+<sup>1</sup>
 
 ----
 
