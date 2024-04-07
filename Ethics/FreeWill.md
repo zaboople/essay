@@ -62,4 +62,6 @@ Rather than obsessing over free will, obsess over *value*. How do you become a p
 
 [Free Will Part III: Why This Is So Important](./FreeWill-III-Importance.md)
 
+[Free Will Part IV: Exhaustion](./FreeWill-IV-Exhaustion.md)
+
 [Back to Ethics main page](./README.md)

@@ -11,6 +11,7 @@ Secondary matters:
 
 - [Free Will Part II: Crime & Punishment](./FreeWill-II-Crime.md)
 - [Free Will Part III: Why This Is So Important](./FreeWill-III-Importance.md)
+- [Free Will Part IV: Exhaustion](./FreeWill-IV-Exhaustion.md)
 - [Proposing a Constitutional Liberty Amendment](./LibertyAmendment.md)
 - [Artificial Intelligence & the Singularity](./AIAndSingularity.md)
 - [The Moral Versus The Miraculous](./MoralVsMiraculous.md)

@@ -34,6 +34,8 @@ Good luck writing your speech.
 
 ------
 
+[Free Will Part IV: Exhaustion](./FreeWill-IV-Exhaustion.md)
+
 [You Can Have Free Will](./FreeWill.md)
 
 [Back to Ethics main page](./README.md)
