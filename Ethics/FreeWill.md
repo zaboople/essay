@@ -1,6 +1,6 @@
 # Yes, You Have Free Will
 
-The familiar and popular argument against free will goes as: First we assert that the universe is perfectly deterministic, which is to say, *predictable*, and *causal* - things happen as a consequence of other things, and if you can measure the right parts of a system, you can predict what that system will do. Second, we see that it is as if the history of the universe is already written; whatever happens is a direct causal outcome of what came before it, leading all the way to the end of history (if there is one). Finally, given that the history is already written, we can say that every decision you make is the only decision you *can* make, and so: *You have no free will*.
+The familiar and popular argument against free will goes as: First we assert that the universe is perfectly deterministic, which is to say, based on *cause-and-effect* - things happen as a consequence of other things, and if you can measure the right parts of a system, you can predict what that system will do. Second, we see that it is as if the history of the universe is already written; whatever happens is a direct causal outcome of what came before it, leading all the way to the end of history (if there is one). Finally, given that the history is already written, we can say that every decision you make is the only decision you *can* make, and so: *You have no free will*.
 
 How does this argument against free will make you feel - as if someone cut your legs out from under you? In fact we've attacked your most fundamental sense of value, in both yourself and others. Many people find it very depressing, even to the point of personal crisis, and I don't want that. To find a fix, I'd like to look at free will from a perspective of *value*, because  that value matters most. Many would say free will is really about *moral responsibility*, which is part of that sense of value, but my objective is not a stick to beat others with, for their failure. I want life to be worth living again, assuming a utilitarian pseudo-utopia of hedonic pleasures isn't enough.
 
@@ -42,13 +42,13 @@ The universe that gives you determinism also refuses to give you omniscience, as
 
 ## An Attempt At Real Perspective
 
-We live in a strange universe that confronts us with the unfathomability of existence. At smaller, more pragmatic scales we can find meaning and create order, but at the greatest scales it is extraordinarily difficult, seemingly hopeless. This forms a *complimentary* contradiction to our deterministic desire. Some people, driven to madness by this contradiction, become delusional, claiming to unlock the fathoming puzzle; and others become nihilistic. Reasonable people learn to accept and balance this burden, knowing they have much work to do regardless. They can render this as religious faith if they like - maybe they must.
+We live in a strange universe that confronts us with the unfathomability of existence. At smaller, more pragmatic scales we can find meaning and create order, but at the greatest scales this approaches impossibility. This forms a complimentary contradiction to our deterministic intentions. Some people use this as an excuse to become nihilistic. Reasonable people learn to accept and balance the burden, knowing they have much work to do. They can render this as religious faith if they like, and some would insist, some shrug, some scoff.
 
-Rational understanding and action is part of your intrinsic value; doing the "right" thing means doing the "smartest" thing means doing the "deterministic" thing, which is to say, your actions are predictable rather than random. Of course we cannot predict your actions perfectly unless we have the same information as you, and your actions will be imperfect because your information is imperfect. There will be quite a bit of chaotic serendipity, in which accidents yield innovations. Imperfection abounds, and any proper artist recognizes imperfection as aesthetic beauty, a paradoxical and intrinsic gift, a second dimension of contradiction, a perfect imperfection. The imperfection of perspective is what *makes* you an individual instead of an indistinguishable dimension of an omniscient entity.
+Rational understanding and action is part of your intrinsic value; doing the "right" thing means doing the "smartest" thing means doing the "deterministic" thing, which is to say, your actions are ideally predictable rather than random. Of course we cannot predict your actions perfectly unless we have the same information as you, and your actions will be imperfect because you and your information are imperfect. There will be quite a bit of chaotic serendipity, in which accidents yield innovations. Imperfection abounds, and any proper artist sees beauty in that. The imperfection of perspective makes you an individual instead of an indistinguishable part of an omnipresent entity.
 
 To be perfectly irrational is to be perfectly doomed; but to be perfectly rational & deterministic in any pragmatic sense is unnecessary, counterproductive, and impossible to begin with. We have to balance rationality with imperfection and the unfathomability of existence.
 
-Rather than obsessing over free will, obsess over *value*. How do you become a person of great value? Start with the rational, deterministic things: Be smart, observant, knowledgeable, reliable. Move on to imperfection: Be open-minded, flexible, forgiving. Finally: Embrace the unfathomability as how things are meant to be, whatever that might mean, and make the most of it.
+Rather than obsessing over free will, obsess over *value*. How do you become a person of great value? Start with the rational, deterministic things: Be smart, observant, knowledgeable, reliable, meaningful. Move on to imperfection: Be open-minded, flexible, forgiving. Finally: Embrace the unfathomability as how things are meant to be, whatever that might mean, and make the most of it.
 
 ----
 
@@ -57,5 +57,9 @@ Rather than obsessing over free will, obsess over *value*. How do you become a p
 <sup>2</sup> My omniscience machine might be attributed to La Place's "demon", although La Place didn't call it a demon, and obviously a lot of others would call it a monotheistic God favoring "predestination".
 
 ----
+
+[Free Will Part II: Crime & Punishment](./FreeWill-II-Crime.md)
+
+[Free Will Part III: Why This Is So Important](./FreeWill-III-Importance.md)
 
 [Back to Ethics main page](./README.md)
