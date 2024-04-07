@@ -16,17 +16,17 @@ The most terrifying movie monster is the one that disguises themselves as a cari
 
 Why would someone claiming the best of intentions seek to destroy your humanity in scorched-earth fashion, yanking your free will out from under you, watching you drop straight into a bottomless pit at terminal velocity, shouting down at you, "I'm doing you a big favor, you know!" How could anyone mistake this idea of all-sins-forgiven as a ham-fisted replica of Christianity Without the Annoying God Parts for anything less than an emotional death sentence? What kind of delusional, head-smacking madness is this?
 
-Being a free speech advocate, I agree that the right way to correct a poor exercise of free speech is not to repress it, or to threaten and attack the speaker; it is to attempt a much better exercise of free speech. When an enchanter's tricks are simply exposed to the broad light of day, they become brittle and weak.
+Of course being a free speech advocate, I agree that when an enchanter's tricks are exposed to the broad light of day, they stop working, and all the enchanters walk away.
 
 ## A Double-Dare
 
-Suppose it is our task to give the eulogy for a great hero who sacrificed themselves for the sake of others. Perhaps we might  say, "Well, this person's courage in the face of great danger and hardship was actually not a choice, so they're really a victim and we should feel sorry for them." We could try to speak of an "instinctive heroism", crediting everyone else for one person's real actions. Maybe we could even talk about heroic acts of self-sacrifice that animals sometimes engage in.
+Suppose it is our task to give the eulogy for a great hero who sacrificed themselves for the sake of others. Perhaps we might  say, "Well, this person's courage in the face of great danger and hardship was actually not a choice, so they're really a victim and we should feel sorry for them." We could try to speak of an "instinctive heroism", crediting everyone else for one person's real actions. Maybe we could even talk about heroic acts of self-sacrifice that animals sometimes engage in, so as to drain humanity from our vision completely.
 
 The audience would hate us for all of that, of course.
 
 It seems that heroic figures sometimes speak of discomfort with their celebrated status, because they tend to think of their actions as strict duty, what one *must* do, a necessity without any real alternative, arguably without free will. However I think they mean that the alternative is in their eyes a cowardice, a negligence they could not live with, that the peers and predecessors they respect would just as readily reject, and recognize as contempt. There *is* a second choice, but it abdicates moral responsibility. It's not a contradiction that free will often finds one acceptable choice instead of many.
 
-So we speak highly of heroic figures because they remind us of duty compelled by our own free will, and that we are all *capable* of summoning such courage, because *this one person did so*. That should be no surprise.
+So we speak highly of heroic figures because they remind us of duty compelled by our own free will, and that we are all *capable* of summoning such courage, because this one person did so. That should be no surprise.
 
 Still, speaking justly to heroism is a complicated needle to thread. Of course dictators, monarchs, and so forth give out medals - sometimes to themselves and cronies. I don't think this ruins our respect for duty, but any good thing can be corrupted, and dysfunctional government can have its few saving graces. Anyhow, I hope I've done justice to a difficult subject, and my apologies if I messed it up.
 
@@ -34,6 +34,6 @@ Good luck writing your speech.
 
 ------
 
-[Yes, You Have Free Will](./FreeWill.md)
+[You Can Have Free Will](./FreeWill.md)
 
 [Back to Ethics main page](./README.md)

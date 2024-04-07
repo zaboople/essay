@@ -2,7 +2,7 @@
 
 In order, I am each of these: idiot, pragmatist, individualist, heretic, and balancing act. In line with those ideals, I have created some essays generally related to "ethics" here.
 
-- [Yes, You Have Free Will](./FreeWill.md)
+- [You Can Have Free Will](./FreeWill.md)
 - [Natural Law](./NaturalLaw.md)
 - [Faith](./Faith.md)
 - [Evil and Suffering](EvilAndSuffering.md)
