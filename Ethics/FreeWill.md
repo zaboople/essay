@@ -38,7 +38,7 @@ Suppose I construct an omniscience machine<sup>2</sup>, a contraption of extraor
 
 Who is Zeno, and who is the archer? Who is saying "Your arrow can't possibly fly"?
 
-The universe that gives you determinism also refuses to give you omniscience, as if one fact is conditioned on the other. Perhaps our free will paradox might help us arrive at some greater theory of information, causality and otherwise some day, but it will never get us to the forbidden ground of omniscient prediction. If the history of the world is already written, it is locked away where we can never get to *most* of it - only some - and for all practical purposes that "most" doesn't exist - as *impractical* purposes go, those can wait for you to recover your self-esteem.
+The universe that gives you determinism also refuses to give you omniscience, as if one fact is conditioned on the other. Perhaps our free will paradox might help us arrive at some greater theory of information, causality and otherwise some day, but it will never get us to the forbidden ground of omniscient prediction. If the history of the world is already written, it is locked away where we can never get to most of it - only some - and for all practical purposes that "most" doesn't exist - as *impractical* purposes go, those can wait for you to recover your self-esteem.
 
 ## An Attempt At Real Perspective
 
