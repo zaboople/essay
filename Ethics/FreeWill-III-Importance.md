@@ -28,7 +28,7 @@ It seems that heroic figures sometimes speak of discomfort with their celebrated
 
 So we speak highly of heroic figures because they remind us of duty compelled by our own free will, and that we are all *capable* of summoning such courage, because this one person did so. That should be no surprise.
 
-Still, speaking justly to heroism is a complicated needle to thread. Of course dictators, monarchs, and so forth give out medals - sometimes to themselves and cronies. I don't think this ruins our respect for duty, but any good thing can be corrupted, and dysfunctional government can have its few saving graces. Anyhow, I hope I've done justice to a difficult subject, and my apologies if I messed it up. Good luck writing your speech.
+Still, speaking justly to heroism is a complicated needle to thread. Of course dictators, monarchs, and so forth give out medals - sometimes to themselves and cronies. I don't think this ruins our respect for duty, but any good thing can be corrupted, and dysfunctional government can have its few saving graces. Anyhow, I hope I've done justice to a difficult subject. Good luck writing your speech.
 
 ------
 
