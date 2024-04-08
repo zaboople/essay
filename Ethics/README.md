@@ -15,7 +15,7 @@ Secondary matters:
 - [Proposing a Constitutional Liberty Amendment](./LibertyAmendment.md)
 - [Artificial Intelligence & the Singularity](./AIAndSingularity.md)
 - [The Moral Versus The Miraculous](./MoralVsMiraculous.md)
-- [MoralityBasketball](./MoralityBasketball.md)
+- [Morality Basketball](./MoralityBasketball.md)
 - [Caste](./Caste.md)
 - [Is Capitalism Failing?](./IsCapitalismFailing.md)
 - [A Tale of Two Bureaucracies](./Bureaucracy.md)
