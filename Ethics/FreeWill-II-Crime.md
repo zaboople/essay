@@ -20,6 +20,6 @@ We can buy into this criminal justice ideology as strictly selfish and even athe
 
 [You Can Have Free Will](./FreeWill.md)
 
-[Free Will Part III: Why This Is So Important](./FreeWill-III-Importance.md)
+[Free Will Part III: Why This Is Important](./FreeWill-III-Importance.md)
 
 [Back to Ethics main page](./README.md)

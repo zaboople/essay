@@ -1,4 +1,4 @@
-# Free Will Part III: Why This Is So Important
+# Free Will Part III: Why This Is Important
 
 Understand that free will is about much more than "moral responsibility": meaning, trust, respect, purpose, duty, honor, even sacrifice; about your life being worthwhile, even in hardship. What is there to be admired in endurance when you have no choice whatsoever, only to endure, having not even the voluntary will to survive? How *does* one survive a meaningless life?
 
@@ -12,7 +12,7 @@ The second kind of person has become preoccupied with spite, and it's fairly evi
 
 The *third* kind of person is the least common. They mean to destroy your free will and grind it into powder. They are good at getting lots of media attention, presenting themselves as smart, persuasive and authoritative. The disturbing part is how they emphasize *compassion*, announcing, "Fear not! Nobody can ever be blamed for anything ever again! Nothing is your fault, forevermore." They go on to present an image of the kindest person making their gentlest, most patient effort to help and guide the listener or reader to a most-moral conclusion - actually a *post-moral* one.
 
-The most terrifying movie monster is the one that disguises themselves as a caring friend, to gain the victim's confidence - then blowtorches their soul with glee. You can insist I've watched too many of those movies. Still, I have seen evidence of a small number of innocent people who are lacking just enough in conviction that they fall into a trap that becomes a spiral of despair. People get hurt.
+The most terrifying movie monster is the one that disguises themselves as a caring friend, to gain the victim's confidence - then blowtorches their soul with glee. You can insist I've watched too many of those movies. Still, I have seen evidence of a small number of innocent people who are lacking just enough in conviction that they fall into a trap that becomes a spiral of despair.
 
 Why would someone claiming the best of intentions seek to destroy your humanity in scorched-earth fashion, yanking your free will out from under you, watching you drop straight into a bottomless pit at terminal velocity, shouting down at you, "I'm doing you a big favor, you know!" How could anyone mistake this idea of all-sins-forgiven as a ham-fisted replica of Christianity Without the Annoying God Parts for anything less than an emotional death sentence? What kind of delusional, head-smacking madness is this?
 
@@ -28,9 +28,7 @@ It seems that heroic figures sometimes speak of discomfort with their celebrated
 
 So we speak highly of heroic figures because they remind us of duty compelled by our own free will, and that we are all *capable* of summoning such courage, because this one person did so. That should be no surprise.
 
-Still, speaking justly to heroism is a complicated needle to thread. Of course dictators, monarchs, and so forth give out medals - sometimes to themselves and cronies. I don't think this ruins our respect for duty, but any good thing can be corrupted, and dysfunctional government can have its few saving graces. Anyhow, I hope I've done justice to a difficult subject, and my apologies if I messed it up.
-
-Good luck writing your speech.
+Still, speaking justly to heroism is a complicated needle to thread. Of course dictators, monarchs, and so forth give out medals - sometimes to themselves and cronies. I don't think this ruins our respect for duty, but any good thing can be corrupted, and dysfunctional government can have its few saving graces. Anyhow, I hope I've done justice to a difficult subject, and my apologies if I messed it up. Good luck writing your speech.
 
 ------
 
