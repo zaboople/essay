@@ -1,6 +1,8 @@
 # An Introduction, Or: Moral Decline Is Not A Perpetual Motion Machine
 
-In order, I am each of these: idiot, pragmatist, individualist, heretic, and balancing act. In line with those ideals, I have created some essays generally related to "ethics" here. Everything is written from an agnostic standpoint, but the influence & example of religion is unavoidable. If this work is off-putting to you, well, *you* try writing about such things without appearing to be either a nihilistic jerk *or* a sanctimonious holy roller; and yet it's a very reasonable project, to simply try not to dictate, but to *come to terms with* the big picture of right and wrong.
+In order, I am each of these: idiot, pragmatist, individualist, heretic, and balancing act. In line with those ideals, I have created some essays generally related to "ethics" here. Everything is written from an agnostic standpoint, but the influence & example of religion is unavoidable. There isn't any embrace of extremist political views.
+
+This all may well be one of the ultimate bad ideas. It seems like a very reasonable project to try to come to terms with the big picture of right and wrong, but it's actually hard to do without appearing to be either a nihilistic jerk *or* a sanctimonious holy roller. I'm allowing myself to be messy, but hopefully not too condescending, insensitive or outright rude.
 
 - [You Can Have Free Will](./FreeWill.md)
 - [Natural Law](./NaturalLaw.md)
@@ -21,7 +23,7 @@ Secondary matters:
 - [A Tale of Two Bureaucracies](./Bureaucracy.md)
 - [Reality Is a Jerk](./RealityIsAJerk.md)
 - [Moral Storytelling](./MoralStorytelling.md)
-- [The Human Animal](./HumanAnimal.md)
+
 
 ----
 
