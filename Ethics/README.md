@@ -23,7 +23,7 @@ Secondary matters:
 - [A Tale of Two Bureaucracies](./Bureaucracy.md)
 - [Reality Is a Jerk](./RealityIsAJerk.md)
 - [Moral Storytelling](./MoralStorytelling.md)
-
+- [The Human Animal](./HumanAnimal.md)
 
 ----
 
