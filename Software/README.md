@@ -21,6 +21,7 @@ These are essays on software, primarily computer programming, or you could say "
 - [Logging, Properly](Logging.md)
 - [Null And Optional](NullAndOptional.md)
 - [The Server Is Down!](TheServerIsDown.md)
+- [When Configuration Is Not Configuration](WhenConfiguration.md)
 - [Which Environment Am I In?](WhichEnvironment.md)
 
 ----
