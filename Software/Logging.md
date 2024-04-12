@@ -1,22 +1,20 @@
 # Logging, Properly
 
-Part I: The Essential Essentials
-
-Logging is essential and valuable, but often ruined through abuse.
+Logging is essential and valuable, but often ruined through abuse. Below are some general principles I follow, not as absolute mandates, but fairly good guidelines for a typical application development environment.
 
 ## Communicate effectively
 
-You write to be read, and if you want to be read, write log messages that get the reader's attention with good punctuation, capitalization, grammar, and so on, because you *respect* your reader. This is what _professional_ writers do, and as a programmer you are also a writer.
+You write to be read, and if you want to be read, write log messages that get the reader's attention with good punctuation, capitalization, grammar, and so on, because you *respect* your reader. This is what professional writers do, and as a programmer you are also a writer.
 
 In production systems, log messages should not be _cryptic_. This means they should not require intimate familiarity with the application's internal logic. Someone who understands the general technical & business layout of the land - say, a systems administrator, or even a manager - should be able to look at the log and get an approximate idea of "This is what is happening right now". They should be able to understand whether the software is humming along normally or gravely upset about something.
 
 ## Info & Error
 
-The two most important kinds of logging are "info" and "error". With these two you can do just about everything you _need_ to do, if you use them properly; if you _abuse_ them, you end up with more problems, and if you try to compensate for that abuse instead of solving the original problem, you will end up with even more problems again. The only difference between info & error is that we put a consistent signifier in our log lines, like "ERROR" or "INFO".
+The two most important kinds of logging are "info" and "error". With these two you can do just about everything you need to do, if you use them properly; if you _abuse_ them, you end up with more problems, and if you try to compensate for that abuse instead of solving the original problem, you will end up with even more problems again. The only difference between info & error is that we put a consistent signifier in our log lines, like "ERROR" or "INFO".
 
 We should designate "INFO" as a default signifier, to say, "This is just what's happening now, FYI." No alarm bells need go off.
 
-We _should_ designate "ERROR" to mean: This is broken, so fix this ASAP. Either the error message itself is an error - we shouldn't have logged one, but we did by accident - or there really is an underlying problem; either way, it means we have work to do. This allows us to proactively discover problems by just searching logs for "ERROR". We can even set up automated scanning and messaging to let us know.
+We should designate "ERROR" to mean: This is broken, so fix this ASAP. Either the error message itself is an error - we shouldn't have logged one, but we did by accident - or there really is an underlying problem; either way, it means we have work to do. This allows us to proactively discover problems by just searching logs for "ERROR". We can even set up automated scanning and messaging to let us know.
 
 All of this sounds simple at first, but our usage of "ERROR" is only useful if we are disciplined about it. Things fall apart when someone says, "Well, that ERROR is an error, yes, but, well... I don't have time right now, and hey, if it was really a _problem_, somebody would call us and complain, or something, so we'll just have to let it go for now..." As this happens over and over, "ERROR" loses any meaning, and we have no way to say, "Something is definitely wrong." We've effectively retold the fable of The Boy Who Cried "ERROR". Now we can't be proactive about problems; we have to wait until they escalate into full-blown fire-breathing emergencies, wait for someone to call, and then sift through the ERROR's until we find out what is so much worse than usual - of course it may be that the problem wasn't logged at all.
 
