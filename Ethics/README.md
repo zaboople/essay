@@ -24,7 +24,6 @@ Secondary matters:
 - [Reality Is a Jerk](./RealityIsAJerk.md)
 - [Moral Storytelling](./MoralStorytelling.md)
 
-
 ----
 
 [Back to Essays main page](../README.md)
