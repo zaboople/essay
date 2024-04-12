@@ -17,8 +17,11 @@ These are essays on software, primarily computer programming, or you could say "
 - [Constants at the Top](ConstantsAtTheTop.md)
 - [Dev-Ops](DevOps.md)
 - [Empty List & 200, Not 404](EmptyList200Not404.md)
+- [Is Multithreading Too Hard?](IsMultithreadingTooHard.md)
+- [Logging, Properly](Logging.md)
 - [Null And Optional](NullAndOptional.md)
 - [The Server Is Down!](TheServerIsDown.md)
+- [When Configuration Is Not Configuration](WhenConfiguration.md)
 - [Which Environment Am I In?](WhichEnvironment.md)
 
 ----
