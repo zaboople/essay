@@ -8,6 +8,14 @@ You write to be read, and if you want to be read, write log messages that get th
 
 In production systems, log messages should not be _cryptic_. This means they should not require intimate familiarity with the application's internal logic. Someone who understands the general technical & business layout of the land - say, a systems administrator, or even a manager - should be able to look at the log and get an approximate idea of "This is what is happening right now". They should be able to understand whether the software is humming along normally or gravely upset about something.
 
+## Have lots of log space
+
+Often I find that it's impossible to gather adequate information because we've shortchanged the logging storage system with inadequate disk space. This is rather tragic given that disk storage is usually the cheapest hardware problem.
+
+## Text is Powerful
+
+I write software using text because text is language, and language has power. I log text messages because still that text has power. I can use zgrep and maybe a dash of perl/gawk/python/etc to surf logs and gather data, provided it has a decently predictable structure - no it doesn't actually have to be formal JSON or XML.
+
 ## Info & Error
 
 The two most important kinds of logging are "info" and "error". With these two you can do just about everything you need to do, if you use them properly; if you _abuse_ them, you end up with more problems, and if you try to compensate for that abuse instead of solving the original problem, you will end up with even more problems again. The only difference between info & error is that we put a consistent signifier in our log lines, like "ERROR" or "INFO".
@@ -34,18 +42,12 @@ There are *some* command-line tools in Linux and other operating systems that of
 
 Some logging libraries add not only a DEBUG signifier, but a TRACE as well, and maybe a few others. I can't even tell you the difference, and am hard-pressed to care.
 
-## Have lots of log space
-
-Often I find that it's impossible to gather adequate information because we've shortchanged the logging storage system with inadequate disk space. This is rather tragic given that disk storage is the cheapest thing.
-
-## Text is Powerful
-
-I write software using text because text is language, and language has power. I log text messages because still that text has power. I can use zgrep and maybe a dash of perl/gawk/python/etc to surf logs and gather data, provided it has a decently predictable structure - no it doesn't actually have to be formal JSON or XML.
-
 ## Fancy online log databases
 
 A lot of people talk about the "ELK stack", which involves a very fancy method of collecting log data and shipping it off to a database with a web front end that makes it "easy" to query large volumes of data. This is yet another idea that sounds great in principle, yet: When I ask, "How do I get to logging information?" people are happy to tell me _where_ to go, but then it turns out nobody knows how to use it. Only one or two people can figure out the user interface and its highly obscure query engine. Worse yet, it turns out the database is collapsing on a regular basis and people are struggling to keep it running consistently, which means one of our software management systems has its own management problems (should it log the errors into itself?)
 
-Software engineering often involves a progression from simple solutions that work well at small scale to elaborate solutions that work better at large scale. We have to make cost judgements about over-simplifying vs. over-elaborating and how well something fits our organization. A lot of the problems I've seen are likely caused by small organizations trying to act like gigantic organizations that can afford the expense of managing complex meta-software.
+Software engineering often involves a progression from simple solutions that work well at small scale to elaborate solutions that work better at large scale. We have to make cost judgements about over-simplifying vs. over-elaborating and how well something fits our organization. A lot of the problems I've seen are likely caused by small organizations trying to act like gigantic organizations that can afford the expense of managing complex meta-software. So it's not as if ELK is always wrong, just wrong for a lot of smaller operations.
 
 ----
+
+[Back to Software main page](./README.md)
