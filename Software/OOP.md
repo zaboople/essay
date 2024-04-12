@@ -1,10 +1,8 @@
 # OOP For Beginners, or, Why OOP Is Useful
 
-A long time ago I was talking to a very smart and experienced computer programmer who lamented to me that no matter how much he tried, OOP just didn't make sense to him, and this really bothered me: I knew good and well he was capable, so what eluded him? It's hard to say for sure, but I think he was actually struggling with this question:
+A long time ago I was talking to a very smart and experienced computer programmer who lamented to me that no matter how much he tried, OOP just didn't make sense to him, and this really bothered me: I knew good and well he was capable, so what eluded him? It's hard to say for sure, but I think he was actually struggling with this question: *Why bother?*
 
-What is this any good for?
-
-The basic answer is: Scope control. OOP is aesthetically appealing to a lot of programmers, leading to all sorts of nonsensical explanations, but scope control is where it really wins.
+The basic answer is: Scope control. OOP is aesthetically appealing to a lot of programmers, leading to all sorts of nonsensical explanations, but scope control is where it really wins. If you can understand that much, I think you'll "get it" - although unfortunately I never tried this with my friend from a long time ago.
 
 This is also meant as a detailed explanation for experienced programmers who have had misgivings about OOP, largely because they've put up with bad programming habits from peers. The message here is that there *is* value in OOP when it's used sensibly, as explained below.
 
