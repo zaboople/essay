@@ -1,8 +1,8 @@
 # OOP For Beginners, or, Why OOP Is Useful
 
-A long time ago I was talking to a very smart and experienced computer programmer who lamented to me that no matter how much he tried, OOP just didn't make sense to him, and this really bothered me: I knew good and well he was capable, so what eluded him? It's hard to say for sure, but I think he was actually struggling with this question: *Why bother?*
+A long time ago I was talking to a very smart and experienced computer programmer who lamented to me that no matter how much he tried, OOP just didn't make sense to him, and this really bothered me: I knew good and well he was capable, so what eluded him? In hindsight it's hard to say for sure; C++ might have been half the problem, but I think he was actually struggling with this question: *Why bother?*
 
-The basic answer is: Scope control. OOP is aesthetically appealing to a lot of programmers, leading to all sorts of nonsensical explanations, but scope control is where it really wins. If you can understand that much, I think you'll "get it" - although unfortunately I never tried this with my friend from a long time ago.
+The basic answer is: Scope control. OOP is aesthetically appealing to a lot of programmers, leading to all sorts of nonsensical explanations, but scope control is where it really wins. If you can understand that much, I think you'll "get it".
 
 This is also meant as a detailed explanation for experienced programmers who have had misgivings about OOP, largely because they've put up with bad programming habits from peers. The message here is that there *is* value in OOP when it's used sensibly, as explained below.
 
@@ -79,7 +79,7 @@ This last change attaches an `insert()` function to the struct itself, allowing 
 
 This `st.insert()` creates a kind of namespacing; when reading this, I know where to look for `insert()` (as does the compiler) because the syntax clearly indicates that it is part of the SuperTree struct itself. If there are other inserts in scope, we've eliminated scope ambiguity about which one is being used. This is our most complex syntax enhancement so far, but it's still quite reasonable.
 
-Now we can call SuperTree a "class" and `insert()` a "method" as per object-oriented parlance, and we've achieved the bare minimum and essence of OOP. We could also use `private` on some of these methods to enforce their scope down to the class itself, which is a common practice; for example we might have a `checkInit()` method that verifies certain initialization parameters, called by only some of the other methods in our class.
+Now we can call SuperTree a "class", and call `insert()` a "method" as per object-oriented parlance, and we've achieved the essence of OOP. We could also use `private` on some of these methods to enforce their scope down to the class itself, which is a common practice; for example we might have a `checkInit()` method that verifies certain initialization parameters, called by only some of the other methods in our class.
 
 Additional features like method overloading and inheritance are interesting and worth having, but less important.
 
