@@ -72,7 +72,7 @@ Let us suggest one more change to our vanilla programming language:
           function void insert(string value){...}
       }
 
-This last change attaches an `insert()` function to the struct itself. We would also like to allow a new way of calling the function:
+This last change attaches an `insert()` function to the struct itself, allowing a new way of calling the function:
 
         SuperTree st=new SuperTree;
         st.insert(st, "hello")
@@ -81,7 +81,7 @@ This `st.insert()` creates a kind of namespacing; when reading this, I know wher
 
 Now we can call SuperTree a "class" and `insert()` a "method" as per object-oriented parlance, and we've achieved the bare minimum and essence of OOP. We could also use `private` on some of these methods to enforce their scope down to the class itself, which is a common practice; for example we might have a `checkInit()` method that verifies certain initialization parameters, called by only some of the other methods in our class.
 
-Additional features like method overloading and inheritance are interesting and worth learning about, but less important.
+Additional features like method overloading and inheritance are interesting and worth having, but less important.
 
 ## Bonus Rant About Bad OOOP
 
@@ -95,13 +95,11 @@ The "All Programming is Simulation" thesis made some sense in the mid-20th centu
 
 In fact the advance of technology today is arguably predicated on our ability to move beyond physical metaphors and use whatever intellectual devices are handy - perhaps even the existing computational abstractions that we already have. However, this shift does not render OOP moot, because modelling & simulation was never the key insight of OOP anyhow.
 
-Perhaps an example of the flaws of the "everything is simulation" approach would help here:
-
-Once I was working on a little homemade video game which required a virtual deck of cards, and of course the deck needed shuffling, and I thought, well, what *is* the most efficient way to do that shuffling operation?
+Perhaps an example of the flaws of the "everything is simulation" approach would help here: Once I was working on a little homemade video game which required a virtual deck of cards, and of course the deck needed shuffling, and I thought, well, what *is* the most efficient way to do that shuffling operation?
 
 Turns out Donald Knuth solved this problem in the 1960's: You can do the shuffle with a single array in about 6 or 7 lines of your favorite programming language, if you have a reasonably effective random() function. The algorithm works out to O(N) and uses no extra memory or linked lists.
 
-However: Research is hard, so before landing on Mr Knuth's solution, I came upon a message board for C++ and Object Pascal programmers, and so forth, where this question came up and inspired a lengthy discussion. The group quickly posited: Well, if I put an actual deck of cards in front of you right now - sans computer - how would you shuffle it? Thus ensued much discussion about the "riffle shuffle" and "cutting the deck" and various physical mechanics that come into play. Eventually someone pointed out that mathematicians proved you need at least 7 consecutive riffle shuffles to obtain a proper random sort. Before long it was apparent that the solution would be at least hundreds of lines and highly error prone, all thanks to the all-programming-is-simulation heuristic.
+However: Research is hard, so before landing on Mr Knuth's solution, I came upon a message board for C++ and Object Pascal programmers, where this same question came up and inspired a lengthy discussion. The group quickly posited: Well, if I put an actual deck of cards in front of you right now - sans computer - how would you shuffle it? Thus ensued much discussion about the "riffle shuffle" and "cutting the deck" and various physical mechanics that come into play. Eventually someone pointed out that mathematicians proved you need at least 7 consecutive riffle shuffles to obtain a proper random sort. Before long it was apparent that the solution would be at least hundreds of lines and highly error prone, all thanks to the all-programming-is-simulation heuristic.
 
 Put simply, I don't care about simulation and modelling unless I'm involved in work that actually requires such. OOP would be a lot more useful if everyone stopped trying to force this ideal onto every project they encounter, but that may take a few more decades.
 
