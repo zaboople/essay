@@ -117,7 +117,7 @@ However: Research is hard, so before landing on the *easy* solution, I came upon
 
 Put simply, I don't care about simulation and modelling unless I'm involved in work that actually requires such. OOP would be a lot more useful if everyone stopped trying to force this fantasy onto every project they encounter, but that may take a few more decades.
 
-## Footnotes
+#### Footnotes
 
 <sup>1</sup> One of my biggest complaints about Google Go is that it *only* has directory privacy; there is no concept of file-private! Most Java programmers are unaware of directory-private, or don't care, and to be honest, if I had to pick *only one*, file-private is more important. Either way, it honestly makes a lot of sense to have both, and it's dissapointing Google's idea of progress is so regressive - back to that theme again...
 
