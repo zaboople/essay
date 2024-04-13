@@ -19,7 +19,7 @@ Suppose we've written a big program in vanilla with 10,000 functions, and notice
 
 This tells the compiler that `foo()` can only be accessed by other functions in the same file (afile.v). This makes life easier by whittling the scope of `foo()` down from "the world" to "just here", to give us an elementary level of scope control. This makes our program a little bit more straightforward, with a minimum of additional complexity.
 
-We could enhance this concept of just *file* privacy and add *directory* privacy, with something like a `dir` keyword, so that a function can only be called from files in the same directory, to specify wider but still limited scope. This is also a useful tactic, but for simplicity I'll leave directory-private out of my examples[<sup>1</sup>](#Footnotes).
+We could enhance this concept of just *file* privacy and add *directory* privacy, with something like a `dir` keyword, so that a function can only be called from files in the same directory, to specify wider but still limited scope. It's quite useful, but for simplicity I'll leave directory-private out of my examples[<sup>1</sup>](#Footnotes).
 
 ## Structs
 
