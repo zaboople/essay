@@ -12,7 +12,7 @@ We'll start with a language I call "vanilla", which is just an ordinary trifling
 
 ## Private
 
-Suppose we've written a big program in vanilla with 10,000 functions, and notice a problem: It's kind of hard to reason about any given function, because it's hard to reason about its context: What calls this function? I can find out using global search (e.g. recursive grep) but that gets old after a while. We might recognize that while all functions are implicitly "global", a lot of them don't *need* to be, so how about we introduce a keyword, "private":
+Suppose we've written a big program in vanilla with 10,000 functions, and notice a problem: It's kind of hard to reason about any given function, because it's hard to reason about its context: What calls this function? I can find out using global search (e.g. recursive `grep`) but that gets old after a while. We might recognize that while all functions are implicitly "global", a lot of them don't *need* to be, so how about we introduce a keyword, "private":
 
     afile.v:
         private int function foo(string s){....}
