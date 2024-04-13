@@ -81,6 +81,10 @@ This last change attaches our manipulation functions to the struct itself, allow
 
 This `st.insert()` creates a kind of namespacing; when reading this, I know where to look for `insert()` (as does the compiler) because the syntax clearly indicates that it is part of the SuperTree struct itself. If there are other inserts in scope, we've eliminated scope ambiguity about which one is being used. This is our most complex syntax enhancement so far, but it's still quite reasonable.
 
+When functions are attached to a struct like this, they are often called "methods" instead of "functions", but it doesn't really matter what you call them.
+
+## Final Transition
+
 Finally, I'll add a private function to SuperTree:
 
     class SuperTree {
@@ -93,7 +97,7 @@ Finally, I'll add a private function to SuperTree:
         private function void checkInit(){...}
     }
 
-This `checkInit()` method could be used by the "public" methods to verify certain initialization parameters and so forth. At this point, I'm no longer thinking "private" in terms of "private to this file" but "private to this *class*". Yes, I've switched the keyword `struct` to `class` just to keep up with the cool kids. My functions are really "methods" now, but we never seem to use "method" as a keyword.
+This `checkInit()` method could be used by the "public" methods to verify certain initialization parameters and so forth. At this point, I'm no longer thinking "private" in terms of "private to this file" but "private to this *class*". Yes, I've switched the keyword `struct` to `class` just to keep up with the cool kids.
 
 Thus: We've achieved the essence of OOP. Additional features like constructors, method overloading and inheritance are  worth learning about and using, but less important.
 
