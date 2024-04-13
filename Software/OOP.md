@@ -4,7 +4,7 @@ A long time ago I was talking to a very smart and experienced computer programme
 
 The basic answer is: Scope control. OOP is aesthetically appealing to a lot of programmers, leading to all sorts of nonsensical explanations, but scope control is where it really wins. If you can understand that much, I think you'll "get it".
 
-This is also meant as a detailed explanation for experienced programmers who have had misgivings about OOP, largely because they've put up with bad programming habits from peers. The message here is that there *is* value in OOP when it's used sensibly, as explained below.
+This is also a detailed explanation for experienced programmers who have had misgivings about OOP, largely because they've put up with bad programming habits from overzealous peers. There *is* value in OOP when it's used sensibly, as explained below.
 
 ## Vanilla
 
@@ -61,9 +61,7 @@ Suppose we are a new programmer on the team, and we encounter SuperTree here:
             insert(st, "hello")
         }
 
-How do we know where to go looking for `insert()`? It would make sense to put insert() in the same file as SuperTree, but is it there? What if there are other insert() functions in our scope, since it's such a common name - will our compiler get confused by that?
-
-Let us suggest one more change to our vanilla programming language:
+How do we know where to go looking for `insert()`? It would make sense to put insert() in the same file as SuperTree, but is it there? What if there are other insert() functions in our scope, since it's such a common name - will our compiler get confused by that? Let's make one more change to our programming language:
 
     struct SuperTree {
         private int[] indices
@@ -74,12 +72,12 @@ Let us suggest one more change to our vanilla programming language:
         function void sort(SuperTree tr, boolean forwardsBackwards){....}
     }
 
-This last change attaches our manipulation functions to the struct itself, allowing a new way of calling `insert()`:
+This last change attaches our manipulation functions to the struct itself. This gives us a new way to call `insert()`:
 
             SuperTree st=new SuperTree;
             st.insert(st, "hello")
 
-This `st.insert()` creates a kind of namespacing; when reading this, I know where to look for `insert()` (as does the compiler) because the syntax clearly indicates that it is part of the SuperTree struct itself. If there are other inserts in scope, we've eliminated scope ambiguity about which one is being used. This is our most complex syntax enhancement so far, but it's still quite reasonable.
+This `st.insert()` creates a kind of namespacing; when reading this, I know where to look for `insert()` (as does the compiler) because the syntax clearly indicates such. If there are other inserts in scope, we've eliminated scope ambiguity about which one is being used. This is our most complex syntax enhancement so far, but it's still quite reasonable.
 
 When functions are attached to a struct like this, they are often called "methods" instead of "functions", but it doesn't really matter what you call them.
 
@@ -97,9 +95,9 @@ Finally, I'll add a private function to SuperTree:
         private function void checkInit(){...}
     }
 
-This `checkInit()` method could be used by the "public" methods to verify certain initialization parameters and so forth. At this point, I'm no longer thinking "private" in terms of "private to this file" but "private to this *class*". Yes, I've switched the keyword `struct` to `class` just to keep up with the cool kids.
+This `checkInit()` method could be used by the "public" methods to verify certain initialization parameters and so forth. At this point, I'm no longer thinking "private" in terms of "private to this file" but "private to this *class*", both for variables and functions/methods. Yes, I've switched the keyword `struct` to `class` just to keep up with the cool kids. In a language like Java programmers usually keep classes and files 1-to-1, but they don't necessarily have to.
 
-Thus: We've achieved the essence of OOP. Additional features like constructors, method overloading and inheritance are  worth learning about and using, but less important.
+Thus: We've achieved the essence of OOP. Additional features like constructors, method overloading and inheritance are  worth learning about and using, but less important. If you think of OOP in terms of scope control, things get a lot more straightforward and practical. Note that some things need wide-open scope, and there's no point in trying to restrict them; OOP is just a way to limit scope to what is necessary, providing guarantees that make it easier for the reader to think about context.
 
 ## Bonus Rant About Bad OOOP
 
