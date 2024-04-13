@@ -8,7 +8,7 @@ This is also a detailed explanation for experienced programmers who have had mis
 
 ## Vanilla
 
-We'll start with a language I call "vanilla", which is just an ordinary trifling language that has functions, character strings, integers, floating point numbers, and structs. We'll give it a compiler and reasonably strict types, so you can't just throw "var" or "def" on everything and expect the world to put up with you; and implicit pointers for simplicity. Vanilla is pretty much what any old fogey would expect of a *non*-OOP language, but we'll slowly upgrade it to minimalist but sufficient OOP capability.
+We'll start with a language I call "vanilla", which is just an ordinary trifling language that has functions, character strings, integers, floating point numbers, basic arithmetic and structs. We'll give it a compiler and reasonably strict types, so you can't just throw "var" or "def" on everything and expect the world to put up with you; and implicit pointers for simplicity. Vanilla is pretty much what any old fogey would expect of a *non*-OOP language, but we'll slowly upgrade it to minimalist but sufficient OOP capability.
 
 ## Private
 
@@ -17,7 +17,7 @@ Suppose we've written a big program in vanilla with 10,000 functions, and notice
     afile.v:
         private int function foo(string s){....}
 
-This tells the compiler that that `foo()` can only be accessed by other functions in the same file (afile.v). How is this going to make my life easier? By whittling the scope of foo down from "the world" to "just here", I've given us an elementary level of *scope control*. This makes our program a little bit more straightforward, with a minimum of additional complexity.
+This tells the compiler that that `foo()` can only be accessed by other functions in the same file (afile.v). How is this going to make my life easier? By whittling the scope of `foo()` down from "the world" to "just here", I've given us an elementary level of *scope control*. This makes our program a little bit more straightforward, with a minimum of additional complexity.
 
 We could also enhance this concept of *file* privacy to add *directory* privacy, with something like a `dir` keyword, so that our function can only be called from files in the same directory. This is also a useful scope control tactic, but for simplicity I'll leave directory-private out of my examples[<sup>1</sup>](#Footnotes).
 
@@ -30,7 +30,6 @@ Suppose we have a struct called "SuperTree", which is some sort of fancy tree th
             int[] indices
             int[] otherIndices
             string[] values
-            //etc...
         }
         function void insert(SuperTree tr, string value){...}
         function string[] find(SuperTree tr, string pattern){....}
@@ -44,7 +43,6 @@ What if we brought that "private" thing in here as well:
           private int[] indices
           private int[] otherIndices
           private string[] values
-          //etc...
       }
 
 Same as before: the private things can only be referenced by functions in the same file. Does it make my life easier? In this case, yes, and yet again because of scope control. Some structs are trivial enough that no scope control is needed, but in this case, it makes sense. In fact, it *really* makes sense because mutable state - the stuff hiding in our struct variables - is very tricky, and while some functional-programming obsessives want such outlawed entirely, scope control is a very pragmatic mitigation for the mutable state problem.
@@ -111,7 +109,7 @@ The "All Programming is Simulation" thesis made some sense in the mid-20th centu
 
 In fact the advance of technology today is predicated on our ability to move beyond physical metaphors and use whatever symbolic devices are handy, i.e. the existing computational abstractions that we already have. However, this shift does not render OOP moot, because modelling & simulation was never the great enlightening insight of OOP anyhow; again, that insight is *scope control*.
 
-Perhaps an example of the flaws of the "everything is simulation" approach would help here: Once I was working on a little homemade video game which required a virtual deck of cards, and of course the deck needed shuffling, and I thought, well, what *is* the most efficient way to do that? Turns out this problem was solved [in the 1960's](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle): You can do the shuffle *in place* with a single plain-jane array in about 6 or 7 lines of your favorite programming language, if you have a good-quality random() function. The algorithm works out to O(N) and uses no extra memory other than a couple of integer variables.
+Perhaps an example of the flaws of the "everything is simulation" approach would help here: Once I was working on a little homemade video game which required a virtual deck of cards, and of course the deck needed shuffling, and I thought, well, what *is* the most efficient way to do that? Turns out this problem was solved [in the 1960's](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle): You can do the shuffle *in place* with a single plain-jane array in about 6 or 7 lines of your favorite programming language, if you have a good-quality random() function. The algorithm works out to O(N) and uses minimal extra memory for a handful of temp variables.
 
 However: Research is hard, so before landing on the *easy* solution, I came upon a message board for C++ and Object Pascal programmers, where this same question came up and inspired a lengthy discussion. The group quickly posited: Well, if I put an actual deck of cards in front of you right now - sans computer - how would you shuffle it? Thus ensued much discussion about the "riffle shuffle", "cutting the deck" and various physical mechanics. Eventually someone pointed out that mathematicians proved you need at least 7 consecutive riffle shuffles to obtain a proper random sort. The resulting solution would be at least hundreds of lines, inefficient and error-prone, all thanks to the all-programming-is-simulation heuristic. Meanwhile, the easy solution had been available for decades. This is how we regress rather than progress.
 
