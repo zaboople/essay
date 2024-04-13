@@ -47,7 +47,7 @@ What if we brought that "private" thing in here as well:
           //etc...
       }
 
-Same as before: the private things can only be referenced by functions in the same file. Does it make my life easier? In this case, yes, and yet again because of scope control. Some structs are trivial enough that no scope control is needed, but in this case, it makes sense.
+Same as before: the private things can only be referenced by functions in the same file. Does it make my life easier? In this case, yes, and yet again because of scope control. Some structs are trivial enough that no scope control is needed, but in this case, it makes sense. In fact, it *really* makes sense because mutable state - the stuff hiding in our struct variables - is very tricky, and while some functional-programming obsessives want such outlawed entirely, scope control is a very pragmatic mitigation for the mutable state problem.
 
 Yet again, we've made the program a little bit more straightforward without any serious cognitive overload. We just need one more thing to get to object-oriented programming proper.
 
@@ -61,7 +61,7 @@ Suppose we are a new programmer on the team, and we encounter SuperTree here:
             insert(st, "hello")
         }
 
-How do we know where to go looking for `insert()`? It would make sense to put insert() in the same file as SuperTree, but is it there? What if there are other insert() functions in our scope, since it's such a common name - will our compiler get confused by that? Let's make one more change to our programming language:
+How do we know where to go looking for `insert()`? It might make sense to look first in SuperTree.v, but we have no guarantee. What if there are other insert() functions in our scope, since it's such a common name - will our compiler get confused by that? Let's make one more change to our programming language:
 
     struct SuperTree {
         private int[] indices
@@ -79,7 +79,7 @@ This last change attaches our manipulation functions to the struct itself. This 
 
 This `st.insert()` creates a kind of namespacing; when reading this, I know where to look for `insert()` (as does the compiler) because the syntax clearly indicates such. If there are other inserts in scope, we've eliminated scope ambiguity about which one is being used. This is our most complex syntax enhancement so far, but it's still quite reasonable.
 
-When functions are attached to a struct like this, they are often called "methods" instead of "functions", but it doesn't really matter what you call them.
+When functions are attached to a struct like this, they are often called "methods" instead of "functions", but it doesn't really matter what you call them (some people still say "procedures").
 
 ## Final Transition
 
@@ -111,9 +111,9 @@ The "All Programming is Simulation" thesis made some sense in the mid-20th centu
 
 In fact the advance of technology today is predicated on our ability to move beyond physical metaphors and use whatever symbolic devices are handy, i.e. the existing computational abstractions that we already have. However, this shift does not render OOP moot, because modelling & simulation was never the great enlightening insight of OOP anyhow; again, that insight is *scope control*.
 
-Perhaps an example of the flaws of the "everything is simulation" approach would help here: Once I was working on a little homemade video game which required a virtual deck of cards, and of course the deck needed shuffling, and I thought, well, what *is* the most efficient way to do that shuffling operation? Turns out this problem was solved [by Richard Durstenfeld in the 1960's](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle): You can do the shuffle with a single array in about 6 or 7 lines of your favorite programming language, if you have a reasonably effective random() function. The algorithm works out to O(N) and uses no extra memory or linked lists.
+Perhaps an example of the flaws of the "everything is simulation" approach would help here: Once I was working on a little homemade video game which required a virtual deck of cards, and of course the deck needed shuffling, and I thought, well, what *is* the most efficient way to do that shuffling operation? Turns out this problem was solved [by Richard Durstenfeld in the 1960's](https://en.wikipedia.org/wiki/Fisher%E2%80%93Yates_shuffle): You can do the shuffle *in place* with a single array in about 6 or 7 lines of your favorite programming language, if you have a good-quality random() function. The algorithm works out to O(N) and uses no extra memory or linked lists.
 
-However: Research is hard, so before landing on the *easy* solution, I came upon a message board for C++ and Object Pascal programmers, where this same question came up and inspired a lengthy discussion. The group quickly posited: Well, if I put an actual deck of cards in front of you right now - sans computer - how would you shuffle it? Thus ensued much discussion about the "riffle shuffle" and "cutting the deck" and various physical mechanics that come into play. Eventually someone pointed out that mathematicians proved you need at least 7 consecutive riffle shuffles to obtain a proper random sort. Before long it was apparent that the solution would be at least hundreds of lines, inefficient and highly error prone, all thanks to the all-programming-is-simulation heuristic. Meanwhile, the easy solution had been available for *decades*. This is how we regress rather than progress.
+However: Research is hard, so before landing on the *easy* solution, I came upon a message board for C++ and Object Pascal programmers, where this same question came up and inspired a lengthy discussion. The group quickly posited: Well, if I put an actual deck of cards in front of you right now - sans computer - how would you shuffle it? Thus ensued much discussion about the "riffle shuffle", "cutting the deck" and various physical mechanics. Eventually someone pointed out that mathematicians proved you need at least 7 consecutive riffle shuffles to obtain a proper random sort. The solution would be at least hundreds of lines, inefficient and error prone, all thanks to the all-programming-is-simulation heuristic. Meanwhile, the easy solution had been available for *decades*. This is how we regress rather than progress.
 
 Put simply, I don't care about simulation and modelling unless I'm involved in work that actually requires such. OOP would be a lot more useful if everyone stopped trying to force this fantasy onto every project they encounter, but that may take a few more decades.
 
