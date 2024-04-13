@@ -4,7 +4,7 @@ A long time ago I was talking to a very smart and experienced computer programme
 
 The basic answer is: Scope control. OOP is aesthetically appealing to a lot of programmers, leading to all sorts of nonsensical explanations, but scope control is where it really wins. If you can understand that much, I think you'll "get it".
 
-This is also a detailed explanation for experienced programmers who have had misgivings about OOP, largely because they've put up with bad programming habits from overzealous peers. There *is* value in OOP when it's used sensibly, as explained below.
+This is also a detailed explanation for experienced programmers who have misgivings about OOP, maybe because they've put up with bad programming habits from overzealous peers. There *is* value in OOP when it's used sensibly, as explained below.
 
 ## Vanilla
 
