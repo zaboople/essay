@@ -17,7 +17,7 @@ Suppose we've written a big program in vanilla with 10,000 functions, and notice
     afile.v:
         private int function foo(string s){....}
 
-This tells the compiler that that foo() can only be accessed by other functions in the same file (afile.v). How is this going to make my life easier? By whittling the scope of foo() down from "the world" to "just here". I've given us an elementary level of *scope control*. This makes our program a little bit more straightforward, with a minimum of additional complexity.
+This tells the compiler that that `foo()` can only be accessed by other functions in the same file (afile.v). How is this going to make my life easier? By whittling the scope of foo down from "the world" to "just here", I've given us an elementary level of *scope control*. This makes our program a little bit more straightforward, with a minimum of additional complexity.
 
 We could also enhance this concept of *file* privacy to add *directory* privacy, with something like a `dir` keyword, so that our function can only be called from files in the same directory; in Java this is called "default" access because it's assigned by the *absence* of a keyword (confusing, no?). This is a useful scope control tactic as well, but for simplicity I'll leave directory-private out of my examples[<sup>1</sup>](#Footnotes).
 
