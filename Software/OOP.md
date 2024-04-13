@@ -8,18 +8,18 @@ This is also meant as a detailed explanation for experienced programmers who hav
 
 ## Vanilla
 
-We'll start with a language I call "vanilla", which is just an ordinary trifling language that has functions, character strings, integers, floating point numbers, and structs. We'll give it a compiler and reasonably strict types, so you can't just throw "var" or "def" on everything and expect the world to put up with you. Vanilla is pretty much what any old fogey would expect (we can give it implicit and/or explicit pointers, but that's not the most important thing).
+We'll start with a language I call "vanilla", which is just an ordinary trifling language that has functions, character strings, integers, floating point numbers, and structs. We'll give it a compiler and reasonably strict types, so you can't just throw "var" or "def" on everything and expect the world to put up with you. We'll give implicit pointers like Java, for simplicity. Vanilla is pretty much what any old fogey would expect of a *non*-OOP language, but we'll slowly upgrade it to minimalist but sufficient OOP.
 
 ## Private
 
-Suppose we've written a program in vanilla, and it has 10,000 functions, and noticed a problem: It's kind of hard to reason about any given function, because it's hard to reason about its context: What calls this function? I can find out using global search (e.g. recursive grep) but that gets old after a while. We might recognize that while all functions are implicitly "global", a lot of them don't *need* to be, so how about we introduce a keyword, "private":
+Suppose we've written a big program in vanilla with 10,000 functions, and notice a problem: It's kind of hard to reason about any given function, because it's hard to reason about its context: What calls this function? I can find out using global search (e.g. recursive grep) but that gets old after a while. We might recognize that while all functions are implicitly "global", a lot of them don't *need* to be, so how about we introduce a keyword, "private":
 
     afile.v:
         private int function foo(string s){....}
 
 This tells the compiler that that foo() can only be accessed by other functions in the same file (afile.v). How is this going to make my life easier? By whittling the scope of foo() down from "the world" to "just here". I've given us an elementary level of *scope control*. This makes our program a little bit more straightforward, with a minimum of additional complexity.
 
-We could also enhance this to add *directory* privacy as a keyword, so that our function can only be called from files in the same directory; in Java this is called "default" access because it's assigned by the *absence* of a keyword (confusing, no?). For simplicity, however, I'll leave this out of my examples.
+We could also enhance this to add *directory* privacy with something like a `dir` keyword, so that our function can only be called from files in the same directory; in Java this is called "default" access because it's assigned by the *absence* of a keyword (confusing, no?). This is a useful scope control tactic as well, but for simplicity I'll leave directory-private out of my examples.
 
 ## Structs
 
@@ -74,8 +74,8 @@ Let us suggest one more change to our vanilla programming language:
 
 This last change attaches an `insert()` function to the struct itself, allowing a new way of calling the function:
 
-        SuperTree st=new SuperTree;
-        st.insert(st, "hello")
+            SuperTree st=new SuperTree;
+            st.insert(st, "hello")
 
 This `st.insert()` creates a kind of namespacing; when reading this, I know where to look for `insert()` (as does the compiler) because the syntax clearly indicates that it is part of the SuperTree struct itself. If there are other inserts in scope, we've eliminated scope ambiguity about which one is being used. This is our most complex syntax enhancement so far, but it's still quite reasonable.
 
