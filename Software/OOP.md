@@ -1,6 +1,6 @@
 # OOP For Beginners, or, Why OOP Is Useful
 
-A long time ago I was talking to a very smart and experienced computer programmer who lamented to me that no matter how much he tried, OOP just didn't make sense to him, and this really bothered me: I knew good and well he was capable, so what eluded him? In hindsight it's hard to say for sure; C++ might have been half the problem, but I think he was actually struggling with this question: *Why bother?*
+A long time ago I was talking to a very smart and experienced computer programmer who lamented that no matter how much he tried, OOP just didn't make sense to him. This really bothered me: I knew good and well he was capable, so what eluded him? In hindsight it's hard to say for sure; C++ might have been half the problem, but I think he was actually struggling with this question: *Why bother?*
 
 The basic answer is: Scope control. OOP is aesthetically appealing to a lot of programmers, leading to all sorts of nonsensical explanations, but scope control is where it really wins. If you can understand that much, I think you'll "get it".
 
@@ -8,7 +8,7 @@ This is also meant as a detailed explanation for experienced programmers who hav
 
 ## Vanilla
 
-We'll start with a language I call "vanilla", which is just an ordinary trifling language that has functions, character strings, integers, floating point numbers, and structs. We'll give it a compiler and reasonably strict types, so you can't just throw "var" or "def" on everything and expect the world to put up with you. We'll give implicit pointers like Java, for simplicity. Vanilla is pretty much what any old fogey would expect of a *non*-OOP language, but we'll slowly upgrade it to minimalist but sufficient OOP.
+We'll start with a language I call "vanilla", which is just an ordinary trifling language that has functions, character strings, integers, floating point numbers, and structs. We'll give it a compiler and reasonably strict types, so you can't just throw "var" or "def" on everything and expect the world to put up with you; and implicit pointers for simplicity. Vanilla is pretty much what any old fogey would expect of a *non*-OOP language, but we'll slowly upgrade it to minimalist but sufficient OOP capability.
 
 ## Private
 
@@ -65,23 +65,37 @@ How do we know where to go looking for `insert()`? It would make sense to put in
 
 Let us suggest one more change to our vanilla programming language:
 
-      struct SuperTree {
-          private int[] indices
-          private int[] otherIndices
-          private string[] values
-          function void insert(string value){...}
-      }
+    struct SuperTree {
+        private int[] indices
+        private int[] otherIndices
+        private string[] values
+        function void insert(string value){...}
+        function string[] find(SuperTree tr, string pattern){....}
+        function void sort(SuperTree tr, boolean forwardsBackwards){....}
+    }
 
-This last change attaches an `insert()` function to the struct itself, allowing a new way of calling the function:
+This last change attaches our manipulation functions to the struct itself, allowing a new way of calling `insert()`:
 
             SuperTree st=new SuperTree;
             st.insert(st, "hello")
 
 This `st.insert()` creates a kind of namespacing; when reading this, I know where to look for `insert()` (as does the compiler) because the syntax clearly indicates that it is part of the SuperTree struct itself. If there are other inserts in scope, we've eliminated scope ambiguity about which one is being used. This is our most complex syntax enhancement so far, but it's still quite reasonable.
 
-Now we can call SuperTree a "class", and call `insert()` a "method" as per object-oriented parlance, and we've achieved the essence of OOP. We could also use `private` on some of these methods to enforce their scope down to the class itself, which is a common practice; for example we might have a `checkInit()` method that verifies certain initialization parameters, called by only some of the other methods in our class.
+Finally, I'll add a private function to SuperTree:
 
-Additional features like method overloading and inheritance are interesting and worth having, but less important.
+    class SuperTree {
+        private int[] indices
+        private int[] otherIndices
+        private string[] values
+        function void insert(string value){...}
+        function string[] find(SuperTree tr, string pattern){....}
+        function void sort(SuperTree tr, boolean forwardsBackwards){....}
+        private function void checkInit(){...}
+    }
+
+This `checkInit()` method could be used by the "public" methods to verify certain initialization parameters and so forth. At this point, I'm no longer thinking "private" in terms of "private to this file" but "private to this *class*". Yes, I've switched the keyword `struct` to `class` just to keep up with the cool kids. My functions are really "methods" now, but we never seem to use "method" as a keyword.
+
+Thus: We've achieved the essence of OOP. Additional features like constructors, method overloading and inheritance are  worth learning about and using, but less important.
 
 ## Bonus Rant About Bad OOOP
 
