@@ -1,4 +1,4 @@
-# OOP For Beginners, or, Why OOP Is Useful
+# OOP For Beginners, or Why OOP Is Useful
 
 A long time ago I was talking to a very smart and experienced computer programmer who lamented that no matter how much he tried, OOP just didn't make sense to him. This really bothered me: I knew good and well he was capable, so what eluded him? In hindsight it's hard to say for sure; C++ might have been half the problem, but I think he was actually struggling with this question: *Why bother?*
 
