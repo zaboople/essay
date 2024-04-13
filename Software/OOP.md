@@ -19,7 +19,7 @@ Suppose we've written a big program in vanilla with 10,000 functions, and notice
 
 This tells the compiler that that foo() can only be accessed by other functions in the same file (afile.v). How is this going to make my life easier? By whittling the scope of foo() down from "the world" to "just here". I've given us an elementary level of *scope control*. This makes our program a little bit more straightforward, with a minimum of additional complexity.
 
-We could also enhance this to add *directory* privacy with something like a `dir` keyword, so that our function can only be called from files in the same directory; in Java this is called "default" access because it's assigned by the *absence* of a keyword (confusing, no?). This is a useful scope control tactic as well, but for simplicity I'll leave directory-private out of my examples.
+We could also enhance this concept of *file* privacy to add *directory* privacy, with something like a `dir` keyword, so that our function can only be called from files in the same directory; in Java this is called "default" access because it's assigned by the *absence* of a keyword (confusing, no?). This is a useful scope control tactic as well, but for simplicity I'll leave directory-private out of my examples<sup>1</sup>.
 
 ## Structs
 
@@ -116,6 +116,8 @@ Perhaps an example of the flaws of the "everything is simulation" approach would
 However: Research is hard, so before landing on the *easy* solution, I came upon a message board for C++ and Object Pascal programmers, where this same question came up and inspired a lengthy discussion. The group quickly posited: Well, if I put an actual deck of cards in front of you right now - sans computer - how would you shuffle it? Thus ensued much discussion about the "riffle shuffle", "cutting the deck" and various physical mechanics. Eventually someone pointed out that mathematicians proved you need at least 7 consecutive riffle shuffles to obtain a proper random sort. The solution would be at least hundreds of lines, inefficient and error prone, all thanks to the all-programming-is-simulation heuristic. Meanwhile, the easy solution had been available for *decades*. This is how we regress rather than progress.
 
 Put simply, I don't care about simulation and modelling unless I'm involved in work that actually requires such. OOP would be a lot more useful if everyone stopped trying to force this fantasy onto every project they encounter, but that may take a few more decades.
+
+<sup>1</sup> One of my biggest complaints about Google Go is that it *only* has directory privacy; there is no concept of file-private! Most Java programmers are unaware of directory-private, or don't care, and to be honest, if I had to pick *only one*, file-private is more important. Either way, it honestly makes a lot of sense to have both, and it's dissapointing Google's idea of progress is so regressive - back to that theme again...
 
 ----
 
