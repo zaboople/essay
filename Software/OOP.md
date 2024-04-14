@@ -15,9 +15,10 @@ We'll start with a language I call "vanilla", which is just an ordinary trifling
 Suppose we've written a big program in vanilla with 10,000 functions, and notice a problem: It's kind of hard to reason about any given function, because it's hard to reason about its context: What calls this function? I can find out using global search (e.g. recursive `grep`) but that gets old after a while. We might recognize that while all functions are implicitly "global", a lot of them don't *need* to be, so how about we introduce a keyword, "private":
 
     afile.v:
+        int function bar(int y){...}
         private int function foo(string s){....}
 
-This tells the compiler that `foo()` can only be accessed by other functions in the same file (afile.v). This makes life easier by whittling the scope of `foo()` down from "the world" to "just here", to give us an elementary level of scope control. This makes our program a little bit more straightforward, with a minimum of additional complexity.
+This tells the compiler that while `bar()` can be accessed globally, `foo()` can only be accessed by other functions in the same file (afile.v), such as `bar()`. This makes life easier by whittling the scope of `foo()` down from "the world" to "just here", to give us an elementary level of scope control. This makes our program a little bit more straightforward, with a minimum of additional complexity.
 
 We could enhance this concept of just *file* privacy and add *directory* privacy, with something like a `dir` keyword, so that a function can only be called from files in the same directory, to specify wider but still limited scope. It's quite useful, but for simplicity I'll leave directory-private out of my examples[<sup>1</sup>](#Footnotes).
 
@@ -95,7 +96,7 @@ Finally, I'll add a private function to SuperTree:
 
 This `checkInit()` method could be used by the "public" methods to verify initialization parameters and so forth. At this point, I'm no longer thinking "private" in terms of "private to this file" but "private to this *class*", both for variables and functions/methods. Yes, I've also switched the keyword `struct` to `class`, just to keep up with the cool kids. In a language like Java programmers usually keep classes and files 1-to-1, but they don't necessarily have to.
 
-Thus we've achieved the essence of OOP. Additional features like constructors, method overloading and inheritance are  worth learning about and using, but less important. If you think of OOP in terms of scope control, things get a lot more straightforward and practical. Of course some things need wide-open scope and there's no point in trying to restrict them; OOP is just a way to limit scope to what is necessary when possible, providing guarantees that make it easier for the reader to think about context. The goal, then, is not to erect pointlessly dogmatic and bureaucratic barriers; that only happens when advocates don't understand *why* their favorite thing is a useful thing.
+Thus we've achieved the essence of OOP. Additional features like constructors, method overloading and inheritance are  worth learning about and using, but slightly less important. If you think of OOP in terms of scope control, things get a lot more straightforward and practical. Of course some things need wide-open scope and there's no point in trying to restrict them; OOP is just a way to limit scope to what is necessary when possible, providing guarantees that make it easier for the reader to think about context. The goal, then, is not to erect pointlessly dogmatic and bureaucratic barriers; that only happens when advocates don't understand *why* their favorite thing is a useful thing.
 
 ## Bonus Rant About Bad OOOP
 
