@@ -4,7 +4,7 @@ You might think of Dependency Injection as a highly sophisticated "design patter
 
 Part 1 is for people who don't understand DI at all, or who don't know that they understand it, or that thought they understood it but were making it overcomplicated. Part 2 is about a well-known framework that makes DI overcomplicated.
 
-----
+## It Was Just A Simple Function...
 
 The place to start is a simple function like:
 
