@@ -78,14 +78,12 @@ You might suggest a way to mitigate this, by creating a "struct" that encloses a
     ABC abc = ABC(a, b, c)
     mine1(abc)
     mine2(abc)
-    ....
 
 After all, one parameter is easier than three. But if I'm still not happy, you can suggest the object-oriented solution:
 
     Mine m = Mine(a, b, c)
     m.mine1()
     m.mine2()
-    ...
 
 That's very fancy, and it does eliminate all the parameter-passing except for the one-time constructor parameters.
 
@@ -113,17 +111,15 @@ But our fellow programmers are an incessantly whiney, complaining bunch, so we b
 
     4) main() -> His(Hers(Yours(Mine))).his()
 
-We've banished all "static" methods, and told everyone from now on everything must be 100% OOP. So for his() to get to hers(), the new His class will accept a Hers instance in its constructor; Hers takes an instance of Yours; and Yours takes a Mine. Now, nobody has to know about any indirect, AKA "transitive" dependencies, only the ones that matter to them directly.
+We've banished all "static" methods, and told everyone from now on everything must be 100% OOP. So for his() to get to hers(), the new His class will accept a Hers instance in its constructor; Hers takes an instance of Yours; and Yours takes a Mine. Now, nobody has to know about any indirect, AKA "transitive" dependencies, only the ones that matter to them directly, and that makes it easier to determine what *really* uses a, b & c.
 
-Mind you, #4 is not the _perfect_ solution, just _a_ solution. It's a little bit of a juggling act for the author of main(), having to work out all the nested constructor-to-constructor relationships. Still, we have a reasonable argument for it now rather than just dogma.
+Mind you, #4 is not the _only_ solution, just a _good_ solution. It's a little bit of a juggling act for the author of main(), having to work out all the nested constructor-to-constructor relationships. Still, we have a reasonable argument for it now rather than just dogma.
 
 ## The Big Picture of Global Variables
 
-Again, as far as I'm concerned, any of those 4 solutions are adequate, because they all eliminate global variables (er, "static singletons"), and that's what this is all about. If you're offended because you don't see why we have to be so militant about eliminating globals, I'll agree that globals aren't automatically the end of the world as we know it (that's a pun, ha-ha... sigh...). The smaller the program, the smaller the chance of a global-induced disaster.
+If you're offended because you don't see why we have to be so militant about eliminating globals, I'll agree that globals aren't automatically the end of the world as we know it (that's a pun, ha-ha... sigh...). The smaller the program, the smaller the chance of a global-induced disaster. Think of it this way: Is a 10,000-line OOP class with instance variables worse or better than a 5,000-line "object-less" program with global variables? What if it's a 5000-line program where *everything* is all in one _function_?
 
-Think of it this way: Is a 10,000-line OOP class with instance variables worse or better than a 5,000-line "object-less" program with global variables? What if it's a 5000-line program where *everything* is all in one _function_?
-
-Object-oriented "instance" variables are really "mini-globals". They don't solve a problem so much as _mitigate_ it down to a manageable level, by reducing "global" to "not as global". The same concept applies to "stack variables", i.e. the lifespan is isolated to a function. Overall, the goal is to reduce the _scope_ of "mutable" (changeable) state, ideally down to only the logic that requires it and no further.
+Object-oriented "instance" variables are really "mini-globals". They don't solve a problem so much as _mitigate_ it down to a manageable level, by reducing "global" to "not as global". The same concept applies to "stack variables", i.e. where the lifespan is isolated to a function. Overall, the goal is to reduce the _scope_ of "mutable" (changeable) state, ideally down to only the logic that requires it and no further, depending on what tools we have at our disposal.
 
 We might even consider _time_: Temporary state is a lot easier to deal with than state that exists for the lifetime of the program, and even worse, state accessed by different "threads" (ugh, multithreading!) of execution simultaneously. More on that in part 2...
 
