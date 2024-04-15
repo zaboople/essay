@@ -28,12 +28,9 @@ Scene 2:
 Scene 3:
 
     You: Well, I initialized the "a" variable this time, and it still blew up.
-    Me: Hmph. Let me look again.
-
-Scene 4:
-
+    Me: Hmph. Let me look again...
     Me: Oh! You forgot to initialize the _other_ global variable, named "b"!
-    You: \[Sighs deeply\]
+    You: [Sighs deeply]
     Me: Come to think of it, I should probably tell you about "c"...
 
 After some trial and error, we determine 3 different global variables require initialization: a, b & c. So maybe you could try to convince me to write `mine()` like this instead:
