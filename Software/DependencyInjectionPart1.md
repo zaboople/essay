@@ -10,22 +10,22 @@ The place to start is a simple function like:
 
     mine()
 
-Suppose I've told you to use this function of mine, because it will solve all of your problems, so you do. This leads to a one-act play in four scenes:
+Suppose I've told you to use this function of mine, because it will solve all of your problems, so you do. This leads to a one-act play in three scenes:
 
-Scene 1:
+Scene 1: *It blew up*
 
     You: That function you said would solve all of my problems? It blew up.
     Me: What? That's impossible
     You: Nothing is impossible.
     Me: Let me look
 
-Scene 2:
+Scene 2: *I see the problem*
 
     Me: Well I see the problem: You forgot to initialize the global variable!
     You: "Forgot"?
     Me: Yes, it's named "a". See? You have to have something in there!
 
-Scene 3:
+Scene 3: *Come to think of it*
 
     You: Well, I initialized the "a" variable this time, and it still blew up.
     Me: Hmph. Let me look again...
