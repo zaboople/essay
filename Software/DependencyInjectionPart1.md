@@ -46,8 +46,8 @@ Our problem is _hidden dependencies_. This is only one bad thing about global va
 Sometimes people "fix" global variables by hiding them behind global functions:
 
     Globals {
-        private static a, b, c;
-        public static setA(aa) {
+        private static String a, b, c;
+        public static setA(String aa) {
             a=aa;
         }
         //... same for b & c
@@ -59,7 +59,7 @@ That isn't going to help our problem very much, and it's why you may see the ter
 
 Our one-act play sprouts a new scene:
 
-Scene 5:
+Scene 5: *What a terrible idea*
 
     Me: Your idea of mine(a,b,c) is terrible, of course.
     You: Why?
