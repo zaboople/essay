@@ -2,17 +2,15 @@
 
 A long time ago I was talking to a very smart and experienced computer programmer who lamented that no matter how much he tried, OOP just didn't make sense to him. This really bothered me: I knew good and well he was capable, so what eluded him? In hindsight it's hard to say for sure; C++ might have been half the problem, but I think he was actually struggling with this question: *Why bother?*
 
-The basic answer is: Scope control. OOP is aesthetically appealing to a lot of programmers, leading to all sorts of nonsensical explanations, but scope control is where it really wins. If you can understand that much, I think you'll "get it".
-
-This is also a detailed explanation for experienced programmers who have misgivings about OOP, maybe because they've put up with bad programming habits from overzealous peers. There *is* value in OOP when it's used sensibly, as explained below.
+The basic answer is: Scope control. OOP is aesthetically appealing to a lot of programmers, leading to all sorts of nonsensical explanations, but scope control is where it really wins. If you can understand that much, I think you'll "get it". This might also be helpful for experienced programmers who know the syntactic bits but have misgivings about OOP, maybe because they've put up with bad habits from overzealous peers.
 
 ## Vanilla
 
-We'll start with a language I call "vanilla", which is just an ordinary trifling language that has functions, character strings, integers, floating point numbers, basic arithmetic and structs. We'll give it a compiler and reasonably strict types, so you can't just throw "var" or "def" on everything and expect the world to put up with you; and implicit pointers for simplicity. Vanilla is pretty much what any old fogey would expect of a *non*-OOP language, but we'll slowly upgrade it to minimalist but sufficient OOP capability.
+We'll start with a language I call "vanilla", which is just an ordinary trifling language that has functions, character strings, integers, floating point numbers, basic arithmetic and "structs" (AKA "records"). We'll give it a compiler and reasonably strict types, so you can't just throw "var" or "def" on everything and expect the world to put up with you; and implicit pointers for simplicity. Vanilla is pretty much what any old fogey would expect of a *non*-OOP language, but we'll slowly upgrade it to minimalist but sufficient OOP capability.
 
 ## Private
 
-Suppose we've written a big program in vanilla with 10,000 functions, and notice a problem: It's kind of hard to reason about any given function, because it's hard to reason about its context: What calls this function? I can find out using global search (e.g. recursive `grep`) but that gets old after a while. We might recognize that while all functions are implicitly "global", a lot of them don't *need* to be, so how about we introduce a keyword, "private":
+Suppose we've written a big program in vanilla with 10,000 functions, and notice a problem: It's kind of hard to reason about any given function, because it's hard to reason about its context: What calls this function? I can find out using global search (e.g. recursive `grep`) but that gets old after a while. We might recognize that while all functions are implicitly "global", a lot of them don't *need* to be, so how about we introduce a keyword, `private`:
 
     afile.v:
         int function bar(int y){...}
@@ -48,7 +46,7 @@ Same as before: the private things can only be referenced by functions in the sa
 
 Yet again we've made the program a little bit more straightforward without any serious cognitive overload. We just need one more thing to get to object-oriented programming proper.
 
-## Namespacing
+## Namespacing, So To Speak
 
 Suppose we are a new programmer on the team, and we encounter SuperTree here:
 
@@ -92,19 +90,19 @@ Finally, I'll add a private function to SuperTree:
         private function void checkInit(){...}
     }
 
-This `checkInit()` method could be used by the "public" methods to verify initialization parameters and so forth. At this point, I'm no longer thinking "private" in terms of "private to this file" but "private to this *class*", both for variables and functions/methods. Yes, I've also switched the keyword `struct` to `class`, just to keep up with the cool kids. In a language like Java programmers usually keep classes and files 1-to-1, but they don't necessarily have to.
+This `checkInit()` method could be used by the "public" methods to verify initialization parameters and so forth. At this point, I'm no longer thinking "private" in terms of "private to this file" but "private to this *class*", both for variables and functions/methods. Yes, I've also switched the keyword `struct` to `class`, just to keep up with the cool kids. In a language like Java programmers often keep classes and files 1-to-1, but they don't necessarily have to.
 
-Thus we've achieved the essence of OOP. Additional features like constructors, method overloading and inheritance are  worth learning about and using, but slightly less important. If you think of OOP in terms of scope control, things get a lot more straightforward and practical. Of course some things need wide-open scope and there's no point in trying to restrict them; OOP is just a way to limit scope to what is necessary when possible, providing guarantees that make it easier for the reader to think about context. The goal, then, is not to erect pointlessly dogmatic and bureaucratic barriers; that only happens when programmers don't understand *why* their favorite thing is a useful thing.
+Thus we've achieved the essence of OOP. Additional features like constructors, method overloading, inner classes and inheritance are  worth learning about and using, but slightly less important. If you think of OOP in terms of scope control, things get a lot more straightforward and practical. Of course some things need wide-open scope and there's no point in trying to restrict them; OOP is just a way to limit scope to what is necessary when possible, providing guarantees that make it easier for the reader to think about context. The goal, then, is not to erect pointlessly dogmatic and bureaucratic barriers; that only happens when programmers don't understand *why* their favorite thing is a useful thing.
 
 ## Bonus Rant About Bad OOOP
 
 I have a limited knowledge of OOP origins, but the common claim is that things really got rolling with *simulation and modelling*. The purpose of computer simulation is to model some aspect of the world, like, say, weather, or a railroad switchyard, and experiment with it until we can draw some mathematical and/or scientific conclusions. Video games might also fit in, since we are often simulating real-world physics and human situations.
 
-To rehash the time-worn explanation: In a computer simulation, you have entities that *do* things, and these entities can be thought of as *objects* that encompass *state*, as well as *behaviors* that alter and reveal that state. So an "object-oriented" language would let you define a Cow object with "methods" like eat(), wander() and poop() which contain logic defining just how a virtual cow will do these things, and stateful "instance variables" like "stomach" and "location" that those methods alter and reveal. Now you're ready to build a simulation of a cattle farm.
+To rehash the time-worn explanation: In a computer simulation, you have entities that *do* things, and these entities can be thought of as *objects* that encompass *state*, as well as *behaviors* that alter and reveal that state. So an object-oriented language would let you define a Cow object with methods like `eat()`, `wander()` and `poop()` that contain logic defining just how a virtual cow will do these things, and stateful *instance variables* like `stomach` and `location` (which might be objects unto themselves) that those methods alter and reveal. Now you're ready to build a simulation of a cattle farm.
 
 Then we get to the idea of the popular movie "The Matrix" and a fantasy about simulating all of reality in a computer, uploading yourself into a computer, etc., all of which is quite intoxicating. Before long you get programmers who believe The Great Enlightening Insight is that all programming is simulation and that OOP is therefore the most intellectually sophisticated and "right" way of programming because of its affinity for simulation.
 
-The "All Programming is Simulation" thesis made some sense in the mid-20th century as a transitional phase from business via "paper" (and pens, stamps, filing cabinets, etc) to business via computers, where we start by mapping the paper process onto an electronic one. It makes far less sense once that transition is over, and it *is* over. Everyone is computer-literate. You don't have to explain the idea of an "electronic invoice" or an "electronic payment", among other things. While we retain some of those symbolic paper-based artifacts, it's mostly habit: If you want to call a "directory" a "folder", it makes no difference to me and it changes nothing about the subject. Yes, "email" is a lot like postal mail, and I don't mind the carryover. In fact the reuse and mutation of language and symbols is not a 20th-century phenomenon: Human beings have been doing that since we first learned to make words.
+The "All Programming is Simulation" thesis made some sense in the mid-20th century as a transitional phase from business via "paper" (and pens, stamps, filing cabinets, etc) to business via computers, where we start by mapping the paper process onto an electronic one. It makes far less sense once that transition is over, and it *is* over. Everyone is computer-literate. You don't have to explain the idea of an "electronic invoice" or an "electronic payment", among other things. While we retain some of those symbolic paper-based artifacts, it's mostly habit: If you want to call a "directory" a "folder", it makes no difference to me and it changes nothing about the subject. Yes, "email" is a lot like postal mail, and I don't mind the carryover. In fact the reuse and mutation of language and symbols is not a twenty-first-century phenomenon: Human beings have been doing that since we first learned to make words.
 
 In fact the advance of technology today is predicated on our ability to move beyond physical metaphors and use whatever symbolic devices are handy, i.e. the existing computational abstractions that we already have. However, this shift does not render OOP moot, because modelling & simulation was never the great enlightening insight of OOP anyhow; again, that insight is *scope control*.
 
@@ -116,7 +114,7 @@ Put simply, I don't care about simulation and modelling unless I'm involved in w
 
 #### Footnotes
 
-<sup>1</sup> One of my biggest complaints about Google Go is that it *only* has directory privacy; there is no concept of file-private! Most Java programmers are unaware of directory-private, or don't care, and to be honest, if I had to pick *only one*, file-private is more important. Either way, it honestly makes a lot of sense to have both, and it's dissapointing that Google's idea of progress is, well, regressive - back to that theme again...
+<sup>1</sup> One of my biggest complaints about Google Go is that it *only* has directory privacy; there is no concept of file-private! Most Java programmers are unaware of directory-private, or don't care, and to be honest, if I had to pick *only one*, file-private is more important. Either way, it honestly makes a lot of sense to have both, and it's dissapointing that Google's idea of progress is, well, somewhat regressive - back to that theme again...
 
 ----
 
