@@ -20,15 +20,18 @@ Scene 1:
     Me: Let me look
 
 Scene 2:
+
     Me: Well I see the problem: You forgot to initialize the global variable!
     You: "Forgot"?
     Me: Yes, it's named "a". See? You have to have something in there!
 
 Scene 3:
+
     You: Well, I initialized the "a" variable this time, and it still blew up.
     Me: Hmph. Let me look again.
 
 Scene 4:
+
     Me: Oh! You forgot to initialize the _other_ global variable, named "b"!
     You: \[Sighs deeply\]
     Me: Come to think of it, I should probably tell you about "c"...
