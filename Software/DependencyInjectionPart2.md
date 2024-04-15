@@ -47,7 +47,7 @@ The original design worked like this: Instead of putting your dependency injecti
 
 Of course our compiler can no longer validate the arrangement, so we wait until runtime to find out if we meta-programmed the wrong way, which we probably did. It's a lot like working in a scripting language, which kind of defeats the purpose of using a compiler. Using XML as a programming language is awkward, but at least everything is in one place, just like with main(). You always know where to look. Then two things happened:
 
-1 Everybody got mad at life in general - war, pestilence, famine, the usual - and agreed to [blame XML](https://en.wikipedia.org/wiki/Ren%C3%A9_Girard).
+1 Everybody got mad at life in general - war, pestilence, famine, the usual - and agreed to [blame XML](https://en.wikipedia.org/wiki/Scapegoating#Scapegoat_mechanism).
 
 2 Java was blessed/cursed with a new feature: @Annotations.
 
