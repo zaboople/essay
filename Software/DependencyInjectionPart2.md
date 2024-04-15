@@ -1,6 +1,6 @@
 # Dependency Injection Part 2: A Good Idea Becomes a Huge Mess
 
-This stands alone pretty well, but refer to [Part 1](./DependencyInjectionPart1.md) if you are of the completist type or you still haven't figured out what dependency injection is supposed to mean.
+This stands alone pretty well, but refer to [Part 1](./DependencyInjectionPart1.md) if you are the completist type or you still haven't figured out what dependency injection is supposed to mean.
 
 ## A Very Subtle Form of OOP Abuse
 
@@ -32,11 +32,11 @@ Library 1 makes dependency injection a no-brainer, and we don't need a special f
 
 ## The Dreaded Java Enterprise Edition
 
-Guess what? Library 2 - *Framework* 2, really - is Java Enterprise Edition. In JEE, an application is made of Servlets, and each Servlet is provided as a class name to the framework, and instantiated (created) for you without any chance to intervene and get in front of the speeding train. There is no single point of entry. To some people this sounds very object-oriented, but again, the result is _anti_-object-oriented.
+Guess what? Library 2 - *Framework* 2, really - is basically Java Enterprise Edition. In JEE, an application is made of Servlets, and each Servlet is provided as a class name to the framework, and instantiated (created) for you without any chance to intervene and get in front of the speeding train. There is no single point of entry. To some people this sounds very object-oriented, but again, the result is _anti_-object-oriented.
 
-JEE did include a dependency injection workaround framework called "JNDI", but it was confusing and often simply didn't work, for reasons that couldn't be explained. Some open source folks decided to come up with a "better" way, and that was named, "Spring". Now the trouble really begins.
+JEE did include a dependency injection workaround framework called "JNDI", but it was confusing, very limited and often simply didn't work, for reasons that couldn't be explained. Some open source folks decided to come up with a "better" way, and that was named, "Spring". Now the trouble really begins.
 
-The goal of Spring was _not_ to eliminate global variables - AKA static singletons - however, because there is no other way to share these dependencies. Neither was the goal to do a proper redesign of JEE and eliminate the problem at its source. Rather, the goal was to hide, disguise and obfuscate global variables until we can *pretend they aren't there*. This is done with all sorts of reflection tricks, which is to say, Meta-programming: reflection, xml, annotations, yaml, json, whatever.
+The goal of Spring was _not_ to eliminate "static singletons" (basically, global variables) however, because there is no other way to share these dependencies. Neither was the goal to do a proper redesign of JEE and eliminate the problem at its source. Rather, the goal was to hide, disguise and obfuscate static singletons until we can *pretend they aren't there*. This is done with all sorts of reflection tricks, which is to say, Meta-programming: reflection, xml, annotations, yaml, json, whatever.
 
 The original design worked like this: Instead of putting your dependency injections into your Java programming logic, they go in a file named "application.xml". Spring reads all this in as metadata, using reflection to "instantiate" all the necessary objects, and stuffs them into a static (global) `Map` object where they can be looked up and cross referenced for use in other objects as things roll along. It's convoluted, but it's basically rewriting Java as XML. Something like this:
 
