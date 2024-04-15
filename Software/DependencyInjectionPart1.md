@@ -15,8 +15,11 @@ Suppose I've told you to use this function of mine, because it will solve all of
 Scene 1:
 
 > You: That function you said would solve all of my problems? It blew up.
+
 > Me: What? That's impossible
+
 > You: Nothing is impossible.
+
 > Me: Let me look
 
 Scene 2:
