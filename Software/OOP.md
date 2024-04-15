@@ -18,9 +18,9 @@ Suppose we've written a big program in vanilla with 10,000 functions, and notice
         int function bar(int y){...}
         private int function foo(string s){....}
 
-This tells the compiler that while `bar()` can be accessed globally, `foo()` can only be accessed by other functions in the same file (afile.v), such as `bar()`. This makes life easier by whittling the scope of `foo()` down from "the world" to "just here", to give us an elementary level of scope control. This makes our program a little bit more straightforward, with a minimum of additional complexity.
+This tells the compiler that while `bar()` can be accessed globally, `foo()` can only be accessed by other functions in the same file (afile.v); so, only bar can call foo. This makes life easier by whittling the scope of foo down from "the world" to "just here", giving us an elementary level of scope control. This makes our program a little bit more straightforward  with a minimum of additional language complexity.
 
-We could enhance this concept of just *file* privacy and add *directory* privacy, with something like a `dir` keyword, so that a function can only be called from files in the same directory, to specify wider but still limited scope. It's quite useful, but for simplicity I'll leave directory-private out of my examples[<sup>1</sup>](#Footnotes).
+We could enhance this concept of just *file* privacy and add *directory* privacy, with something like a `dir` keyword, so that a function can only be called from files in the same directory, for wider but still limited scope. It's quite useful, but for simplicity I'll leave directory-private out of my examples[<sup>1</sup>](#Footnotes).
 
 ## Structs
 
@@ -36,9 +36,7 @@ Suppose we have a struct called "SuperTree", which is some sort of fancy tree th
         function string[] find(SuperTree tr, string pattern){....}
         function void sort(SuperTree tr, boolean forwardsBackwards){....}
 
-It's worth asking: Since we've already made nice functions for working with SuperTree, does the rest of our program really need to access its variables? Might bad things happen if other programmers do questionable things with those variables owing to misunderstandings about how they work?
-
-What if we brought that "private" thing in here as well:
+Since we've already made nice functions for working with SuperTree, does the rest of our program really need to access its variables? Might unexpected things happen if we make adjustments to the internals of SuperTree? It would be nice to guarantee that such worrying is unwarranted, so let's bring in that "private" keyword here as well:
 
       struct SuperTree {
           private int[] indices
@@ -46,9 +44,9 @@ What if we brought that "private" thing in here as well:
           private string[] values
       }
 
-Same as before: the private things can only be referenced by functions in the same file. Does it make my life easier? In this case, yes, and yet again because of scope control. Some structs are trivial enough that no scope control is needed, but in this case, it makes sense. In fact, it *really* makes sense because mutable state - the stuff hiding in our struct variables - is very tricky, and while some functional-programming obsessives want such outlawed entirely, scope control is a very pragmatic mitigation for the mutable state problem.
+Same as before: the private things can only be referenced by functions in the same file. Yet again we are enhancing scope control. Some structs are trivial enough that no scope control is needed, but in this case, it makes sense. In fact, it *really* makes sense because *mutable state* - the stuff hiding in our struct variables - is very tricky, and while some functional-programming obsessives want such outlawed entirely, scope control is a very pragmatic mitigation for the mutable state problem.
 
-Yet again, we've made the program a little bit more straightforward without any serious cognitive overload. We just need one more thing to get to object-oriented programming proper.
+Yet again we've made the program a little bit more straightforward without any serious cognitive overload. We just need one more thing to get to object-oriented programming proper.
 
 ## Namespacing
 
@@ -76,7 +74,7 @@ This last change lets us attach our manipulation functions *to the struct itself
             SuperTree st=new SuperTree;
             st.insert(st, "hello")
 
-This `st.insert()` creates a kind of namespacing; when reading this, I know where to look for `insert()` (as does the compiler) because the syntax clearly indicates such. If there are other inserts in scope, we've eliminated scope ambiguity about which one is being used. This is our most complex syntax enhancement so far, but it's still quite reasonable.
+This `st.insert()` creates a kind of namespacing; when reading this, we know where to look for `insert()` (as does the compiler) because the syntax clearly indicates such. If there are other insert functions in scope, we've eliminated scope ambiguity about which one is being used. This is our most complex syntax enhancement so far, but it's still quite reasonable.
 
 When functions are attached to a struct like this, they are often called "methods" instead of "functions", but it doesn't really matter what you call them (some people still say "procedures").
 
@@ -96,7 +94,7 @@ Finally, I'll add a private function to SuperTree:
 
 This `checkInit()` method could be used by the "public" methods to verify initialization parameters and so forth. At this point, I'm no longer thinking "private" in terms of "private to this file" but "private to this *class*", both for variables and functions/methods. Yes, I've also switched the keyword `struct` to `class`, just to keep up with the cool kids. In a language like Java programmers usually keep classes and files 1-to-1, but they don't necessarily have to.
 
-Thus we've achieved the essence of OOP. Additional features like constructors, method overloading and inheritance are  worth learning about and using, but slightly less important. If you think of OOP in terms of scope control, things get a lot more straightforward and practical. Of course some things need wide-open scope and there's no point in trying to restrict them; OOP is just a way to limit scope to what is necessary when possible, providing guarantees that make it easier for the reader to think about context. The goal, then, is not to erect pointlessly dogmatic and bureaucratic barriers; that only happens when advocates don't understand *why* their favorite thing is a useful thing.
+Thus we've achieved the essence of OOP. Additional features like constructors, method overloading and inheritance are  worth learning about and using, but slightly less important. If you think of OOP in terms of scope control, things get a lot more straightforward and practical. Of course some things need wide-open scope and there's no point in trying to restrict them; OOP is just a way to limit scope to what is necessary when possible, providing guarantees that make it easier for the reader to think about context. The goal, then, is not to erect pointlessly dogmatic and bureaucratic barriers; that only happens when programmers don't understand *why* their favorite thing is a useful thing.
 
 ## Bonus Rant About Bad OOOP
 
