@@ -2,17 +2,15 @@
 
 A long time ago I was talking to a very smart and experienced computer programmer who lamented that no matter how much he tried, OOP just didn't make sense to him. This really bothered me: I knew good and well he was capable, so what eluded him? In hindsight it's hard to say for sure; C++ might have been half the problem, but I think he was actually struggling with this question: *Why bother?*
 
-The basic answer is: Scope control. OOP is aesthetically appealing to a lot of programmers, leading to all sorts of nonsensical explanations, but scope control is where it really wins. If you can understand that much, I think you'll "get it".
-
-This is also a detailed explanation for experienced programmers who have misgivings about OOP, maybe because they've put up with bad programming habits from overzealous peers. There *is* value in OOP when it's used sensibly, as explained below.
+The basic answer is: Scope control. OOP is aesthetically appealing to a lot of programmers, leading to all sorts of nonsensical explanations, but scope control is where it really wins. If you can understand that much, I think you'll "get it". This might also be helpful for experienced programmers who know the syntactic bits but have misgivings about OOP, maybe because they've put up with bad programming habits from overzealous peers.
 
 ## Vanilla
 
-We'll start with a language I call "vanilla", which is just an ordinary trifling language that has functions, character strings, integers, floating point numbers, basic arithmetic and structs. We'll give it a compiler and reasonably strict types, so you can't just throw "var" or "def" on everything and expect the world to put up with you; and implicit pointers for simplicity. Vanilla is pretty much what any old fogey would expect of a *non*-OOP language, but we'll slowly upgrade it to minimalist but sufficient OOP capability.
+We'll start with a language I call "vanilla", which is just an ordinary trifling language that has functions, character strings, integers, floating point numbers, basic arithmetic and "structs" (AKA "records"). We'll give it a compiler and reasonably strict types, so you can't just throw "var" or "def" on everything and expect the world to put up with you; and implicit pointers for simplicity. Vanilla is pretty much what any old fogey would expect of a *non*-OOP language, but we'll slowly upgrade it to minimalist but sufficient OOP capability.
 
 ## Private
 
-Suppose we've written a big program in vanilla with 10,000 functions, and notice a problem: It's kind of hard to reason about any given function, because it's hard to reason about its context: What calls this function? I can find out using global search (e.g. recursive `grep`) but that gets old after a while. We might recognize that while all functions are implicitly "global", a lot of them don't *need* to be, so how about we introduce a keyword, "private":
+Suppose we've written a big program in vanilla with 10,000 functions, and notice a problem: It's kind of hard to reason about any given function, because it's hard to reason about its context: What calls this function? I can find out using global search (e.g. recursive `grep`) but that gets old after a while. We might recognize that while all functions are implicitly "global", a lot of them don't *need* to be, so how about we introduce a keyword, `private`:
 
     afile.v:
         int function bar(int y){...}
