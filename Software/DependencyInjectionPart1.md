@@ -125,7 +125,7 @@ We might even consider _time_: Temporary state is a lot easier to deal with than
 
 One more question: Once the program is actually converted to machine instructions, can the computer's CPU tell the difference between global-vs-not-as-global? In all cases I know of, no. We pursue our goal for the sake of _people_, not the computer itself, which could care less. As people, we want guarantees about what we're reading so we can understand it better.
 
-[Dependency Injection Part 2: A Good Idea Becomes a Huge Mess](./DependencyInjection-Part2.md)
+[Dependency Injection Part 2: A Good Idea Becomes a Huge Mess](./DependencyInjectionPart2.md)
 
 ----
 
