@@ -1,4 +1,4 @@
-# Dependency Injection Part 1: For The Completely Uninitiated
+# Dependency Injection Part 1: For The Uninitiated
 
 You might think of Dependency Injection as a highly sophisticated "design pattern" only understood by elite, highly educated software engineers, out of reach for ordinary hacks. You might even think that DI is so fancy as to be of little pragmatic value - merely another way for snobs to show off. It's actually just ordinary common sense, easily understood by any mediocre programmer. If you also understand object-oriented programming, you have more options, but you don't need to be much of an expert at OOP. In fact, you might find yourself thinking, "I already do that, but I never thought it needed to have a special *name*..."
 
@@ -13,10 +13,11 @@ The place to start is a simple function like:
 Suppose I've told you to use this function of mine, because it will solve all of your problems, so you do. This leads to a one-act play in four scenes:
 
 Scene 1:
-    You: That function you said would solve all of my problems? It blew up.
-    Me: What? That's impossible
-    You: Nothing is impossible.
-    Me: Let me look
+
+> You: That function you said would solve all of my problems? It blew up.
+> Me: What? That's impossible
+> You: Nothing is impossible.
+> Me: Let me look
 
 Scene 2:
     Me: Well I see the problem: You forgot to initialize the global variable!
