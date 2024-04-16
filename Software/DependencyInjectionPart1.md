@@ -2,7 +2,7 @@
 
 You might think of Dependency Injection as a highly sophisticated "design pattern" only understood by elite, highly educated software engineers, out of reach for ordinary hacks. You might even think that DI is so fancy as to be of little pragmatic value - merely another way for snobs to show off. It's actually just ordinary common sense, easily understood by any mediocre programmer. If you also understand object-oriented programming, you have more options, but you don't need to be much of an expert at OOP. In fact, you might find yourself thinking, "I already do that, but I never thought it needed to have a special *name*..."
 
-Part 1 is for people who don't understand DI at all, or who don't know that they understand it, or that thought they understood it but were making it overcomplicated. Part 2 is about a well-known framework that makes DI overcomplicated.
+Part 1 - this part - is for people who don't understand DI at all, or who don't know that they understand it, or that thought they understood it but were making it overcomplicated. Part 2 is about frameworks that make DI overcomplicated.
 
 ## It Was Just A Simple Function...
 
@@ -19,7 +19,7 @@ Scene 1: *It blew up*
     You: Nothing is impossible.
     Me: Let me look
 
-Scene 2: *I see the problem*
+Scene 2: *You forgot*
 
     Me: Well I see the problem: You forgot to initialize the global variable!
     You: "Forgot"?
@@ -43,7 +43,7 @@ Our problem is _hidden dependencies_. This is only one bad thing about global va
 
 ## Global Functions
 
-Sometimes people "fix" global variables by hiding them behind global functions:
+Sometimes people "fix" global variables by hiding them behind global functions, like this Java example:
 
     Globals {
         private static String a, b, c;
@@ -59,7 +59,7 @@ That isn't going to help our problem very much, and it's why you may see the ter
 
 Our one-act play sprouts a new scene:
 
-Scene 5: *What a terrible idea*
+Scene 5: *A terrible idea*
 
     Me: Your idea of mine(a,b,c) is terrible, of course.
     You: Why?
