@@ -119,7 +119,7 @@ As an exercise for the reader, in this specific example you could probably wangl
 
 ## The Big Picture of Global Variables
 
-If you're offended because you don't see why we have to be so militant about eliminating globals, I'll agree that globals aren't automatically the end of the world as we know it (that's a pun, ha-ha... sigh...). The smaller the program, the smaller the chance of a global-induced disaster. Think of it this way: Is a 10,000-line OOP class with instance variables worse or better than a 5,000-line "object-less" program with global variables? What if it's a 5000-line program where *everything* is all in one _function_?
+If you're offended because you don't see why we have to be so militant about eliminating globals, I'll agree that globals aren't automatically the end of the world as we know it (that's a pun, ha-ha... sigh...). The smaller the program, the smaller the chance of a global-induced disaster. Think of it this way: Is a 10,000-line OOP class with instance variables better or worse than a 5,000-line "object-less" program with global variables? What if it's a 5000-line program where *everything* is all in one _function_?
 
 Object-oriented "instance" variables are really "mini-globals". They don't solve a problem so much as _mitigate_ it down to a manageable level, by reducing "global" to "not as global". The same concept applies to "stack variables", i.e. where the lifespan is isolated to a function. Overall, the goal is to reduce the _scope_ of "mutable" (changeable) state, ideally down to only the logic that requires it and no further, depending on what tools we have at our disposal.
 
