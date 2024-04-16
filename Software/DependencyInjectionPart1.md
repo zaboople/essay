@@ -29,7 +29,7 @@ Scene 3: *Come to think of it*
 
     You: Well, I initialized the "a" variable this time, and it still blew up.
     Me: Hmph. Let me look again...
-    Me: Oh! You forgot to initialize the _other_ global variable, named "b"!
+    Me: Oh! You forgot to initialize the _other_ global variable, named "b"! See?
     You: [Sighs deeply]
     Me: Come to think of it, I should probably tell you about "c"...
 
@@ -37,7 +37,7 @@ After some trial and error, we determine 3 different global variables require in
 
     mine(a, b, c)
 
-This way, my function explicitly declares its dependencies, and nobody has to guess about global variables.
+This way, my function explicitly declares its dependencies, and nobody has to guess about global variables. This is actually a legitimate thumbs-up DI implementation, but don't tell anybody I said that.
 
 Our problem is _hidden dependencies_. This is only one bad thing about global variables, but it's a very good reason to get rid of them. If you can appreciate the idea of reducing global variable usage, the rest is really just a matter of following your nose.
 
@@ -59,7 +59,7 @@ That isn't going to help our problem very much, and it's why you may see the ter
 
 Our one-act play sprouts a new scene:
 
-Scene 5: *A terrible idea*
+Scene 5: *Terrible, of course*
 
     Me: Your idea of mine(a,b,c) is terrible, of course.
     You: Why?
@@ -85,9 +85,7 @@ After all, one parameter is easier than three. You can also suggest the object-o
     m.mine1()
     m.mine2()
 
-That's very fancy, and it does eliminate all the parameter-passing except for the one-time constructor parameters.
-
-However, all of three of our solutions lead to a new problem.
+That's very fancy, and it does eliminate all the parameter-passing except for the one-time constructor parameters. However, all of three of our solutions soon lead to a new problem.
 
 ## Call Chains
 
@@ -95,7 +93,7 @@ Our function calls don't exist in isolation, but as part of a larger program, so
 
     main(args) -> his() -> hers() -> yours() -> mine(a, b, c)
 
-The whole reason a, b & c were global is because they likely *need* to be shared - a complete diagram might show dozens more functions using them. They are probably going to end up being initialized by `main()`. So where is `yours()` supposed to get a/b/c from, before passing it to `mine()`? It would be hypocritical to resort to global variables now, so:
+The reason a, b & c were global is because they likely *need* to be shared - a complete diagram might show dozens more functions using them. They are probably going to end up being initialized by `main()`. So where is `yours()` supposed to get a/b/c from, before passing it to `mine()`? It would be hypocritical to resort to global variables now, so:
 
     1) main() -> his(a, b, c) -> hers(a, b, c) -> yours(a, b, c) -> mine(a, b, c)
 
@@ -103,17 +101,19 @@ Here, `main()` is our program's entry point, and a very reasonable place to init
 
     2) main() -> his(ABC(a,b,c)) -> hers(abc) -> yours(abc) -> mine(abc)
 
-Or the basic object-oriented solution:
+Note that I'm using `ABC` as a class/struct name and `abc` as an *instance* name in example 2.
 
-    3) main() -> his(Mine(a,b,c)) -> hers(mine) -> yours(mine) -> mine.mine1()
+Anyhow, here's the basic object-oriented solution, but it isn't much different:
+
+    3) main() -> his(Mine(a,b,c)) -> hers(mine) -> yours(mine) -> mine.mine()
 
 Or maybe we bring down the OOP hammer globally, so to speak:
 
     4) main() -> His(Hers(Yours(Mine(a, b, c)))).his() -> hers.hers() -> yours.yours() -> mine.mine()
 
-We've banished all "static" methods, and told everyone: From now on everything will be 100% OOP. So, each function is now part of a class: His.his(), Hers.hers(), Yours.yours(), Mine.mine(); and each class takes an instance of another in its constructor.
+We've banished all "static" methods, and told everyone: From now on everything will be 100% OOP. So, each function is now part of a class: `His.his()`, `Hers.hers()`, `Yours.yours()`, `Mine.mine()`; and each class takes an instance of another in its constructor.
 
-Example 4 is a liiittle bit contrived (one function per class) but the noteworthy point is that now, nobody has to deal with indirect, AKA "transitive" dependencies, only the ones that matter to them directly, and (hopefully) that makes it easier for readers to determine what *really* uses a, b & c - the same old `mine()` function. From the standpoint of dependencies and scope control, it does well, but the downside is some heavy-handed OOP juggling. All in all, this option is at least *acceptable*.
+Example 4 is a liiittle bit contrived (one function per class? I've seen it before) but the noteworthy point is that now, nobody has to deal with indirect, AKA "transitive" dependencies, only the ones that matter to them directly, and that makes it somewhat easier for readers to determine what *really* uses a, b & c - the same old `mine()` function. From the standpoint of dependencies and scope control, it does well, but the downside is some heavy-handed OOP juggling. All in all, this option is at least *acceptable*.
 
 As an exercise for the reader, in this specific example you could probably wangle an object-free functional-programming solution with currying and lambdas. Also, if I didn't point that out, the FP people would come looking for me (I know you're out there...).
 
