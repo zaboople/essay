@@ -79,7 +79,7 @@ You might suggest a way to mitigate this, by creating a "struct" that encloses a
     mine1(abc)
     mine2(abc)
 
-After all, one parameter is easier than three. But if I'm still not happy, you can suggest the object-oriented solution:
+After all, one parameter is easier than three. You can also suggest the object-oriented solution:
 
     Mine m = Mine(a, b, c)
     m.mine1()
@@ -87,7 +87,7 @@ After all, one parameter is easier than three. But if I'm still not happy, you c
 
 That's very fancy, and it does eliminate all the parameter-passing except for the one-time constructor parameters.
 
-However, all of these solutions - `mine(a, b, c)`, `mine(ABC(a,b,c))`, or `Mine(a,b,c).mine()` - lead to a new problem.
+However, all of three of our solutions lead to a new problem.
 
 ## Call Chains
 
@@ -95,25 +95,27 @@ Our function calls don't exist in isolation, but as part of a larger program, so
 
     main(args) -> his() -> hers() -> yours() -> mine(a, b, c)
 
-The whole reason a, b & c were global is because they likely *need* to be shared - a complete diagram might show dozens more functions using them. So where is `yours()` supposed to get a/b/c from, before passing it to `mine()`? It would be hypocritical to resort to global variables now, so:
+The whole reason a, b & c were global is because they likely *need* to be shared - a complete diagram might show dozens more functions using them. They are probably going to end up being initialized by `main()`. So where is `yours()` supposed to get a/b/c from, before passing it to `mine()`? It would be hypocritical to resort to global variables now, so:
 
-    1)  main() -> his(a, b, c) -> hers(a, b, c) -> yours(a, b, c) -> mine(a, b, c)
+    1) main() -> his(a, b, c) -> hers(a, b, c) -> yours(a, b, c) -> mine(a, b, c)
 
 Here, `main()` is our program's entry point, and a very reasonable place to initialize a, b & c since main is at the root of the call stack and all its divergent paths. But now _everyone_ is complaining about Too Many Darned Parameters, so we circle back to some of our previous ideas, starting with the ABC(a,b,c) solution:
 
-    2) main() -> his(ABC) -> hers(ABC) -> yours(ABC) -> mine(ABC)
+    2) main() -> his(ABC(a,b,c)) -> hers(abc) -> yours(abc) -> mine(abc)
 
-Or the Mine(a,b,c).mine() solution:
+Or the basic object-oriented solution:
 
-    3) main() -> his(Mine) -> hers(Mine) -> yours(Mine) -> Mine.mine1()
+    3) main() -> his(Mine(a,b,c)) -> hers(mine) -> yours(mine) -> mine.mine1()
 
-But our fellow programmers are an incessantly whiney, complaining bunch, so we bring down the OOP hammer:
+Or maybe we bring down the OOP hammer globally, so to speak:
 
-    4) main() -> His(Hers(Yours(Mine))).his()
+    4) main() -> His(Hers(Yours(Mine(a, b, c)))).his() -> hers.hers() -> yours.yours() -> mine.mine()
 
-We've banished all "static" methods, and told everyone from now on everything must be 100% OOP. So for his() to get to hers(), the new His class will accept a Hers instance in its constructor; Hers takes an instance of Yours; and Yours takes a Mine. Now, nobody has to know about any indirect, AKA "transitive" dependencies, only the ones that matter to them directly, and that makes it easier to determine what *really* uses a, b & c.
+We've banished all "static" methods, and told everyone: From now on everything will be 100% OOP. So, each function is now part of a class: His.his(), Hers.hers(), Yours.yours(), Mine.mine(); and each class takes an instance of another in its constructor.
 
-Mind you, #4 is not the _only_ solution, just a _good_ solution. It's a little bit of a juggling act for the author of main(), having to work out all the nested constructor-to-constructor relationships. Still, we have a reasonable argument for it now rather than just dogma.
+Example 4 is a liiittle bit contrived (one function per class) but the noteworthy point is that now, nobody has to deal with indirect, AKA "transitive" dependencies, only the ones that matter to them directly, and (hopefully) that makes it easier for readers to determine what *really* uses a, b & c - the same old `mine()` function. From the standpoint of dependencies and scope control, it does well, but the downside is some heavy-handed OOP juggling. All in all, this option is at least *acceptable*.
+
+As an exercise for the reader, in this specific example you could probably wangle an object-free functional-programming solution with currying and lambdas. Also, if I didn't point that out, the FP people would come looking for me (I know you're out there...).
 
 ## The Big Picture of Global Variables
 
