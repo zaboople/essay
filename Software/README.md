@@ -7,13 +7,15 @@ These are essays on software, primarily computer programming, or you could say "
 - [Myths of Agile Software Development](Agile.md)
 - [Object-Oriented Programming For Beginners, or, Why OOP is Useful](OOP.md)
 - [Why ORM's Fail Us](ORMsFail.md)
+- [Dependency Injection Part 1: For The Uninitiated](DependencyInjectionPart1.md)
+- [Dependency Injection Part 2: A Good Idea Becomes a Huge Mess](DependencyInjectionPart2.md)
 
 ## Medium Deal Things
 
 - [Git For Average People](GitForAveragePeople.md)
 - [The Rich Domain Model](TheRichDomainModel.md)
 
-## Little Things
+## Little But Significant Things
 
 - [Constants at the Top](ConstantsAtTheTop.md)
 - [Dev-Ops](DevOps.md)
