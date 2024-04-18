@@ -38,7 +38,7 @@ JEE did include a dependency injection workaround framework called "JNDI", but i
 
 [foo](./bar)
 
-The goal of Spring was _not_ to eliminate "static singletons" however - basically global variables, as mentioned in [Part 1](./DependencyInjectionPart1.md#global-functions) - because there is no other way to share these dependencies. Neither was the goal to do a proper redesign of JEE and eliminate the problem at its source. Rather, the goal was to hide, disguise and obfuscate static singletons until we can *pretend they aren't there*. This is done with all sorts of reflection tricks, which is to say, Meta-programming: reflection, xml, annotations, yaml, json, whatever.
+The goal of Spring was _not_ to eliminate "static singletons" however - basically global variables, [as mentioned in Part 1](./DependencyInjectionPart1.md#global-functions) - because there is no other way to share these dependencies. Neither was the goal to do a proper redesign of JEE and eliminate the problem at its source. Rather, the goal was to hide, disguise and obfuscate static singletons until we can *pretend they aren't there*. This is done with all sorts of reflection tricks, which is to say, Meta-programming: reflection, xml, annotations, yaml, json, whatever.
 
 The original design worked like this: Instead of putting your dependency injections into your Java programming logic, they go in a file named "application.xml". Spring reads all this in as metadata, using reflection to "instantiate" all the necessary objects, and stuffs them into a static (global) `Map` object where they can be looked up and cross referenced for use in other objects as things roll along. It's convoluted, but it's basically rewriting Java as XML. Something like this:
 
@@ -53,7 +53,7 @@ Of course our compiler can no longer validate the arrangement, so we wait until 
 
 2 Java was blessed/cursed with a new feature: @Annotations.
 
-So, Spring was revised to redo all that XML as Java annotations. Wait... how could that work? Well, instead of being all in one place, our dependency injection is scattered to the four winds as a sort of publish & subscribe system. So an annotation in class A says, "@I am publishing myself as an IThing" and an annotation in class B says, "@Boy, I really could use an IThing right now." Spring scans the entire application at runtime and juggles everyone around until all the subscribers are hooked up to the things published by the publishers. This is time-consuming to compute, and it's also hard for humans to reverse-engineer. Eventually people added the ability to limit the scanning only to designated libraries because it slows things down so much, so other people added the ability to override that scanning and force it anyhow, so now it's a tug-of-war. While writing Java in XML *is* bad, the annotation solution is arguably even worse.
+So, Spring was revised to redo all that XML as Java annotations. Wait... how could that work? Well, instead of being all in one place, our dependency injections are scattered to the four winds as a sort of publish & subscribe system. So an annotation in class A says, "@I am publishing myself as an IThing" and an annotation in class B says, "@Boy, I really could use an IThing right now." Spring scans the entire application at runtime and juggles everyone around until all the subscribers are hooked up to the things published by the publishers. This is time-consuming to compute, and it's also hard for humans to reverse-engineer. Eventually people added the ability to limit the scanning only to designated libraries because it slows things down so much, so other people added the ability to override that scanning and force it anyhow, so now it's a tug-of-war. While writing Java in XML *is* bad, the annotation solution is arguably even worse.
 
 At any rate, the aforementioned static singleton/global Map is hiding out as something called the "application context", camel-cased as `ApplicationContext`. You can query it if you like, but other programmers might shake their fingers at you and remind you that it's your job to pretend it isn't there.
 
@@ -75,15 +75,7 @@ So, if you use ThreadLocals because your local Chief Architect vouched for them 
 
 Let me put it this way: If you're feeling smug and self-satisfied about your expert knowledge of design patterns like Dependency Injection, looking down your nose at lesser programmers who "just don't get it", and yet you use ThreadLocals, you are a complete hypocrite. If you never had any design pattern pretentiousness to begin with, and you flaunt your global variables with a devil-may-care flare, well, I guess at least you aren't a hypocrite.
 
-Strangely, Spring encourages ThreadLocals. It also has numerous ThreadLocals hiding out in its own source logic. This is utter hypocrisy, but it continues Spring's pattern of doing the specific thing you tell everyone not to do.
-
-### Side Note: The Request UUID Workaround
-
-Probably the best excuse for ThreadLocals I've ever seen is this: His web service calls her web service calls your web service calls my web service. Suppose something is wrong for a given user at a given time and we're trying to trace down what happened; as we cross reference our way through the individual service logs, we realize the only way to match things up is to look at timestamps, hoping that the servers' time settings are reasonably well-synchronized (don't bet on it).
-
-How about this: At the beginning of this chain of http requests we create a UUID, and pass it from server to server, and whenever we log something, we include the current UUID. Now, we just grep all the things for that UUID and voila: The sequence of events pops right out. The catch is that this is extremely tedious to put in place without ThreadLocal, esp. when you consider 3rd party logging. We need a ThreadLocal-aware logging system - these exist, fortunately.
-
-Of course there's another way to look at it: This is service spaghetti. How and the heck did things get stretched across all these different servers in the first place? Are these services truly "decoupled" into free-standing, independent components, or have we simply run a monolithic business process through the slap-chopper such that four parts came out the chute at the other end? Perhaps I am being overly idealistic. Perhaps slap-chopping everything every which way isn't a good idea. Anyhow, that's the best reason I can come up with.
+Strangely, Spring encourages static-singleton ThreadLocals. It also has numerous ThreadLocals hiding out in its own source logic. This is utter hypocrisy, but it continues Spring's pattern of doing the specific thing it tells everyone not to do.
 
 ----
 
