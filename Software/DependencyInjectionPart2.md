@@ -38,7 +38,7 @@ JEE did include a dependency injection workaround framework called "JNDI", but i
 
 [foo](./bar)
 
-The goal of Spring was _not_ to eliminate "static singletons" however (basically global variables, as mentioned in [Part 1](./DependencyInjectionPart1#Global Functions.md) ), because there is no other way to share these dependencies. Neither was the goal to do a proper redesign of JEE and eliminate the problem at its source. Rather, the goal was to hide, disguise and obfuscate static singletons until we can *pretend they aren't there*. This is done with all sorts of reflection tricks, which is to say, Meta-programming: reflection, xml, annotations, yaml, json, whatever.
+The goal of Spring was _not_ to eliminate "static singletons" however - basically global variables, as mentioned in [Part 1](./DependencyInjectionPart1.md#global-functions) - because there is no other way to share these dependencies. Neither was the goal to do a proper redesign of JEE and eliminate the problem at its source. Rather, the goal was to hide, disguise and obfuscate static singletons until we can *pretend they aren't there*. This is done with all sorts of reflection tricks, which is to say, Meta-programming: reflection, xml, annotations, yaml, json, whatever.
 
 The original design worked like this: Instead of putting your dependency injections into your Java programming logic, they go in a file named "application.xml". Spring reads all this in as metadata, using reflection to "instantiate" all the necessary objects, and stuffs them into a static (global) `Map` object where they can be looked up and cross referenced for use in other objects as things roll along. It's convoluted, but it's basically rewriting Java as XML. Something like this:
 
