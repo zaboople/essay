@@ -8,15 +8,11 @@ When it comes to computer programming, we could ask: Where is the design, and wh
 
 Consider a second, seemingly unrelated question: What do we mean by "code"? Computer programmers talk about "code" and "coding" (really, _encoding_) and accept this terminology without question. This is actually where all of our trouble begins, especially the trouble of separating "design" vs. "construction".
 
-## Minor History
-
-Most software engineers work in programming languages, not the actual machine language itself (e.g. the x86 instruction set). A compiler or interpreter program _automatically_ does the job of translating the programming language statements into machine language, usually in just a few moments on modern computer hardware. As a result, many computer programmers don't understand machine language because they don't _need_ to, and they often don't understand how the machine even works; they may be aware that the machine doesn't know what common programming idioms like a "function", a "class", a "for-loop", etc. actually *are*, although most computer science curriculums at universities have one or more courses on computer architecture, compiler design, etc, which can help a lot. Learning assembly language is a pretty good shortcut, if nothing else.
-
-The first computers didn't have programming languages. Programmers worked in numeric machine code directly, and it was very painstaking work at that. In fact it was designated as "women's work" akin to typing, sewing, and such, and given to the ladies so that men could focus on the business of making clever computer hardware. Almost all of the first programmers were women (Ada Lovelace is usually credited as the very first), until the men apparently realized that the ladies were having too much fun.
-
 ## The Birth of Software "Engineering"
 
-Even after the advent of programming languages, various critics watched the programmers at work, and pointed out that the programmers were engaged in "construction" without any kind of diagrams or blueprints. Extending the engineering analogy from other trades to programming, the finger of accusation declared: _Aha - Construction without design!_ This worked out nicely for the critics, who happily volunteered to take charge of this design problem and rectify it - for a hefty fee, of course, since proper engineers often earn more than construction workers. Some elevated themselves to the position of _architect_, the grandest engineer of all, so to speak. Then they set about the task of making _diagrams_.
+The first programmers worked directly with machine instruction sets, plugging in numeric instructions bit by bit, so to speak. It was tedious, so programming languages were gradually invented, starting in the 1950's. A compiler or interpreter program _automatically_ does the job of translating the programming language statements into machine language, usually in just a few moments on modern computer hardware. As a result, many computer programmers don't understand machine language because they don't _need_ to, and they often don't understand how the machine even works. They may or may not be aware that the machine doesn't know what common programming idioms like a "function", a "class", a "for-loop", etc. actually *are*, although most computer science curriculums at universities have one or more courses on computer architecture, compiler design, etc, which can help a lot. Learning assembly language is a pretty good shortcut, if nothing else.
+
+After the advent of programming languages, various critics watched the programmers at work, and pointed out that the programmers were engaged in some kind of "construction" without any diagrams or blueprints. Extending the engineering analogy from other trades to programming, the finger of accusation declared: _Aha - Construction without design!_ This worked out nicely for the critics, who happily volunteered to take charge of this design problem and rectify it - for a hefty fee, of course, since proper engineers often earn more than construction workers. Some elevated themselves to the position of _architect_, the grandest engineer of all, so to speak. Then they set about the task of making _diagrams_.
 
 This resulted in many, many pages of diagrams needed to describe a few pages of programming language text, which made for a lot of work, because drawing things takes a lot of time. Worse yet, the act of drawing didn't actually do anything to ensure the program would work, which meant that upon testing there was quite a bit of "Back to the drawing board," as they say. The more advanced computer-aided-design tools employed an idea of "round-trip engineering", where the drawing could automatically translate to the intended programming language statements and back - well, most of the time, sort of...
 
@@ -28,9 +24,7 @@ In any kind of engineering that *isn't* software engineering, everything is fund
 
 This whole diagramming epic failed because the design was *already being done* by the programmers, in a different diagramming "language": *A programming language*.
 
-So about this "code": When programmers talk about working in a programming language, they insist on using the term, "code", as in "I wrote some code for that!" or "Well, I've been busy coding all day, what have you been doing?"
-
-What do most people think of when you say, "code"? They think of "gibberish" - something hard to read, even encrypted. They figure that to read this gibberish you need to be a kind of savant, nearly a human computer, and can look at something like
+So about this "code": When programmers talk about working in a programming language, they insist on using the term, "code", as in "I wrote some code for that!" or "Well, I've been busy coding all day, what have you been doing?" What do most people think of when you say, "code"? They think of "gibberish" - something hard to read, even encrypted. They figure that to read this gibberish you need to be a kind of savant, nearly a human computer, and can look at something like
 
     01100011011100100110000101110000
 
@@ -59,9 +53,11 @@ It actually does make some sense to think of computer programming as engineering
 
 It has been difficult to convince computer programmers to mature and discipline themselves instead of wallowing in a tough-guy, danger-close, hacker-cowboy mentality of arrogance justified by a constant refrain of, "How else am I supposed to innovate?" That's actually a good enough question to insist on learning to manage risk effectively rather than refusing to accept risk at all, but room for improvement abounds.
 
-## Distributed Systems
+## Second & Third Thoughts On Diagrams
 
 Now that everyone is obsessed with building extraordinarily distributed systems with dozens of network nodes, it *does* make sense to start diagramming those networks, since they are specifically *physical* entities. Unfortunately most of us still rely on word-of-mouth, whiteboard photographs and institutional memory to keep track of these mostly invisible diagrams, often with lots of mistakes and missing parts. If you force a typical software development team to draw a reasonably complete diagram "or else", you can usually guess the diagram's accuracy by how much it embarrasses the team with its organically grown, mind-boggling complexity.
+
+The classic "flow chart" diagram invented in the early 20th century is still a highly accessible means of communicating complex logical steps to laypersons and stakeholders. Lots of software exists for creating flow charts, and a lot of otherwise non-technical people have seen them before. When it's important to get documented, clear agreement on system requirements, flow-charts are a good tool to have at your disposal.
 
 ## Impact
 
