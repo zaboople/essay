@@ -14,6 +14,7 @@ These are essays on software, primarily computer programming, or you could say "
 
 - [Git For Average People](GitForAveragePeople.md)
 - [The Rich Domain Model](TheRichDomainModel.md)
+- [Elitism](Elitism.md)
 
 ## Little But Significant Things
 
