@@ -1,6 +1,8 @@
 # Elitism
 
-If you already have a turing-complete toolset, any enhancement I propose is only valid on the principle that it makes the job [*easier*](./FiveKindsOfEasyAndHard.md), not harder. If you've made a good faith effort to learn to use my enhancement, but you're struggling just to understand it, I've probably failed.
+There's an old truism worth repeating: *It's easy to create complicated solutions for simple problems; what's hard is creating simple solutions for complicated problems*.
+
+In computer programming, if you already have a turing-complete toolset, any enhancement I propose is only valid on the principle that it makes the job [*easier*](./FiveKindsOfEasyAndHard.md), not harder. If you've made a good faith effort to learn to use my enhancement, but you're struggling just to understand it, I've probably failed.
 
 Elitism tries to do the opposite, to deliberately obfuscate and overcomplicate computer programming. The goal is to stake out a claim to some pseudo-advanced intellectual territory that can be used to delineate Those Who Get It from Those Who Don't, so that one can seek membership in a group that is highly compensated and celebrated for its rare brilliance. Unfortunately this practice is much more commonplace than one would expect from a community that prides itself on pure objectivity and scientific thinking.
 
