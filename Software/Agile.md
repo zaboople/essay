@@ -60,15 +60,15 @@ Most Agile advocates divide people up into *stakeholders* and *implementors*: St
 
 A stakeholder can be anyone with some kind of stake in the success of a software project. A corporate attorney might be completely disinterested in using the product, but they might also be the person responsible for telling us that we're doing something illegal, so: They're a stakeholder.
 
-Stakeholders each have their own perspective on what the system should or shouldn't do, based on their knowledge and background. They don't carry weight based on rank and status, but on what they *know*. The least important person may be the one person who recognizes critical deficiencies that must be addressed soon.
+Stakeholders each have their own perspective on what the system should or shouldn't do, based on their knowledge and background. They don't carry weight based on rank and status, but on what they *know*. The lowest-ranking person may be the one person who recognizes critical deficiencies that must be addressed soon.
 
-Who understands technical defiencies best? Technical people, i.e. first and foremost the implementation staff. Those technical staff are stakeholders too. Denying this fact allows us to deliver faster, but leaves us open to long-term hazards that the team knows about, but is not allowed to work on.
+Who understands technical defiencies best? Technical people, i.e. first and foremost the implementation staff. Those technical staff are stakeholders too. Denying this fact allows us to deliver faster, but leaves us open to long-term hazards that the team knows about but is not allowed to work on.
 
 ## Efficiency
 
 It's important to understand that formal processes don't magically make people more efficient; if anything, we'll be robbed of time spent on the process itself. Management is usually hoping their new agile initiative will fix the problem of "things not getting delivered on time", and they will usually be dissapointed. Then comes accusations that software developers could get the job done faster if they would stop working on the wrong things, so that we're really playing a game of Agile Crackdown: If you don't have a ticket for it, we better not catch you working on it.
 
-Management may be right that things are not getting done quickly enough, but they need to consider alternatives to their assessment of *why*. Agile methods cannot compensate for bad software architecture that is choking software development. A process solution can only fix process problems. An "agile crackdown" tickets-required approach is actually reasonable,  as long as we're recognizing the stakeholder-ness of the software development team (as per above) and balancing their priorities with those of everyone else.
+Management may be right that things are not getting done quickly enough, but they need to consider alternatives to their assessment of *why*. Agile methods cannot compensate for bad software architecture that is choking software development. A process solution can only fix process problems. An "agile crackdown" tickets-required approach is actually reasonable, as long as we're recognizing the stakeholder-ness of the software development team (as per above) and balancing their priorities with those of everyone else.
 
 ## Risk
 
