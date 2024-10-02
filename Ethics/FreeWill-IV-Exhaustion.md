@@ -23,7 +23,7 @@ Most of us are taking these realities on some small measure of *faith*, aren't w
 
 Yet again comes the reminder that compassion is not just pity for the helpless, but an effort to help them gain control of their lives, i.e. empowerment. It's a good litmus test for our views on religion, ethics and politics. I can argue that atheism conquers the boogeyman of superstition and gives you that empowerment, but not if we have to fight a lengthy and brutal battle just to prove that it's acceptable to want to be real, free and honorable, among other things.
 
-I'm not even passing judgement on that deism question, but attempting to establish that it's not enough to insist on unconditional faith in "truth", because truth is incredibly hard. We have to first insist on unconditional faith in a meaningful life as a necessity we can agree on and defend relentlessly, and to let the cynics question our authenticity without fear that they would consume us.
+I'm not even passing judgement on that theism question, but attempting to establish that it's not enough to insist on unconditional faith in "truth", because truth is incredibly hard. We have to first insist on unconditional faith in a meaningful life as a necessity we can agree on and defend relentlessly, and to let the cynics question our authenticity without fear that they would consume us.
 
 ------
 
